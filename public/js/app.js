@@ -25000,7 +25000,7 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mt-8 text-2xl"
-}, " Welcome to your Jetstream application! ", -1
+}, " Bienvenido a SEYPRE ", -1
 /* HOISTED */
 );
 
