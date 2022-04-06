@@ -6,17 +6,17 @@
             <!-- Add Team Member -->
             <jet-form-section @submitted="addTeamMember">
                 <template #title>
-                    Add Team Member
+                    Agregar miembro del equipo
                 </template>
 
                 <template #description>
-                    Add a new team member to your team, allowing them to collaborate with you.
+                    Agregue un nuevo miembro del equipo a su equipo, permitiéndole colaborar con usted.
                 </template>
 
                 <template #form>
                     <div class="col-span-6">
                         <div class="max-w-xl text-sm text-gray-600">
-                            Please provide the email address of the person you would like to add to this team.
+                            Proporcione la dirección de correo electrónico de la persona que desea agregar a este equipo.
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@
 
                     <!-- Role -->
                     <div class="col-span-6 lg:col-span-4" v-if="availableRoles.length > 0">
-                        <jet-label for="roles" value="Role" />
+                        <jet-label for="roles" value="Rol" />
                         <jet-input-error :message="addTeamMemberForm.errors.role" class="mt-2" />
 
                         <div class="relative z-0 mt-1 border border-gray-200 rounded-lg cursor-pointer">
@@ -109,11 +109,11 @@
             <!-- Manage Team Members -->
             <jet-action-section class="mt-10 sm:mt-0">
                 <template #title>
-                    Team Members
+                    Miembros del equipo
                 </template>
 
                 <template #description>
-                    All of the people that are part of this team.
+                    Todas las personas que forman parte de este equipo.
                 </template>
 
                 <!-- Team Member List -->
@@ -141,14 +141,14 @@
                                 <button class="cursor-pointer ml-6 text-sm text-red-500"
                                                     @click="confirmLeavingTeam"
                                                     v-if="$page.props.user.id === user.id">
-                                    Leave
+                                    Salir
                                 </button>
 
                                 <!-- Remove Team Member -->
                                 <button class="cursor-pointer ml-6 text-sm text-red-500"
                                                     @click="confirmTeamMemberRemoval(user)"
                                                     v-if="userPermissions.canRemoveTeamMembers">
-                                    Remove
+                                    Eliminar
                                 </button>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
         <!-- Role Management Modal -->
         <jet-dialog-modal :show="currentlyManagingRole" @close="currentlyManagingRole = false">
             <template #title>
-                Manage Role
+                Administrar rol
             </template>
 
             <template #content>
@@ -193,11 +193,11 @@
 
             <template #footer>
                 <jet-secondary-button @click="currentlyManagingRole = false">
-                    Cancel
+                    Cancelar
                 </jet-secondary-button>
 
                 <jet-button class="ml-3" @click="updateRole" :class="{ 'opacity-25': updateRoleForm.processing }" :disabled="updateRoleForm.processing">
-                    Save
+                    Guardar
                 </jet-button>
             </template>
         </jet-dialog-modal>
@@ -205,20 +205,20 @@
         <!-- Leave Team Confirmation Modal -->
         <jet-confirmation-modal :show="confirmingLeavingTeam" @close="confirmingLeavingTeam = false">
             <template #title>
-                Leave Team
+                Dejar el equipo
             </template>
 
             <template #content>
-                Are you sure you would like to leave this team?
+                ¿Estás seguro de que te gustaría dejar este equipo?
             </template>
 
             <template #footer>
                 <jet-secondary-button @click="confirmingLeavingTeam = false">
-                    Cancel
+                    Cancelar
                 </jet-secondary-button>
 
                 <jet-danger-button class="ml-3" @click="leaveTeam" :class="{ 'opacity-25': leaveTeamForm.processing }" :disabled="leaveTeamForm.processing">
-                    Leave
+                    Salir
                 </jet-danger-button>
             </template>
         </jet-confirmation-modal>
@@ -226,20 +226,20 @@
         <!-- Remove Team Member Confirmation Modal -->
         <jet-confirmation-modal :show="teamMemberBeingRemoved" @close="teamMemberBeingRemoved = null">
             <template #title>
-                Remove Team Member
+                Eliminar miembro del equipo
             </template>
 
             <template #content>
-                Are you sure you would like to remove this person from the team?
+                ¿Está seguro de que desea eliminar a esta persona del equipo?
             </template>
 
             <template #footer>
                 <jet-secondary-button @click="teamMemberBeingRemoved = null">
-                    Cancel
+                    Cancelar
                 </jet-secondary-button>
 
                 <jet-danger-button class="ml-3" @click="removeTeamMember" :class="{ 'opacity-25': removeTeamMemberForm.processing }" :disabled="removeTeamMemberForm.processing">
-                    Remove
+                    Eliminar
                 </jet-danger-button>
             </template>
         </jet-confirmation-modal>
