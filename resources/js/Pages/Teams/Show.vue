@@ -2,7 +2,7 @@
     <app-layout title="Team Settings">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Team Settings
+                Configuración del equipo
             </h2>
         </template>
 

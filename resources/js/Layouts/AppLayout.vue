@@ -46,23 +46,23 @@
                                             <!-- Team Management -->
                                             <template v-if="$page.props.jetstream.hasTeamFeatures">
                                                 <div class="block px-4 py-2 text-xs text-gray-400">
-                                                    Manage Team
+                                                    Administrar equipo
                                                 </div>
 
                                                 <!-- Team Settings -->
                                                 <jet-dropdown-link :href="route('teams.show', $page.props.user.current_team)">
-                                                    Team Settings
+                                                    Configuración del equipo
                                                 </jet-dropdown-link>
 
                                                 <jet-dropdown-link :href="route('teams.create')" v-if="$page.props.jetstream.canCreateTeams">
-                                                    Create New Team
+                                                    Crear nuevo equipo
                                                 </jet-dropdown-link>
 
                                                 <div class="border-t border-gray-100"></div>
 
                                                 <!-- Team Switcher -->
                                                 <div class="block px-4 py-2 text-xs text-gray-400">
-                                                    Switch Teams
+                                                    cambiar de equipo
                                                 </div>
 
                                                 <template v-for="team in $page.props.user.all_teams" :key="team.id">
@@ -103,11 +103,11 @@
                                     <template #content>
                                         <!-- Account Management -->
                                         <div class="block px-4 py-2 text-xs text-gray-400">
-                                            Manage Account
+                                            Administrar cuenta
                                         </div>
 
                                         <jet-dropdown-link :href="route('profile.show')">
-                                            Profile
+                                            Perfil
                                         </jet-dropdown-link>
 
                                         <jet-dropdown-link :href="route('api-tokens.index')" v-if="$page.props.jetstream.hasApiFeatures">
@@ -119,7 +119,7 @@
                                         <!-- Authentication -->
                                         <form @submit.prevent="logout">
                                             <jet-dropdown-link as="button">
-                                                Log Out
+                                                Salir
                                             </jet-dropdown-link>
                                         </form>
                                     </template>
@@ -162,7 +162,7 @@
 
                         <div class="mt-3 space-y-1">
                             <jet-responsive-nav-link :href="route('profile.show')" :active="route().current('profile.show')">
-                                Profile
+                                Perfil
                             </jet-responsive-nav-link>
 
                             <jet-responsive-nav-link :href="route('api-tokens.index')" :active="route().current('api-tokens.index')" v-if="$page.props.jetstream.hasApiFeatures">
@@ -172,7 +172,7 @@
                             <!-- Authentication -->
                             <form method="POST" @submit.prevent="logout">
                                 <jet-responsive-nav-link as="button">
-                                    Log Out
+                                    Salir
                                 </jet-responsive-nav-link>
                             </form>
 
@@ -181,23 +181,23 @@
                                 <div class="border-t border-gray-200"></div>
 
                                 <div class="block px-4 py-2 text-xs text-gray-400">
-                                    Manage Team
+                                    Administrar equipo
                                 </div>
 
                                 <!-- Team Settings -->
                                 <jet-responsive-nav-link :href="route('teams.show', $page.props.user.current_team)" :active="route().current('teams.show')">
-                                    Team Settings
+                                    Configuración del equipo
                                 </jet-responsive-nav-link>
 
                                 <jet-responsive-nav-link :href="route('teams.create')" :active="route().current('teams.create')" v-if="$page.props.jetstream.canCreateTeams">
-                                    Create New Team
+                                    Crear nuevo equipo
                                 </jet-responsive-nav-link>
 
                                 <div class="border-t border-gray-200"></div>
 
                                 <!-- Team Switcher -->
                                 <div class="block px-4 py-2 text-xs text-gray-400">
-                                    Switch Teams
+                                    Cambiar de Equipo
                                 </div>
 
                                 <template v-for="team in $page.props.user.all_teams" :key="team.id">

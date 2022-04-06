@@ -2,7 +2,7 @@
     <app-layout title="Create Team">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Create Team
+                Crear equipo
             </h2>
         </template>
 
