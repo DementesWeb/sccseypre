@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\CustomerController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\TelFinalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,4 +46,7 @@ Route::middleware([
     Route::get('/customers/create',function () {
         return Inertia::render('Customers/Create');
     })->name('customers.create');
-}); 
+});
+
+Route::middleware(
+    ['auth:sanctum', 'verified'])->get('/consultacedula', [TelFinalController::class,'Index'])->name('Consultacedula');
