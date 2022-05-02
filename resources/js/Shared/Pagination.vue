@@ -20,15 +20,14 @@
         <div>
         <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
 
- 
-            <template v-for="(link ,key) in pagination.links" >
+            <template v-for="(link ,key) in pagination.links">
                 <div :key="key" v-if="link.url == null" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50" v-html="link.label">
 
                 </div >
 
-                <Link :key="'link-' + key" 
-                v-else :href="link.url" 
-                class="relative inline-flex items-center px-4 py-2 border text-sm font-medium" 
+                <Link :key="'link-' + key"
+                v-else :href="link.url"
+                class="relative inline-flex items-center px-4 py-2 border text-sm font-medium"
                 :class="link.active ? 'z-10 bg-indigo-50 border-indigo-500 text-indigo-600':'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'"
                 v-html="link.label" />
 
@@ -41,8 +40,8 @@
                 <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
             </svg>
             </a> -->
-            
-            
+
+
         </nav>
         </div>
     </div>
