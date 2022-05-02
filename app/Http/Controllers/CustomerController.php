@@ -6,6 +6,7 @@ use App\Models\customer;
 use App\Http\Requests\StorecustomerRequest;
 use App\Http\Requests\UpdatecustomerRequest;
 use Inertia\Inertia;
+use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
@@ -18,16 +19,22 @@ class CustomerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+
         //$customer = Customer::all();
         
-        $customer = Customer::latest()->get();
+        //$customer = Customer::latest()->get();
 
-        //$customer = Customer::latest()->paginate();
-        //
+        $filters = $request->all('search');
 
+        $customer = Customer::latest()
+            ->when( $filters['search'] ?? null, function($query, $search){
+                $query->where('cedula','LIKE',"%".$search."%");
+            })
+            ->paginate();
+
+        //return $filters;
         //return $customer;
         return Inertia::render('Customers/Index',compact('customer'));
     }

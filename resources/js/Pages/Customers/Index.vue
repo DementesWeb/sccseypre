@@ -18,6 +18,12 @@
             <div class="overflow-x-auto shadow-md sm:rounded-lg">
                 <div class="inline-block min-w-full align-middle">
                     <div class="overflow-hidden ">
+
+                        <div class="py-4 px-6 ">
+                            <Input v-model="search" type="text" class="w-full" placeholder="Digitar Cédula Ej:'1-234-567'"/>
+                            {{ search }}
+                        </div>
+
                         <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
                             <thead class="bg-gray-100 dark:bg-gray-700">
                                 <tr>
@@ -52,7 +58,7 @@
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
-                                <tr v-for="customers in customer" :key="customers.id" class="hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <tr v-for="customers in customer.data" :key="customers.id" class="hover:bg-gray-100 dark:hover:bg-gray-700">
                                     <td class="p-4 w-4">
                                         <div class="flex items-center">
                                             <input id="checkbox-table-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
@@ -75,7 +81,8 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <Pagination :pagination="customres"></Pagination>
+
+                        <Pagination :pagination="customer"></Pagination>
                        
                        
                     </div>
@@ -102,19 +109,34 @@
 <script>
     import AppLayout from '@/Layouts/AppLayout.vue';
     import Pagination from '@/Shared/Pagination.vue';
+    import Input from '@/Jetstream/Input.vue'
 
-    console.log('pintar CLIENTES');
+
     export default {
         components: {
             AppLayout,
             Pagination,
+            Input
+        },
+        data() {
+            return {
+                search: '',
+            }
+        },
+        watch: {
+            search($value) {
+                this.$inertia.get('/customers',
+                {search : $value},
+                {preserveState: true}  
+                )
+            }
         },
         props:{
             customer: Object,
         } 
         
     }
-    console.log('pintar CLIENTES 2');
+
 </script>
 
 <style>
