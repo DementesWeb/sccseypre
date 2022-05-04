@@ -56,9 +56,17 @@ class CustomerController extends Controller
      * @param  \App\Http\Requests\StorecustomerRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorecustomerRequest $request)
+    public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'nombre_y_apellido'=> 'required',
+            'cedula'=> 'required',
+
+        ]);
+
+        $customer = Customer::create($data);
+
+        return redirect()->route('customer.index');
     }
 
     /**

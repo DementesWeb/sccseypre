@@ -21,9 +21,9 @@ return new class extends Migration
             $table->double('sueldo');
             $table->double('sobresueldo');
             $table->double('sueldo_neto');
-            $table->double('35_porciento');
-            $table->double('25_porciento');
-            $table->double('20_porciento');
+            $table->double('v35_porciento');
+            $table->double('v25_porciento');
+            $table->double('v20_porciento');
             $table->string('COD_1');
             $table->double('DES_1');
             $table->date('FEC_1');

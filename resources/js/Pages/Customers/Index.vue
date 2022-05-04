@@ -18,10 +18,13 @@
             <div class="overflow-x-auto shadow-md sm:rounded-lg">
                 <div class="inline-block min-w-full align-middle">
                     <div class="overflow-hidden ">
-
-                        <div class="py-4 px-6 ">
-                            <Input v-model="search" type="text" class="w-full" placeholder="Digitar Cédula Ej:'1-234-567'"/>
-                            {{ search }}
+                        
+                        <div class="py-4 px-6 flex items-center">
+                            <Input v-model="search" type="text" class="flex-1" placeholder="Buscar Cédula Ej:'1-234-567'"/>
+                            <Link :href="route('customers.create')" class="ml-4 flex-shrink-0 btn btn-blue">
+                                Nuevo
+                                <i class="fa fa-thin fa-users"></i>
+                            </Link>
                         </div>
 
                         <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
@@ -46,7 +49,7 @@
                                         Sueldo
                                     </th>
                                     <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                        Sueldo_neto
+                                        Sueldo Neto
                                     </th>
                                     <th scope="col" class="p-4">
                                         <span class="sr-only">
@@ -90,18 +93,10 @@
             </div>
         </div><!-- fin -->
 
-            <p class="mt-5">This table component is part of a larger, open-source library of Tailwind CSS components. Learn
-                more
-                by going to the official <a class="text-blue-600 hover:underline"
-                    href="https://flowbite.com/docs/getting-started/introduction/" target="_blank">Flowbite Documentation</a>.
-            </p>
         </div>          
             
         </div>
 
-        <pre>
-            {{ customer }}
-        </pre>
     </AppLayout>
     
 </template>
@@ -109,14 +104,16 @@
 <script>
     import AppLayout from '@/Layouts/AppLayout.vue';
     import Pagination from '@/Shared/Pagination.vue';
-    import Input from '@/Jetstream/Input.vue'
+    import Input from '@/Jetstream/Input.vue';
+    import { Link } from '@inertiajs/inertia-vue3';
 
 
     export default {
         components: {
             AppLayout,
             Pagination,
-            Input
+            Input,
+            Link
         },
         data() {
             return {

@@ -37,7 +37,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
 
-Route::middleware([
+/* Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
@@ -45,4 +45,4 @@ Route::middleware([
     Route::get('/customers/create',function () {
         return Inertia::render('Customers/Create');
     })->name('customers.create');
-}); 
+}); */ 
