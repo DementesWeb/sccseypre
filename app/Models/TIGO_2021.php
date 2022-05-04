@@ -10,6 +10,7 @@ class TIGO_2021 extends Model
     use HasFactory;
 
     protected $fillable = [
+        'CEDULA',
         'NOMBRE_CLIENTE',
         'SUSCRIPTOR',
         'BARRIO',

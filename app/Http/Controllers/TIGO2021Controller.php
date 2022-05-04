@@ -18,7 +18,7 @@ class TIGO2021Controller extends Controller
         $cedulatigo = TIGO_2021::latest()
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('CED', 'like', '%' . $search . '%');
-        })->paginate();
+        })->paginate(6);
         return Inertia::render('Tigo_2021/Index', ['cedulatigo'=>$cedulatigo, 'filters'=>$filters]);
     }
 }

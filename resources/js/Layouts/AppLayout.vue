@@ -25,6 +25,9 @@
                                 <jet-nav-link :href="route('customers.index')" :active="route().current('customers.*')">
                                     Clientes
                                 </jet-nav-link>
+                                <jet-nav-link :href="route('Consultacedula')" :active="route().current('Consultacedula')">
+                                    Tel Final
+                                </jet-nav-link>
                                 <jet-nav-link :href="route('Tigo')" :active="route().current('Tigo')">
                                     Tigo 2021
                                 </jet-nav-link>

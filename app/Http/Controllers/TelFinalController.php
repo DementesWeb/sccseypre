@@ -18,7 +18,7 @@ class TelFinalController extends Controller
         $cedulatelfinal = TelFinal::latest()
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('CED', 'like', '%' . $search . '%');
-        })->paginate();
+        })->paginate(6);
         return Inertia::render('Consultacedula/Index', ['cedulatelfinal'=>$cedulatelfinal, 'filters'=>$filters]);
     }
 }

@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_i_g_o_2021_s', function (Blueprint $table) {
             $table->id();
+            $table->string('CEDULA')->nullable();
             $table->string('NOMBRE_CLIENTE')->nullable();
             $table->string('SUSCRIPTOR')->nullable();
             $table->string('BARRIO')->nullable();
@@ -27,9 +28,9 @@ return new class extends Migration
             $table->integer('SALDO60')->nullable();
             $table->integer('SALDO90')->nullable();
             $table->integer('SALDO90MAS')->nullable();
-            $table->string('ESTADO')->nullable();
+            $table->boolean('ESTADO')->nullable();
             $table->double('DEUDATOTAL')->nullable();
-            $table->dateTime('FECHA_ACTUALIZACION')->nullable();
+            $table->date('FECHA_ACTUALIZACION')->nullable();
             $table->timestamps();
         });
     }
