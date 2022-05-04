@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TIGO_2021;
 use Inertia\Inertia;
-use App\Models\TelFinal;
 use Illuminate\Http\Request;
 
-class TelFinalController extends Controller
+class TIGO2021Controller extends Controller
 {
     public function __construct(){
         $this->middleware('auth');
@@ -15,10 +15,10 @@ class TelFinalController extends Controller
     public function Index(Request $request)
     {
         $filters = $request->all('search');
-        $cedulatelfinal = TelFinal::latest()
+        $cedulatigo = TIGO_2021::latest()
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('CED', 'like', '%' . $search . '%');
         })->paginate(6);
-        return Inertia::render('Consultacedula/Index', ['cedulatelfinal'=>$cedulatelfinal, 'filters'=>$filters]);
+        return Inertia::render('Tigo_2021/Index', ['cedulatigo'=>$cedulatigo, 'filters'=>$filters]);
     }
 }

@@ -26,7 +26,10 @@
                                     Clientes
                                 </jet-nav-link>
                                 <jet-nav-link :href="route('Consultacedula')" :active="route().current('Consultacedula')">
-                                    Consultar Cedula
+                                    Tel Final
+                                </jet-nav-link>
+                                <jet-nav-link :href="route('Tigo')" :active="route().current('Tigo')">
+                                    Tigo 2021
                                 </jet-nav-link>
                             </div>
                         </div>
