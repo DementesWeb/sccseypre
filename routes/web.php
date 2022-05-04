@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\TelFinalController;
+use App\Models\TIGO_2021;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,3 +51,5 @@ Route::middleware([
 
 Route::middleware(
     ['auth:sanctum', 'verified'])->get('/consultacedula', [TelFinalController::class,'Index'])->name('Consultacedula');
+Route::middleware(
+    ['auth:sanctum', 'verified'])->get('/tigo', [TIGO_2021::class,'Index'])->name('Tigo');
