@@ -22,3 +22,4 @@ class TIGO2021Controller extends Controller
         return Inertia::render('Tigo_2021/Index', ['cedulatigo'=>$cedulatigo, 'filters'=>$filters]);
     }
 }
+
