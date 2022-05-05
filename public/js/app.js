@@ -27924,9 +27924,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         placeholder: "Digitar Cédula Ej:'1-234-567'"
       }, null, 8
       /* PROPS */
-      , ["modelValue"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.search), 1
-      /* TEXT */
-      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", _hoisted_12, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.customer.data, function (customers) {
+      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", _hoisted_12, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.customer.data, function (customers) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", {
           key: customers.id,
           "class": "hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -27947,9 +27945,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         pagination: $props.customer
       }, null, 8
       /* PROPS */
-      , ["pagination"])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" fin "), _hoisted_20])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", null, "            " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.customer) + "\r\n        ", 1
-      /* TEXT */
-      )];
+      , ["pagination"])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" fin "), _hoisted_20])])];
     }),
     _: 1
     /* STABLE */
@@ -30656,10 +30652,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     );
   }), 256
   /* UNKEYED_FRAGMENT */
-  )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("\n            <a href=\"#\" class=\"relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50\">\n            <span class=\"sr-only\">Previous</span> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Heroicon name: solid/chevron-left "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <svg class=\"h-5 w-5\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n                <path fill-rule=\"evenodd\" d=\"M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z\" clip-rule=\"evenodd\" />\n            </svg>\n            </a> ")])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", null, "        " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.pagination) + "\n    ", 1
-  /* TEXT */
-  )], 64
-  /* STABLE_FRAGMENT */
+  ))])])])])], 2112
+  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
   );
 }
 
