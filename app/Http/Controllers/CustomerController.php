@@ -12,7 +12,7 @@ class CustomerController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');        
+        $this->middleware('auth');
     }
     /**
      * Display a listing of the resource.
@@ -23,14 +23,15 @@ class CustomerController extends Controller
     {
 
         //$customer = Customer::all();
-        
+
         //$customer = Customer::latest()->get();
 
         $filters = $request->all('search');
 
         $customer = Customer::latest()
             ->when( $filters['search'] ?? null, function($query, $search){
-                $query->where('cedula','LIKE',"%".$search."%");
+                $query->where('cedula','LIKE',"%".$search."%")
+                ->orWhere('cargo','LIKE',"%".$search."%");
             })
             ->paginate();
 
