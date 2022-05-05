@@ -21,7 +21,6 @@
 
                         <div class="py-4 px-6 ">
                             <Input v-model="search" type="text" class="w-full" placeholder="Digitar Cédula Ej:'1-234-567'"/>
-                            {{ search }}
                         </div>
 
                         <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
@@ -50,9 +49,9 @@
                                     </th>
                                     <th scope="col" class="p-4">
                                         <span class="sr-only">
-                                            
+
                                             <i class="fa fa-circle-chevron-right"></i>
-                                            
+
                                         </span>
                                     </th>
                                 </tr>
@@ -83,8 +82,8 @@
                         </table>
 
                         <Pagination :pagination="customer"></Pagination>
-                       
-                       
+
+
                     </div>
                 </div>
             </div>
@@ -95,15 +94,12 @@
                 by going to the official <a class="text-blue-600 hover:underline"
                     href="https://flowbite.com/docs/getting-started/introduction/" target="_blank">Flowbite Documentation</a>.
             </p>
-        </div>          
-            
         </div>
 
-        <pre>
-            {{ customer }}
-        </pre>
+        </div>
+
     </AppLayout>
-    
+
 </template>
 
 <script>
@@ -127,14 +123,14 @@
             search($value) {
                 this.$inertia.get('/customers',
                 {search : $value},
-                {preserveState: true}  
+                {preserveState: true}
                 )
             }
         },
         props:{
             customer: Object,
-        } 
-        
+        }
+
     }
 
 </script>
