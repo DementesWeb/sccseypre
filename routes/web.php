@@ -6,6 +6,7 @@ use Illuminate\Foundation\Application;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\TelFinalController;
 use App\Http\Controllers\TIGO2021Controller;
+use App\Http\Controllers\CableOndaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,4 +53,8 @@ Route::middleware([
 Route::middleware(
     ['auth:sanctum', 'verified'])->get('/consultacedula', [TelFinalController::class,'Index'])->name('Consultacedula');
 Route::middleware(
+    ['auth:sanctum', 'verified'])->get('/cableonda', [CableOndaController::class,'Index'])->name('CableOnda');
+Route::middleware(
     ['auth:sanctum', 'verified'])->get('/tigo_2021', [TIGO2021Controller::class,'Index'])->name('Tigo');
+
+    
