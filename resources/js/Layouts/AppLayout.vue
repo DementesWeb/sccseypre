@@ -31,6 +31,9 @@
                                 <jet-nav-link :href="route('Tigo')" :active="route().current('Tigo')">
                                     Tigo 2021
                                 </jet-nav-link>
+                                <jet-nav-link :href="route('CableOnda')" :active="route().current('CableOnda')">
+                                    Cable Onda
+                                </jet-nav-link>
                             </div>
                         </div>
 
