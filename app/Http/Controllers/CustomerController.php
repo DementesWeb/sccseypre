@@ -23,21 +23,16 @@ class CustomerController extends Controller
     {
 
         //$customer = Customer::all();
-
         //$customer = Customer::latest()->get();
 
         $filters = $request->all('search');
 
         $customer = Customer::latest()
-            ->when( $filters['search'] ?? null, function($query, $search){
-                $query->where('cedula','LIKE',"%".$search."%")
-                ->orWhere('cargo','LIKE',"%".$search."%");
-            })
+            ->filter($filters)
             ->paginate();
 
-        //return $filters;
-        //return $customer;
-        return Inertia::render('Customers/Index',compact('customer'));
+
+        return Inertia::render('Customers/Index',compact('customer','filters'));
     }
 
     /**
@@ -57,9 +52,65 @@ class CustomerController extends Controller
      * @param  \App\Http\Requests\StorecustomerRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorecustomerRequest $request)
+    public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'nombre_y_apellido' => 'required',
+            'cedula' => 'required',
+            'cargo'=>  'nullable',
+            'sueldo'=> 'nullable',
+            'sobresueldo'=> 'nullable',
+            'sueldo_neto'=> 'nullable',
+            'v35_porciento'=> 'nullable',
+            'v25_porciento'=> 'nullable',
+            'v20_porciento'=> 'nullable',
+            'COD_1'=> 'nullable',
+            'DES_1'=> 'nullable',
+            'FEC_1'=> 'nullable',
+            'COD_2'=> 'nullable',
+            'DES_2'=> 'nullable',
+            'FEC_2'=> 'nullable',
+            'COD_3'=> 'nullable',
+            'DES_3'=> 'nullable',
+            'FEC_3'=> 'nullable',
+            'COD_4'=> 'nullable',
+            'DES_4'=> 'nullable',
+            'FEC_4'=> 'nullable',
+            'COD_5'=> 'nullable',
+            'DES_5'=> 'nullable',
+            'FEC_5'=> 'nullable',
+            'COD_6'=> 'nullable',
+            'DES_6'=> 'nullable',
+            'FEC_6'=> 'nullable',
+            'COD_7'=> 'nullable',
+            'DES_7'=> 'nullable',
+            'FEC_7'=> 'nullable',
+            'COD_8'=> 'nullable',
+            'DES_8'=> 'nullable',
+            'FEC_8'=> 'nullable',
+            'COD_9'=> 'nullable',
+            'DES_9'=> 'nullable',
+            'FEC_9'=> 'nullable',
+            'COD_10'=> 'nullable',
+            'DES_10'=> 'nullable',
+            'FEC_10'=> 'nullable',
+            'COD_11'=> 'nullable',
+            'DES_11'=> 'nullable',
+            'FEC_11'=> 'nullable',
+            'COD_12'=> 'nullable',
+            'DES_12'=> 'nullable',
+            'FEC_12'=> 'nullable',
+        ]);
+        
+        //$customer = Customer::create($data);
+        $customer = Customer::create($data);
+    
+        //return redirect()->route('customres.edit', $customer);
+    
+        return Inertia::render('Customers/Edit',compact('customer'));
+        
+
+        
     }
 
     /**
@@ -92,9 +143,59 @@ class CustomerController extends Controller
      * @param  \App\Models\customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatecustomerRequest $request, customer $customer)
+    public function update(Request $request, customer $customer)
     {
-        //
+        $data = $request->validate([
+            'nombre_y_apellido' => 'required',
+            'cedula' => 'required',
+            'cargo'=>  'nullable',
+            'sueldo'=> 'nullable',
+            'sobresueldo'=> 'nullable',
+            'sueldo_neto'=> 'nullable',
+            'v35_porciento'=> 'nullable',
+            'v25_porciento'=> 'nullable',
+            'v20_porciento'=> 'nullable',
+            'COD_1'=> 'nullable',
+            'DES_1'=> 'nullable',
+            'FEC_1'=> 'nullable',
+            'COD_2'=> 'nullable',
+            'DES_2'=> 'nullable',
+            'FEC_2'=> 'nullable',
+            'COD_3'=> 'nullable',
+            'DES_3'=> 'nullable',
+            'FEC_3'=> 'nullable',
+            'COD_4'=> 'nullable',
+            'DES_4'=> 'nullable',
+            'FEC_4'=> 'nullable',
+            'COD_5'=> 'nullable',
+            'DES_5'=> 'nullable',
+            'FEC_5'=> 'nullable',
+            'COD_6'=> 'nullable',
+            'DES_6'=> 'nullable',
+            'FEC_6'=> 'nullable',
+            'COD_7'=> 'nullable',
+            'DES_7'=> 'nullable',
+            'FEC_7'=> 'nullable',
+            'COD_8'=> 'nullable',
+            'DES_8'=> 'nullable',
+            'FEC_8'=> 'nullable',
+            'COD_9'=> 'nullable',
+            'DES_9'=> 'nullable',
+            'FEC_9'=> 'nullable',
+            'COD_10'=> 'nullable',
+            'DES_10'=> 'nullable',
+            'FEC_10'=> 'nullable',
+            'COD_11'=> 'nullable',
+            'DES_11'=> 'nullable',
+            'FEC_11'=> 'nullable',
+            'COD_12'=> 'nullable',
+            'DES_12'=> 'nullable',
+            'FEC_12'=> 'nullable', 
+        ]);
+
+        $customer->update($data);
+
+        return Inertia::render('Customers/Edit',compact('customer'));
     }
 
     /**
@@ -105,6 +206,7 @@ class CustomerController extends Controller
      */
     public function destroy(customer $customer)
     {
-        //
+        $customer->delete();
+        return redirect()->route('customers.index');
     }
 }

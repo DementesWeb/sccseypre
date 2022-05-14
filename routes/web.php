@@ -33,22 +33,13 @@ Route::get('customers/create', [CustomerController::class, 'create'])->name('cus
 Route::get('customers/{customer}/edit', [CustomerController::class, 'edit'])->name('customers.edit');
 Route::post('customers', [CustomerController::class, 'store'])->name('customers.store');
 Route::put('customers/{customer}', [CustomerController::class, 'update'])->name('customers.update');
-Route::delete('customers/{customer}', [CustomerController::class, 'destry'])->name('customers.destroy');
+Route::delete('customers/{customer}', [CustomerController::class, 'destroy'])->name('customers.destroy');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-    ])->group(function () {
-    Route::get('/customers/create',function () {
-        return Inertia::render('Customers/Create');
-    })->name('customers.create');
-});
 
 Route::middleware(
     ['auth:sanctum', 'verified'])->get('/consultacedula', [TelFinalController::class,'Index'])->name('Consultacedula');
