@@ -25,14 +25,20 @@
                                 <jet-nav-link :href="route('customers.index')" :active="route().current('customers.*')">
                                     Clientes
                                 </jet-nav-link>
-                                <jet-nav-link :href="route('Consultacedula')" :active="route().current('Consultacedula')">
-                                    Tel Final
+                                <jet-nav-link :href="route('Telefono')" :active="route().current('Telefono')">
+                                    Telefono
                                 </jet-nav-link>
-                                <jet-nav-link :href="route('Tigo')" :active="route().current('Tigo')">
-                                    Tigo 2021
+                                <jet-nav-link :href="route('Dato1')" :active="route().current('Dato1')">
+                                    Dato 1
                                 </jet-nav-link>
-                                <jet-nav-link :href="route('CableOnda')" :active="route().current('CableOnda')">
-                                    Cable Onda
+                                <jet-nav-link :href="route('Dato2')" :active="route().current('Dato2')">
+                                    Dato 2
+                                </jet-nav-link>
+                                <jet-nav-link :href="route('Dato3')" :active="route().current('Dato3')">
+                                    Dato 3
+                                </jet-nav-link>
+                                <jet-nav-link :href="route('Dato4')" :active="route().current('Dato4')">
+                                    Dato 4
                                 </jet-nav-link>
                             </div>
                         </div>

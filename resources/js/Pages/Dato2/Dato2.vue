@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Cedula Tigo">
+    <app-layout title="Dato 2">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Tigo 2021
+                Dato 2
             </h2>
         </template>
 
@@ -21,7 +21,7 @@
                         class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
                     >
                         <template
-                            v-for="items in cedulatigo.data"
+                            v-for="items in ceddato2.data"
                             :key="items.id"
                         >
                             <!-- Card 1 -->
@@ -50,7 +50,7 @@
                                 <!-- Title -->
                                 <div class="col-span-11 xl:-ml-5">
                                     <p class="text-blue-600 font-bold">
-                                        Cedula: {{ items.CEDULA }}
+                                        Cedula: {{ items.cedula }}
                                     </p>
                                 </div>
 
@@ -63,41 +63,42 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Nombre Cliente:
+                                            Nombre:
+                                        <span class="font-bold">
+                                            {{ items.nombre }}
+                                        </span>
+                                        </p>
+                                        <p
+                                            class="text-md text-gray-800 font-light"
+                                        >
+                                                Telefono Casa:
                                             <span class="font-bold">
-                                                {{ items.NOMBRE_CLIENTE }}
+                                                {{ items.telefono_casa }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Suscriptor:
+                                            Telefono Oficina:
                                             <span class="font-bold">
-                                                {{ items.SUSCRIPTOR }}
+                                                {{ items.telefono_oficina }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Barrio:
-                                            <span class="font-bold">
-                                                {{ items.BARRIO }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
+
                                             Celular:
                                             <span class="font-bold">
-                                                {{ items.CELULAR }}
+                                                {{ items.celular }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono:
+                                            Fax:
                                             <span class="font-bold">
-                                                {{ items.TELEFONO }}
+                                                {{ items.fax }}
                                             </span>
                                         </p>
                                         <p
@@ -105,23 +106,39 @@
                                         >
                                             Email:
                                             <span class="font-bold">
-                                                {{ items.EMAIL }}
+                                                {{ items.email }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Email Cable:
+                                            Dirección Postal:
                                             <span class="font-bold">
-                                                {{ items.EMAIL_CABLE }}
+                                                {{ items.direccion_postal }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Saldo Corriente:
+                                            Dirección:
                                             <span class="font-bold">
-                                                {{ items.SALDOCORRIENTE }}
+                                                {{ items.direccion }}
+                                            </span>
+                                        </p>
+                                        <p
+                                            class="text-md text-gray-800 font-light"
+                                        >
+                                            Telefono Residencia Cable:
+                                            <span class="font-bold">
+                                                {{ items.telefono_residencia_cable }}
+                                            </span>
+                                        </p>
+                                        <p
+                                            class="text-md text-gray-800 font-light"
+                                        >
+                                            Telefono Oficina Cable:
+                                            <span class="font-bold">
+                                                {{ items.telefono_oficina_cable }}
                                             </span>
                                         </p>
                                     </div>
@@ -130,57 +147,41 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Saldo 30:
+                                            Telefono Celular Cable:
                                             <span class="font-bold">
-                                                {{ items.SALDO30 }}
+                                                {{ items.telefono_celular_cable }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Saldo 60:
+                                            Dirección Postal Cable:
                                             <span class="font-bold">
-                                                {{ items.SALDO60 }}
+                                                {{ items.direccion_postal_cable }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Saldo 90:
+                                            FAX:
                                             <span class="font-bold">
-                                                {{ items.SALDO90 }}
+                                                {{ items.fax_cable }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Saldo 90 Mas:
+                                            Dirección Fisica:
                                             <span class="font-bold">
-                                                {{ items.SALDO90MAS }}
+                                                {{ items.direccion_fisica }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Estado:
+                                            Telefono Contacto:
                                             <span class="font-bold">
-                                                {{ items.ESTADO }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Deuda Total:
-                                            <span class="font-bold">
-                                                {{ items.DEUDATOTAL }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Fecha Actualización:
-                                            <span class="font-bold">
-                                                {{ items.FECHA_ACTUALIZACION }}
+                                                {{ items.telefono_contacto }}
                                             </span>
                                         </p>
                                     </div>
@@ -189,7 +190,7 @@
                         </template>
                     </div>
                     <!-- <pre>{{ cedulatelfinal }}</pre> -->
-                    <Pagination :pagination="cedulatigo"></Pagination>
+                    <Pagination :pagination="ceddato2"></Pagination>
                 </div>
             </div>
         </div>
@@ -217,7 +218,7 @@ export default {
     watch: {
         search($value) {
             this.$inertia.get(
-                "/tigo_2021",
+                "/dato2",
                 {
                     search: $value,
                 },
@@ -229,7 +230,7 @@ export default {
     },
 
     props: {
-        cedulatigo: Object,
+        ceddato2: Object,
         filters: Object,
     },
 };

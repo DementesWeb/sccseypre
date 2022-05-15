@@ -1021,14 +1021,14 @@ select {
 .col-span-11 {
   grid-column: span 11 / span 11;
 }
+.m-12 {
+  margin: 3rem;
+}
 .m-2 {
   margin: 0.5rem;
 }
 .m-8 {
   margin: 2rem;
-}
-.m-12 {
-  margin: 3rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -1527,14 +1527,14 @@ select {
 .p-6 {
   padding: 1.5rem;
 }
-.p-3 {
-  padding: 0.75rem;
-}
 .p-16 {
   padding: 4rem;
 }
 .p-4 {
   padding: 1rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;

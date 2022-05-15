@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CableOnda extends Model
+class Dato2 extends Model
 {
     use HasFactory;
 

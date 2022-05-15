@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Consultar Cedula">
+    <app-layout title="Dato 1">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Consultar Cedula
+                Dato 1
             </h2>
         </template>
 
@@ -21,7 +21,7 @@
                         class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
                     >
                         <template
-                            v-for="items in cedulatelfinal.data"
+                            v-for="items in ceddato1.data"
                             :key="items.id"
                         >
                             <!-- Card 1 -->
@@ -50,7 +50,7 @@
                                 <!-- Title -->
                                 <div class="col-span-11 xl:-ml-5">
                                     <p class="text-blue-600 font-bold">
-                                        Cedula: {{ items.CED }}
+                                        Cedula: {{ items.CEDULA }}
                                     </p>
                                 </div>
 
@@ -63,82 +63,65 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Primer Nombre:
-                                        <span class="font-bold">
-                                            {{ items.PRIMER_NOMBRE }}
-                                        </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                                Segundo Nombre:
+                                            Nombre Cliente:
                                             <span class="font-bold">
-                                                {{ items.SEGUNDO_NOMBRE }}
+                                                {{ items.NOMBRE_CLIENTE }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Apellido Paterno:
+                                            Suscriptor:
                                             <span class="font-bold">
-                                                {{ items.APELLIDO_PATERNO }}
+                                                {{ items.SUSCRIPTOR }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-
-                                            Apellido Materno:
+                                            Barrio:
                                             <span class="font-bold">
-                                                {{ items.APELLIDO_MATERNO }}
+                                                {{ items.BARRIO }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Apellido Casada:
+                                            Celular:
                                             <span class="font-bold">
-                                                {{ items.APELLIDO_CASADA }}
+                                                {{ items.CELULAR }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 1:
+                                            Telefono:
                                             <span class="font-bold">
-                                                {{ items.TEL1 }}
+                                                {{ items.TELEFONO }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 2:
+                                            Email:
                                             <span class="font-bold">
-                                                {{ items.TEL2 }}
+                                                {{ items.EMAIL }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 3:
+                                            Email Cable:
                                             <span class="font-bold">
-                                                {{ items.TEL3 }}
+                                                {{ items.EMAIL_CABLE }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 4:
+                                            Saldo Corriente:
                                             <span class="font-bold">
-                                                {{ items.TEL4 }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono 5:
-                                            <span class="font-bold">
-                                                {{ items.TEL5 }}
+                                                {{ items.SALDOCORRIENTE }}
                                             </span>
                                         </p>
                                     </div>
@@ -147,81 +130,57 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 6:
+                                            Saldo 30:
                                             <span class="font-bold">
-                                                {{ items.TEL6 }}
+                                                {{ items.SALDO30 }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 7:
+                                            Saldo 60:
                                             <span class="font-bold">
-                                                {{ items.TEL7 }}
+                                                {{ items.SALDO60 }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 8:
+                                            Saldo 90:
                                             <span class="font-bold">
-                                                {{ items.TEL8 }}
+                                                {{ items.SALDO90 }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 9:
+                                            Saldo 90 Mas:
                                             <span class="font-bold">
-                                                {{ items.TEL9 }}
+                                                {{ items.SALDO90MAS }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 10:
+                                            Estado:
                                             <span class="font-bold">
-                                                {{ items.TEL10 }}
+                                                {{ items.ESTADO }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 11:
+                                            Deuda Total:
                                             <span class="font-bold">
-                                                {{ items.TEL11 }}
+                                                {{ items.DEUDATOTAL }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 12:
+                                            Fecha Actualización:
                                             <span class="font-bold">
-                                                {{ items.TEL12 }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono 13:
-                                            <span class="font-bold">
-                                                {{ items.TEL13 }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono 14:
-                                            <span class="font-bold">
-                                                {{ items.TEL14 }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono 15:
-                                            <span class="font-bold">
-                                                {{ items.TEL15 }}
+                                                {{ items.FECHA_ACTUALIZACION }}
                                             </span>
                                         </p>
                                     </div>
@@ -230,7 +189,7 @@
                         </template>
                     </div>
                     <!-- <pre>{{ cedulatelfinal }}</pre> -->
-                    <Pagination :pagination="cedulatelfinal"></Pagination>
+                    <Pagination :pagination="ceddato1"></Pagination>
                 </div>
             </div>
         </div>
@@ -241,14 +200,12 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
-import pickBy from "lodash/pickBy";
 
 export default {
     components: {
         AppLayout,
         Input,
         Pagination,
-        pickBy,
     },
 
     data() {
@@ -260,7 +217,7 @@ export default {
     watch: {
         search($value) {
             this.$inertia.get(
-                "/consultacedula",
+                "/dato1",
                 {
                     search: $value,
                 },
@@ -272,7 +229,7 @@ export default {
     },
 
     props: {
-        cedulatelfinal: Object,
+        ceddato1: Object,
         filters: Object,
     },
 };

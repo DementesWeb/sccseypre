@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cable_ondas', function (Blueprint $table) {
+        Schema::create('dato2s', function (Blueprint $table) {
             $table->id();
             $table->string('cedula')->nullable();
             $table->string('nombre')->nullable();
@@ -44,6 +44,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cable_ondas');
+        Schema::dropIfExists('dato2s');
     }
 };

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TIGO_2021 extends Model
+class Dato1 extends Model
 {
     use HasFactory;
 
@@ -27,5 +27,4 @@ class TIGO_2021 extends Model
         'DEUDATOTAL',
         'FECHA_ACTUALIZACION'
     ];
-
 }

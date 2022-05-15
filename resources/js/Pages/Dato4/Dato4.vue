@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Consultar Cable Onda">
+    <app-layout title="Dato 4">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Consultar Cable Onda
+                Dato 4
             </h2>
         </template>
 
@@ -21,7 +21,7 @@
                         class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
                     >
                         <template
-                            v-for="items in cedulacable.data"
+                            v-for="items in ceddato4.data"
                             :key="items.id"
                         >
                             <!-- Card 1 -->
@@ -50,7 +50,7 @@
                                 <!-- Title -->
                                 <div class="col-span-11 xl:-ml-5">
                                     <p class="text-blue-600 font-bold">
-                                        Cedula: {{ items.cedula }}
+                                        Cedula: {{ items.CEDULA }}
                                     </p>
                                 </div>
 
@@ -63,82 +63,33 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Nombre:
+                                            Primer Nombre:
                                         <span class="font-bold">
-                                            {{ items.nombre }}
+                                            {{ items.P_NOMBRE }}
                                         </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                                Telefono Casa:
+                                                Segundo Nombre:
                                             <span class="font-bold">
-                                                {{ items.telefono_casa }}
+                                                {{ items.S_NOMBRE }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono Oficina:
+                                            Paterno:
                                             <span class="font-bold">
-                                                {{ items.telefono_oficina }}
+                                                {{ items.PATERNO }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-
-                                            Celular:
+                                            Materno:
                                             <span class="font-bold">
-                                                {{ items.celular }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Fax:
-                                            <span class="font-bold">
-                                                {{ items.fax }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Email:
-                                            <span class="font-bold">
-                                                {{ items.email }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Dirección Postal:
-                                            <span class="font-bold">
-                                                {{ items.direccion_postal }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Dirección:
-                                            <span class="font-bold">
-                                                {{ items.direccion }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono Residencia Cable:
-                                            <span class="font-bold">
-                                                {{ items.telefono_residencia_cable }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono Oficina Cable:
-                                            <span class="font-bold">
-                                                {{ items.telefono_oficina_cable }}
+                                                {{ items.MATERNO }}
                                             </span>
                                         </p>
                                     </div>
@@ -147,50 +98,43 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono Celular Cable:
+                                            Casada:
                                             <span class="font-bold">
-                                                {{ items.telefono_celular_cable }}
+                                                {{ items.CASADA }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Dirección Postal Cable:
+                                            Sexo:
                                             <span class="font-bold">
-                                                {{ items.direccion_postal_cable }}
+                                                {{ items.SEXO }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            FAX:
+                                            Telefono:
                                             <span class="font-bold">
-                                                {{ items.fax_cable }}
+                                                {{ items.TEELFONO }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Dirección Fisica:
+                                            Fecha Nacimiento:
                                             <span class="font-bold">
-                                                {{ items.direccion_fisica }}
+                                                {{ items.FECHA_NACIMIENTO }}
                                             </span>
                                         </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono Contacto:
-                                            <span class="font-bold">
-                                                {{ items.telefono_contacto }}
-                                            </span>
-                                        </p>
+
                                     </div>
                                 </div>
                             </div>
                         </template>
                     </div>
                     <!-- <pre>{{ cedulatelfinal }}</pre> -->
-                    <Pagination :pagination="cedulacable"></Pagination>
+                    <Pagination :pagination="ceddato4"></Pagination>
                 </div>
             </div>
         </div>
@@ -218,7 +162,7 @@ export default {
     watch: {
         search($value) {
             this.$inertia.get(
-                "/cableonda",
+                "/dato4",
                 {
                     search: $value,
                 },
@@ -230,7 +174,7 @@ export default {
     },
 
     props: {
-        cedulacable: Object,
+        ceddato4: Object,
         filters: Object,
     },
 };

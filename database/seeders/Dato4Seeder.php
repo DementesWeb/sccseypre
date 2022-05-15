@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\CableOnda;
-use Illuminate\Database\Seeder;
+use App\Models\Dato4;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
 
-class CableOndaSeeder extends Seeder
+class Dato4Seeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class CableOndaSeeder extends Seeder
      */
     public function run()
     {
-        CableOnda::factory(50)->create();
+        Dato4::factory(50)->create();
     }
 }

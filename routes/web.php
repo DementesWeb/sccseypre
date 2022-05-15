@@ -3,10 +3,12 @@
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
+use App\Http\Controllers\Dato1Controller;
+use App\Http\Controllers\Dato2Controller;
+use App\Http\Controllers\Dato3Controller;
+use App\Http\Controllers\Dato4Controller;
 use App\Http\Controllers\CustomerController;
-use App\Http\Controllers\TelFinalController;
-use App\Http\Controllers\TIGO2021Controller;
-use App\Http\Controllers\CableOndaController;
+use App\Http\Controllers\TelefonoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,11 +43,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::middleware(
-    ['auth:sanctum', 'verified'])->get('/consultacedula', [TelFinalController::class,'Index'])->name('Consultacedula');
-Route::middleware(
-    ['auth:sanctum', 'verified'])->get('/cableonda', [CableOndaController::class,'Index'])->name('CableOnda');
-Route::middleware(
-    ['auth:sanctum', 'verified'])->get('/tigo_2021', [TIGO2021Controller::class,'Index'])->name('Tigo');
+Route::get('/telefono', [TelefonoController::class,'Index'])->name('Telefono');
+Route::get('/dato1', [Dato1Controller::class,'Index'])->name('Dato1');
+Route::get('/dato2', [Dato2Controller::class,'Index'])->name('Dato2');
+Route::get('/dato3', [Dato3Controller::class,'Index'])->name('Dato3');
+Route::get('/dato4', [Dato4Controller::class,'Index'])->name('Dato4');
 
-    

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('t_i_g_o_2021_s', function (Blueprint $table) {
+        Schema::create('dato1s', function (Blueprint $table) {
             $table->id();
             $table->string('CEDULA')->nullable();
             $table->string('NOMBRE_CLIENTE')->nullable();
@@ -42,6 +42,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('t_i_g_o_2021_s');
+        Schema::dropIfExists('dato1s');
     }
 };

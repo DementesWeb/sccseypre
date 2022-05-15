@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\TelFinal;
-use Illuminate\Database\Seeder;
+use App\Models\Dato1;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
 
-class TelFinalSeeder extends Seeder
+class Dato1Seeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class TelFinalSeeder extends Seeder
      */
     public function run()
     {
-        TelFinal::factory(50)->create();
+        Dato1::factory(50)->create();
     }
 }
