@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Consultar Cedula">
+    <app-layout title="Dato 2">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Consultar Cedula
+                Dato 2
             </h2>
         </template>
 
@@ -21,7 +21,7 @@
                         class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
                     >
                         <template
-                            v-for="items in cedulatelfinal.data"
+                            v-for="items in ceddato2.data"
                             :key="items.id"
                         >
                             <!-- Card 1 -->
@@ -50,7 +50,7 @@
                                 <!-- Title -->
                                 <div class="col-span-11 xl:-ml-5">
                                     <p class="text-blue-600 font-bold">
-                                        Cedula: {{ items.CED }}
+                                        Cedula: {{ items.cedula }}
                                     </p>
                                 </div>
 
@@ -63,82 +63,82 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Primer Nombre:
+                                            Nombre:
                                         <span class="font-bold">
-                                            {{ items.PRIMER_NOMBRE }}
+                                            {{ items.nombre }}
                                         </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                                Segundo Nombre:
+                                                Telefono Casa:
                                             <span class="font-bold">
-                                                {{ items.SEGUNDO_NOMBRE }}
+                                                {{ items.telefono_casa }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Apellido Paterno:
+                                            Telefono Oficina:
                                             <span class="font-bold">
-                                                {{ items.APELLIDO_PATERNO }}
+                                                {{ items.telefono_oficina }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
 
-                                            Apellido Materno:
+                                            Celular:
                                             <span class="font-bold">
-                                                {{ items.APELLIDO_MATERNO }}
+                                                {{ items.celular }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Apellido Casada:
+                                            Fax:
                                             <span class="font-bold">
-                                                {{ items.APELLIDO_CASADA }}
+                                                {{ items.fax }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 1:
+                                            Email:
                                             <span class="font-bold">
-                                                {{ items.TEL1 }}
+                                                {{ items.email }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 2:
+                                            Dirección Postal:
                                             <span class="font-bold">
-                                                {{ items.TEL2 }}
+                                                {{ items.direccion_postal }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 3:
+                                            Dirección:
                                             <span class="font-bold">
-                                                {{ items.TEL3 }}
+                                                {{ items.direccion }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 4:
+                                            Telefono Residencia Cable:
                                             <span class="font-bold">
-                                                {{ items.TEL4 }}
+                                                {{ items.telefono_residencia_cable }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 5:
+                                            Telefono Oficina Cable:
                                             <span class="font-bold">
-                                                {{ items.TEL5 }}
+                                                {{ items.telefono_oficina_cable }}
                                             </span>
                                         </p>
                                     </div>
@@ -147,81 +147,41 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 6:
+                                            Telefono Celular Cable:
                                             <span class="font-bold">
-                                                {{ items.TEL6 }}
+                                                {{ items.telefono_celular_cable }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 7:
+                                            Dirección Postal Cable:
                                             <span class="font-bold">
-                                                {{ items.TEL7 }}
+                                                {{ items.direccion_postal_cable }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 8:
+                                            FAX:
                                             <span class="font-bold">
-                                                {{ items.TEL8 }}
+                                                {{ items.fax_cable }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 9:
+                                            Dirección Fisica:
                                             <span class="font-bold">
-                                                {{ items.TEL9 }}
+                                                {{ items.direccion_fisica }}
                                             </span>
                                         </p>
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 10:
+                                            Telefono Contacto:
                                             <span class="font-bold">
-                                                {{ items.TEL10 }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono 11:
-                                            <span class="font-bold">
-                                                {{ items.TEL11 }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono 12:
-                                            <span class="font-bold">
-                                                {{ items.TEL12 }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono 13:
-                                            <span class="font-bold">
-                                                {{ items.TEL13 }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono 14:
-                                            <span class="font-bold">
-                                                {{ items.TEL14 }}
-                                            </span>
-                                        </p>
-                                        <p
-                                            class="text-md text-gray-800 font-light"
-                                        >
-                                            Telefono 15:
-                                            <span class="font-bold">
-                                                {{ items.TEL15 }}
+                                                {{ items.telefono_contacto }}
                                             </span>
                                         </p>
                                     </div>
@@ -230,7 +190,7 @@
                         </template>
                     </div>
                     <!-- <pre>{{ cedulatelfinal }}</pre> -->
-                    <Pagination :pagination="cedulatelfinal"></Pagination>
+                    <Pagination :pagination="ceddato2"></Pagination>
                 </div>
             </div>
         </div>
@@ -241,14 +201,12 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
-import pickBy from "lodash/pickBy";
 
 export default {
     components: {
         AppLayout,
         Input,
         Pagination,
-        pickBy,
     },
 
     data() {
@@ -260,7 +218,7 @@ export default {
     watch: {
         search($value) {
             this.$inertia.get(
-                "/consultacedula",
+                "/dato2",
                 {
                     search: $value,
                 },
@@ -272,7 +230,7 @@ export default {
     },
 
     props: {
-        cedulatelfinal: Object,
+        ceddato2: Object,
         filters: Object,
     },
 };

@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Cedula Tigo">
+    <app-layout title="Dato 1">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Tigo 2021
+                Dato 1
             </h2>
         </template>
 
@@ -21,7 +21,7 @@
                         class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
                     >
                         <template
-                            v-for="items in cedulatigo.data"
+                            v-for="items in ceddato1.data"
                             :key="items.id"
                         >
                             <!-- Card 1 -->
@@ -189,7 +189,7 @@
                         </template>
                     </div>
                     <!-- <pre>{{ cedulatelfinal }}</pre> -->
-                    <Pagination :pagination="cedulatigo"></Pagination>
+                    <Pagination :pagination="ceddato1"></Pagination>
                 </div>
             </div>
         </div>
@@ -229,7 +229,7 @@ export default {
     },
 
     props: {
-        cedulatigo: Object,
+        ceddato1: Object,
         filters: Object,
     },
 };
