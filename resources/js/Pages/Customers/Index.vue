@@ -19,10 +19,10 @@
                 <div class="inline-block min-w-full align-middle">
                     <div class="overflow-hidden ">
 
-                        <div class="py-4 px-6 ">
-                            <Input v-model="search" type="text" class="w-full" placeholder="Digitar Cédula Ej:'1-234-567'"/>
-                        </div>
-
+                        <div class="py-4 px-6 flex items-center">
+                            <Input v-model="search" type="text" class="flex-1" placeholder="Digitar Cédula Ej:'1-234-567'"/>
+                            <Link :href="route('customers.create')" class="flex-shrink-0 ml-4 btn btn-blue">Nuevo</Link>
+                        </div>    
                         <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
                             <thead class="bg-gray-100 dark:bg-gray-700">
                                 <tr>
@@ -45,7 +45,7 @@
                                         Sueldo
                                     </th>
                                     <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                        Sueldo_neto
+                                        Sueldo neto
                                     </th>
                                     <th scope="col" class="p-4">
                                         <span class="sr-only">
@@ -69,13 +69,10 @@
                                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{customers.cargo}}</td>
                                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">${{customers.sueldo}}</td>
                                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">${{customers.sueldo_neto}}</td>
-                                    <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                                        <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">
-                                            Editar
-                                        </a>
-                                        <a href="#">
+                                    <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">                                        
+                                        <Link :href="route('customers.edit', customers.id)">
                                             <i class="fa fa-angle-right"></i>
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                             </tbody>
@@ -100,18 +97,20 @@
 <script>
     import AppLayout from '@/Layouts/AppLayout.vue';
     import Pagination from '@/Shared/Pagination.vue';
-    import Input from '@/Jetstream/Input.vue'
+    import Input from '@/Jetstream/Input.vue';
+    import { Head, Link } from '@inertiajs/inertia-vue3';
 
 
     export default {
         components: {
             AppLayout,
             Pagination,
-            Input
+            Input,
+            Link
         },
         data() {
             return {
-                search: '',
+                search: this.filters.search,
             }
         },
         watch: {
@@ -123,6 +122,7 @@
             }
         },
         props:{
+            filters: Object,
             customer: Object,
         }
 

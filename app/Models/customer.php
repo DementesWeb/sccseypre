@@ -16,9 +16,9 @@ class Customer extends Model
         'sueldo',
         'sobresueldo',
         'sueldo_neto',
-        '35_porciento',
-        '25_porciento',
-        '20_porciento',
+        'v35_porciento',
+        'v25_porciento',
+        'v20_porciento',
         'COD_1',
         'DES_1',
         'FEC_1',
@@ -56,4 +56,12 @@ class Customer extends Model
         'DES_12',
         'FEC_12'
     ];
+
+    //Query Scope
+    public function scopeFilter($query, $filters){
+        $query->when( $filters['search'] ?? null, function($query, $search){
+            $query->where('cedula','LIKE',"%".$search."%")
+            ->orWhere('cargo','LIKE',"%".$search."%");
+        });
+    }
 }
