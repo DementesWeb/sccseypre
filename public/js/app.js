@@ -23120,7 +23120,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   watch: {
     search: function search($value) {
-      this.$inertia.get("/tigo_2021", {
+      this.$inertia.get("/dato1", {
         search: $value
       }, {
         preserveState: true
@@ -23255,7 +23255,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   watch: {
     search: function search($value) {
-      this.$inertia.get("/dato2", {
+      this.$inertia.get("/dato4", {
         search: $value
       }, {
         preserveState: true

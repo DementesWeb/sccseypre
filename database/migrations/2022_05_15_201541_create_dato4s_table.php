@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string("CASADA")->nullable();
             $table->string("SEXO")->nullable();
             $table->string("TEELFONO")->nullable();
-            $table->string("FECHA NACIMIENTO")->nullable();
+            $table->string("FECHA_NACIMIENTO")->nullable();
             $table->timestamps();
         });
     }

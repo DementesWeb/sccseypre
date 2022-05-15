@@ -162,7 +162,7 @@ export default {
     watch: {
         search($value) {
             this.$inertia.get(
-                "/dato2",
+                "/dato4",
                 {
                     search: $value,
                 },

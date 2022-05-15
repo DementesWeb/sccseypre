@@ -217,7 +217,7 @@ export default {
     watch: {
         search($value) {
             this.$inertia.get(
-                "/tigo_2021",
+                "/dato1",
                 {
                     search: $value,
                 },
