@@ -40,6 +40,9 @@
                                 <jet-nav-link :href="route('Dato4')" :active="route().current('Dato4')">
                                     Dato 4
                                 </jet-nav-link>
+                                <jet-nav-link :href="route('BuscarCedula')" :active="route().current('BuscarCedula')">
+                                    Buscar Cedula
+                                </jet-nav-link>
                             </div>
                         </div>
 
