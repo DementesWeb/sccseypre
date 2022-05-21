@@ -40,6 +40,9 @@
                                 <jet-nav-link :href="route('Dato4')" :active="route().current('Dato4')">
                                     Dato 4
                                 </jet-nav-link>
+                                <jet-nav-link :href="route('Dato5')" :active="route().current('Dato5')">
+                                    Dato 5
+                                </jet-nav-link>
                             </div>
                         </div>
 
