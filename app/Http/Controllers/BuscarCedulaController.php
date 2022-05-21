@@ -1,0 +1,50 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Inertia\Inertia;
+use App\Models\Dato1;
+use App\Models\Dato2;
+use App\Models\Dato3;
+use App\Models\Dato4;
+use App\Models\Telefono;
+use Illuminate\Http\Request;
+
+class BuscarCedulaController extends Controller
+{
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
+    public function Index(Request $request)
+    {
+        $filters = $request->all('search');
+        $ceddato1 = Dato1::latest()
+            ->when($filters['search'] ?? null, function($query, $search){
+                $query->where('CEDULA', 'like', '%' . $search . '%');
+            })->paginate(6);
+        $ceddato2 = Dato2::latest()
+            ->when($filters['search'] ?? null, function($query, $search){
+                $query->where('cedula', 'like', '%' . $search . '%');
+            })->paginate(6);
+        $ceddato3 = Dato3::latest()
+            ->when($filters['search'] ?? null, function($query, $search){
+                $query->where('CEDULA', 'like', '%' . $search . '%');
+            })->paginate(6);
+        $ceddato4 = Dato4::latest()
+            ->when($filters['search'] ?? null, function($query, $search){
+                $query->where('CEDULA', 'like', '%' . $search . '%');
+            })->paginate(6);
+        $cedtelefono = Telefono::latest()
+            ->when($filters['search'] ?? null, function($query, $search){
+                $query->where('CED', 'like', '%' . $search . '%');
+            })->paginate(6);
+
+        return Inertia::render('BuscarCedula/BuscarCedula', ['ceddato1'=>$ceddato1,
+                                                                    'ceddato2'=>$ceddato2,
+                                                                    'ceddato3'=>$ceddato3,
+                                                                    'ceddato4'=>$ceddato4,
+                                                                    'cedtelefono'=>$cedtelefono,
+                                                                    'filters'=>$filters]);
+    }
+}
