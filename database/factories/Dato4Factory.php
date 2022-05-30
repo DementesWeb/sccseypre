@@ -25,7 +25,7 @@ class Dato4Factory extends Factory
             'CASADA'=>$this->faker->name(),
             'SEXO'=>$this->faker->randomLetter('M'|'F'),
             'TEELFONO'=>$this->faker->phoneNumber(8),
-            'FECHA_NACIMIENTO'=>$this->faker->date('d/m/Y'),
+            'FECHA NACIMIENTO'=>$this->faker->date('d/m/Y'),
         ];
     }
 }

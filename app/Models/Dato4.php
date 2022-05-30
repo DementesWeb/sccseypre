@@ -18,6 +18,6 @@ class Dato4 extends Model
         'CASADA',
         'SEXO',
         'TEELFONO',
-        'FECHA_NACIMIENTO',
+        'FECHA NACIMIENTO',
     ];
 }
