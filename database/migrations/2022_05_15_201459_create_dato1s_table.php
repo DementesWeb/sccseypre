@@ -28,7 +28,7 @@ return new class extends Migration
             $table->integer('SALDO60')->nullable();
             $table->integer('SALDO90')->nullable();
             $table->integer('SALDO90MAS')->nullable();
-            $table->boolean('ESTADO')->nullable();
+            $table->string('ESTADO')->nullable();
             $table->double('DEUDATOTAL')->nullable();
             $table->date('FECHA_ACTUALIZACION')->nullable();
             $table->timestamps();
