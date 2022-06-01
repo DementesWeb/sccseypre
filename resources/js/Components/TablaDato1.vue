@@ -310,10 +310,7 @@
             </div>
         </div>
     </div>
-
-
 </template>
-
 <script>
 import Pagination from "@/Components/Pagination.vue";
 export default {

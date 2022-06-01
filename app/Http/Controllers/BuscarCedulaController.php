@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Customer;
 use Inertia\Inertia;
 use App\Models\Dato1;
 use App\Models\Dato2;
@@ -44,6 +45,10 @@ class BuscarCedulaController extends Controller
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CED', 'like', '%' . $search . '%');
             })->paginate(6);
+        $customer = Customer::latest()
+            ->when($filters['search'] ?? null, function($query, $search){
+                $query->where('cedula', 'like', '%' . $search . '%');
+            })->paginate(6);
 
         return Inertia::render('BuscarCedula/BuscarCedula', ['ceddato1'=>$ceddato1,
                                                                     'ceddato2'=>$ceddato2,
@@ -51,6 +56,7 @@ class BuscarCedulaController extends Controller
                                                                     'ceddato4'=>$ceddato4,
                                                                     'ceddato5'=>$ceddato5,
                                                                     'cedtelefono'=>$cedtelefono,
+                                                                    'customer'=>$customer,
                                                                     'filters'=>$filters]);
     }
 }

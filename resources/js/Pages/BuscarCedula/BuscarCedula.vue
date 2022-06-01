@@ -37,6 +37,9 @@
         <!-- DATO 5 -->
         <Tabla-Dato-5 :ceddato5="ceddato5"></Tabla-Dato-5>
         <!--FIN DATO 5 -->
+        <!-- DATO 5 -->
+        <Tabla-Customer :customer="customer"></Tabla-Customer>
+        <!--FIN DATO 5 -->
         
     </app-layout>
 </template>
@@ -50,6 +53,7 @@ import TablaDato4 from "@/Components/TablaDato4.vue";
 import TablaDato3 from "@/Components/TablaDato3.vue";
 import TablaDato2 from "@/Components/TablaDato2.vue";
 import TablaDato1 from "@/Components/TablaDato1.vue";
+import TablaCustomer from "@/Components/TablaCustomer.vue";
 import TablaTelefono from "@/Components/TablaTelefono.vue";
 
 export default {
@@ -63,6 +67,7 @@ export default {
         TablaDato3,
         TablaDato2,
         TablaDato1,
+        TablaCustomer,
     },
 
     data() {
@@ -93,6 +98,7 @@ export default {
         ceddato4: Object,
         ceddato5: Object,
         filters: Object,
+        customer: Object,
     },
 };
 </script>
