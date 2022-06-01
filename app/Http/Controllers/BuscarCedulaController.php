@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Customer;
+use App\Models\customer;
 use Inertia\Inertia;
 use App\Models\Dato1;
 use App\Models\Dato2;
