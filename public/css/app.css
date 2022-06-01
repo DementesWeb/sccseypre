@@ -1044,10 +1044,13 @@ select {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+<<<<<<< HEAD
 }
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+=======
+>>>>>>> 0b49b1fdf1e5bf674a51121bb9b3d09bbe04c8ae
 }
 .ml-3 {
   margin-left: 0.75rem;
