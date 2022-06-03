@@ -8,14 +8,13 @@
 
     <div v-if="isActive">
 
-        <div  class="max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8"> 
+        <div  class="max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">
             <div class="max-w-1xl mx-auto">
-    
+
             <div class="flex flex-col">
                 <div class="overflow-x-auto shadow-md sm:rounded-lg">
                     <div class="inline-block min-w-full align-middle">
-                        <div class="overflow-hidden ">
-                               
+                        <div class="overflow-hidden">
                             <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
                                 <thead class="bg-gray-100 dark:bg-gray-700">
                                     <tr>
@@ -54,7 +53,7 @@
                                         </th>
                                         <th scope="col" class="p-4">
                                             <span class="sr-only">
-                                                <i class="fa fa-circle-chevron-right"></i>    
+                                                <i class="fa fa-circle-chevron-right"></i>
                                             </span>
                                         </th>
                                     </tr>
@@ -75,8 +74,8 @@
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.CASADA}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.SEXO}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.TEELFONO}}</td>
-                                        <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.FECHA_NACIMIENTO}}</td>                                      
-                                        <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">                                        
+                                        <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.FECHA_NACIMIENTO}}</td>
+                                        <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
                                             <!-- <Link :href="route('customers.edit', items.id)">
                                                 <i class="fa fa-angle-right"></i>
                                             </Link> -->
@@ -85,7 +84,7 @@
                                 </tbody>
                             </table>
                             <Pagination :pagination="ceddato4"></Pagination>
-    
+
                         </div>
                     </div>
                 </div>
@@ -94,7 +93,7 @@
         </div>
     </div>
     <div v-else>
-        
+
         <div class="container max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8  py-6">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
@@ -129,14 +128,14 @@
                                         />
                                     </svg>
                                 </div>
-    
+
                                 <!-- Title -->
                                 <div class="col-span-11 xl:-ml-5">
                                     <p class="text-blue-600 font-bold">
                                         Cedula: {{ items.CEDULA }}
                                     </p>
                                 </div>
-    
+
                                 <!-- Description -->
                                 <div
                                     class="flex flex-row md:col-start-2 col-span-11 xl:-ml-5 gap-2"
@@ -210,7 +209,7 @@
                                                 {{ items.FECHA_NACIMIENTO }}
                                             </span>
                                         </p>
-    
+
                                     </div>
                                 </div>
                             </div>
@@ -253,5 +252,5 @@ export default {
 </script>
 
 <style>
-    
+
 </style>

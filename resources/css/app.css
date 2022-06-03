@@ -4,3 +4,7 @@
 
 @import 'buttons.css';
 @import 'forms.css';
+
+body{
+    overflow-x: hidden;
+}
