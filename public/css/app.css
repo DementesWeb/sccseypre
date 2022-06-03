@@ -1044,13 +1044,10 @@ select {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-<<<<<<< HEAD
 }
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-=======
->>>>>>> 0b49b1fdf1e5bf674a51121bb9b3d09bbe04c8ae
 }
 .ml-3 {
   margin-left: 0.75rem;
@@ -1124,11 +1121,11 @@ select {
 .-mt-px {
   margin-top: -1px;
 }
-.-ml-10 {
-  margin-left: -2.5rem;
-}
 .mb-8 {
   margin-bottom: 2rem;
+}
+.-ml-10 {
+  margin-left: -2.5rem;
 }
 .block {
   display: block;
@@ -1311,9 +1308,6 @@ select {
 }
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -2502,10 +2496,6 @@ select {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .sm\:items-start {
     align-items: flex-start;
   }
@@ -2601,10 +2591,6 @@ select {
 
   .md\:col-start-3 {
     grid-column-start: 3;
-  }
-
-  .md\:col-start-1 {
-    grid-column-start: 1;
   }
 
   .md\:mt-0 {
