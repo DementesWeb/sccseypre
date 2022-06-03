@@ -42,6 +42,9 @@
         <!--FIN DATO 7 -->
         <Tabla-Dato-7 :ceddato7="ceddato7"></Tabla-Dato-7>
         <!--FIN DATO 7 -->
+        <!--FIN DATO 8 -->
+        <Tabla-Dato-8 :ceddato8="ceddato8"></Tabla-Dato-8>
+        <!--FIN DATO 8 -->
         
     </app-layout>
 </template>
@@ -50,6 +53,7 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
+import TablaDato8 from "@/Components/TablaDato8.vue";
 import TablaDato7 from "@/Components/TablaDato7.vue";
 import TablaDato5 from "@/Components/TablaDato5.vue";
 import TablaDato4 from "@/Components/TablaDato4.vue";
@@ -65,6 +69,7 @@ export default {
         Input,
         Pagination,
         TablaTelefono,
+        TablaDato8,
         TablaDato7,
         TablaDato5,
         TablaDato4,
@@ -102,6 +107,7 @@ export default {
         ceddato4: Object,
         ceddato5: Object,
         ceddato7: Object,
+        ceddato8: Object,
         filters: Object,
         customer: Object,
     },
