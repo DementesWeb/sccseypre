@@ -30,7 +30,7 @@
                                 <jet-nav-link :href="route('BuscarCedula')" :active="route().current('BuscarCedula')">
                                     Buscar Cedula
                                 </jet-nav-link>
-                                
+
                                 <div class="hidden sm:flex sm:items-center sm:ml-6">
                                     <jet-dropdown align="right" width="60" v-if="$page.props.jetstream.hasTeamFeatures">
                                     <template #trigger>
@@ -73,6 +73,9 @@
                                                 <jet-dropdown-link :href="route('Dato5')" :active="route().current('Dato5')">
                                                     DATOS 5
                                                 </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato6')" :active="route().current('Dato6')">
+                                                    DATOS 6
+                                                </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato7')" :active="route().current('Dato7')">
                                                     DATOS 7
                                                 </jet-dropdown-link>
@@ -93,7 +96,7 @@
                             <div class="ml-3 relative">
                                 <!-- Teams Dropdown  Datos-->
 
-                                
+
                                 <!-- Teams Dropdown Teams -->
                                 <jet-dropdown align="right" width="60" v-if="$page.props.jetstream.hasTeamFeatures">
                                     <template #trigger>
