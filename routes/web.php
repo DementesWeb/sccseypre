@@ -8,7 +8,7 @@ use App\Http\Controllers\Dato2Controller;
 use App\Http\Controllers\Dato3Controller;
 use App\Http\Controllers\Dato4Controller;
 use App\Http\Controllers\Dato5Controller;
-use App\Http\Controllers\Dato6Controller;
+use App\Http\Controllers\Dato7Controller;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\TelefonoController;
 use App\Http\Controllers\BuscarCedulaController;
@@ -56,5 +56,7 @@ Route::get('/dato3', [Dato3Controller::class,'Index'])->name('Dato3');
 Route::get('/dato4', [Dato4Controller::class,'Index'])->name('Dato4');
 Route::get('/dato5', [Dato5Controller::class,'Index'])->name('Dato5');
 Route::get('/dato6', [Dato6Controller::class,'Index'])->name('Dato6');
+
+Route::get('/dato7', [Dato7Controller::class,'Index'])->name('Dato7');
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 
