@@ -73,6 +73,9 @@
                                                 <jet-dropdown-link :href="route('Dato5')" :active="route().current('Dato5')">
                                                     DATOS 5
                                                 </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato7')" :active="route().current('Dato7')">
+                                                    DATOS 7
+                                                </jet-dropdown-link>
 
                                                 <div class="border-t border-gray-100"></div>
 
