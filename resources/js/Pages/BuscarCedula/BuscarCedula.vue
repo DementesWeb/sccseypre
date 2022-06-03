@@ -19,19 +19,19 @@
         <!-- Fin Telefono -->
 
         <!-- Dato 1 -->
-        <Tabla-Dato-1 :ceddato1="ceddato1"></Tabla-Dato-1> 
+        <Tabla-Dato-1 :ceddato1="ceddato1"></Tabla-Dato-1>
         <!-- Fin Dato 1 -->
 
         <!-- Dato 2 -->
-        <Tabla-Dato-2 :ceddato2="ceddato2"></Tabla-Dato-2> 
+        <Tabla-Dato-2 :ceddato2="ceddato2"></Tabla-Dato-2>
         <!-- FIN DATO 2 -->
 
         <!-- DATO 3 -->
-        <Tabla-Dato-3 :ceddato3="ceddato3"></Tabla-Dato-3> 
+        <Tabla-Dato-3 :ceddato3="ceddato3"></Tabla-Dato-3>
         <!-- FIN DATO 3 -->
 
         <!-- DATO 4 -->
-        <Tabla-Dato-4 :ceddato4="ceddato4"></Tabla-Dato-4>        
+        <Tabla-Dato-4 :ceddato4="ceddato4"></Tabla-Dato-4>
         <!-- FIN DATO 4 -->
 
         <!-- DATO 5 -->
@@ -39,6 +39,11 @@
         <!--FIN DATO 5 -->
         <!-- DATO 5 -->
         <Tabla-Customer :customer="customer"></Tabla-Customer>
+
+        <!-- DATO 6 -->
+        <Tabla-Dato-6 :ceddato6="ceddato6"></Tabla-Dato-6>
+        <!--FIN DATO 6 -->
+
         <!--FIN DATO 7 -->
         <Tabla-Dato-7 :ceddato7="ceddato7"></Tabla-Dato-7>
         <!--FIN DATO 7 -->
@@ -46,6 +51,7 @@
         <Tabla-Dato-8 :ceddato8="ceddato8"></Tabla-Dato-8>
         <!--FIN DATO 8 -->
         
+
     </app-layout>
 </template>
 
@@ -55,6 +61,7 @@ import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
 import TablaDato8 from "@/Components/TablaDato8.vue";
 import TablaDato7 from "@/Components/TablaDato7.vue";
+import TablaDato6 from "@/Components/TablaDato6.vue";
 import TablaDato5 from "@/Components/TablaDato5.vue";
 import TablaDato4 from "@/Components/TablaDato4.vue";
 import TablaDato3 from "@/Components/TablaDato3.vue";
@@ -71,6 +78,7 @@ export default {
         TablaTelefono,
         TablaDato8,
         TablaDato7,
+        TablaDato6,
         TablaDato5,
         TablaDato4,
         TablaDato3,
@@ -106,6 +114,7 @@ export default {
         ceddato3: Object,
         ceddato4: Object,
         ceddato5: Object,
+        ceddato6: Object,
         ceddato7: Object,
         ceddato8: Object,
         filters: Object,
