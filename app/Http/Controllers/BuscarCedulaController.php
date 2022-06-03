@@ -9,9 +9,9 @@ use App\Models\Dato3;
 use App\Models\Dato4;
 use App\Models\Dato5;
 use App\Models\Dato6;
-
 use App\Models\Dato7;
 use App\Models\Dato8;
+use App\Models\Dato9;
 use App\Models\customer;
 use App\Models\Telefono;
 use Illuminate\Http\Request;
@@ -65,6 +65,10 @@ class BuscarCedulaController extends Controller
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CEDULA', 'like', '%' . $search . '%');
             })->paginate(6);
+        $ceddato9 = Dato9::latest()
+            ->when($filters['search'] ?? null, function($query, $search){
+                $query->where('CEDULA', 'like', '%' . $search . '%');
+            })->paginate(6);
 
         return Inertia::render('BuscarCedula/BuscarCedula', ['ceddato1'=>$ceddato1,
                                                                     'ceddato2'=>$ceddato2,
@@ -74,6 +78,7 @@ class BuscarCedulaController extends Controller
                                                                     'ceddato6'=>$ceddato6,
                                                                     'ceddato7'=>$ceddato7,
                                                                     'ceddato8'=>$ceddato8,
+                                                                    'ceddato9'=>$ceddato9,
                                                                     'cedtelefono'=>$cedtelefono,
                                                                     'customer'=>$customer,
                                                                     'filters'=>$filters]);
