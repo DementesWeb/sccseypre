@@ -5,17 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Dato7 extends Model
+class Dato6 extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'cedula',
-        'nombre',
-        'empresa_1',
-        'empresa_2',
-        'numero_1',
-        'numero_2',
-        'salario_neto',
+        'CEDULA',
+        'NOMBRE',
+        'BARRIADA',
+        'CALLE',
+        'CASA',
+        'TELEFONO',
     ];
 }
