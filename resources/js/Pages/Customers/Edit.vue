@@ -251,7 +251,9 @@
                 </div>
             </div>
             <button @click="update" class="my-4 btn btn-blue">Editar</button>
-            <button @click="destroy" class="my-4 ml-4 btn btn-red">Eliminar</button>
+            <span v-if="$page.props.user.current_team_id == 1">
+                <button @click="destroy" class="my-4 ml-4 btn btn-red">Eliminar</button>
+            </span>
            
         </div>
 

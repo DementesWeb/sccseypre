@@ -2,6 +2,7 @@
 
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\Dato1Controller;
 use App\Http\Controllers\Dato2Controller;
@@ -27,10 +28,11 @@ use App\Http\Controllers\BuscarCedulaController;
 |
 */
 
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
+        /* 'canRegister' => Route::has('register'), */
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
@@ -47,6 +49,15 @@ Route::delete('customers/{customer}', [CustomerController::class, 'destroy'])->n
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/register', function () {
+    $role = Auth::user()->current_team_id;
+    if ($role==1) {
+        return Inertia::render('Auth/Register');
+    }else{
+        return Inertia::render('Dashboard');
+    }
+})->name('register');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/consulta', function () {
     return Inertia::render('Consulta');
