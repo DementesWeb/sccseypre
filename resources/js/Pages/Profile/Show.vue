@@ -27,12 +27,14 @@
                 </div>
 
                 <logout-other-browser-sessions-form :sessions="sessions" class="mt-10 sm:mt-0" />
+                
+                <span v-if="$page.props.user.current_team_id == 1">
+                    <template v-if="$page.props.jetstream.hasAccountDeletionFeatures">
+                        <jet-section-border />
 
-                <template v-if="$page.props.jetstream.hasAccountDeletionFeatures">
-                    <jet-section-border />
-
-                    <delete-user-form class="mt-10 sm:mt-0" />
-                </template>
+                        <delete-user-form class="mt-10 sm:mt-0" />
+                    </template>
+                </span>
             </div>
         </div>
     </app-layout>

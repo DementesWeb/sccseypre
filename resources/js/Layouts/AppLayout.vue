@@ -33,7 +33,7 @@
 
                                 <div class="hidden sm:flex sm:items-center sm:ml-6">
                                     <jet-dropdown align="right" width="60" v-if="$page.props.jetstream.hasTeamFeatures">
-                                    <template #trigger>
+                                    <template #trigger v-if="$page.props.user.current_team_id == 1">
                                         <span class="inline-flex rounded-md">
                                             <button type="button" class="inline-flex items-center px-3 pt-3 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50 transition">
                                                 DATOS
@@ -101,11 +101,10 @@
                         <div class="hidden sm:flex sm:items-center sm:ml-6">
                             <div class="ml-3 relative">
                                 <!-- Teams Dropdown  Datos-->
-
-
+                                
                                 <!-- Teams Dropdown Teams -->
                                 <jet-dropdown align="right" width="60" v-if="$page.props.jetstream.hasTeamFeatures">
-                                    <template #trigger>
+                                    <template #trigger v-if="$page.props.user.current_team_id == 1">
                                         <span class="inline-flex rounded-md">
                                             <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50 transition">
                                                 {{ $page.props.user.current_team.name }}
@@ -121,6 +120,12 @@
                                         <div class="w-60">
                                             <!-- Team Management -->
                                             <template v-if="$page.props.jetstream.hasTeamFeatures">
+                                                <div class="block px-4 py-2 text-xs text-gray-400">
+                                                    Usuarios
+                                                </div>
+                                                <jet-dropdown-link :href="route('register')">
+                                                    Crear Asesor
+                                                </jet-dropdown-link>
                                                 <div class="block px-4 py-2 text-xs text-gray-400">
                                                     Administrar equipo
                                                 </div>

@@ -6,15 +6,11 @@
             <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-gray-700 underline">
                 Dashboard
             </Link>
-
             <template v-else>
                 <Link :href="route('login')" class="text-sm text-gray-700 underline">
                     Ingresar
                 </Link>
 
-                <!-- <Link v-if="canRegister" :href="route('register')" class="ml-4 text-sm text-gray-700 underline">
-                    Registro
-                </Link> -->
             </template>
         </div>
 
@@ -25,7 +21,7 @@
 
                     <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                         <div class="flex items-center">
-                            <div class="ml-4 text-lg leading-7 font-semibold text-gray-100 dark:text-white">SCCSEYPRE Powered by</div>
+                            <div class="ml-4 text-lg leading-7 font-semibold text-gray-100 dark:text-white"> Powered by SCCSEYPRE</div>
                         </div>
 
                         <div class="ml-12">

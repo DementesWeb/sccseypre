@@ -15,20 +15,23 @@
         </div>
 
         <!-- Telefonos -->
-        <Tabla-Telefono :cedtelefono="cedtelefono"></Tabla-Telefono>
+        <!-- <Tabla-Telefono :cedtelefono="cedtelefono"></Tabla-Telefono> -->
         <!-- Fin Telefono -->
 
         <!-- Dato 1 -->
-        <Tabla-Dato-1 :ceddato1="ceddato1"></Tabla-Dato-1>
+        <!-- <Tabla-Dato-1 :ceddato1="ceddato1"></Tabla-Dato-1> -->
         <!-- Fin Dato 1 -->
 
         <!-- Dato 2 -->
-        <Tabla-Dato-2 :ceddato2="ceddato2"></Tabla-Dato-2>
+        <!-- <Tabla-Dato-2 :ceddato2="ceddato2"></Tabla-Dato-2> -->
         <!-- FIN DATO 2 -->
 
         <!-- DATO 3 -->
-        <Tabla-Dato-3 :ceddato3="ceddato3"></Tabla-Dato-3>
+        <!-- <Tabla-Dato-3 :ceddato3="ceddato3"></Tabla-Dato-3> -->
         <!-- FIN DATO 3 -->
+        
+        <!-- CUSTOMER -->
+        <Tabla-Customer :customer="customer"></Tabla-Customer>
 
         <!-- DATO 4 -->
         <Tabla-Dato-4 :ceddato4="ceddato4"></Tabla-Dato-4>
@@ -37,8 +40,6 @@
         <!-- DATO 5 -->
         <Tabla-Dato-5 :ceddato5="ceddato5"></Tabla-Dato-5>
         <!--FIN DATO 5 -->
-        <!-- DATO 5 -->
-        <Tabla-Customer :customer="customer"></Tabla-Customer>
 
         <!-- DATO 6 -->
         <Tabla-Dato-6 :ceddato6="ceddato6"></Tabla-Dato-6>
