@@ -1,100 +1,21 @@
 <template>
-    <app-layout title="Dato 7">
+    <app-layout title="Dato 8">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Dato 8
             </h2>
         </template>
-
-        <div class="container py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
-                    <Input
-                        type="text"
-                        class="form-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        v-model="search"
-                        placeholder="Buscar Cedula"
-                    />
-
-                    <!-- component -->
-                    <div
-                        class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
-                    >
-                        <template
-                            v-for="items in ceddato8.data"
-                            :key="items.id"
-                        >
-                            <!-- Card 1 -->
-                            <div
-                                class="rounded-sm w-3/4 grid grid-cols-12 bg-white shadow p-3 gap-2 items-center hover:shadow-lg transition delay-150 duration-300 ease-in-out hover:scale-105 transform"
-                                href="#"
-                            >
-                                <!-- Icon -->
-                                <div class="col-span-12 md:col-span-1">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-8 w-8"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="#2563eb"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
-                                        />
-                                    </svg>
-                                </div>
-
-                                <!-- Title -->
-                                <div class="col-span-11 xl:-ml-5">
-                                    <p class="text-blue-600 font-bold">
-                                        Cedula: {{ items.cedula }}
-                                    </p>
-                                </div>
-
-                                <!-- Description -->
-                                <div
-                                    class="flex flex-row md:col-start-2 col-span-11 xl:-ml-5 gap-2"
-                                >
-                                    <!-- Parte Izquierda -->
-                                    <div class="items-center m-8">
-                                        <p class="text-md text-gray-800 font-light">
-                                            Nombre:
-                                        <span class="font-bold">
-                                            {{ items.NOMBRE }}
-                                        </span>
-                                        </p>
-                                        <p class="text-md text-gray-800 font-light">
-                                                Empresa 1:
-                                            <span class="font-bold">
-                                                {{ items.LUGAR_DE_TRABAJO }}
-                                            </span>
-                                        </p>
-                                        <p class="text-md text-gray-800 font-light">
-                                            Empresa 2:
-                                            <span class="font-bold">
-                                                {{ items.SALARIO }}
-                                            </span>
-                                        </p>
-                                        
-                                    </div>
-                                    <!-- Parte derecha -->
-                                    <div class="items-center m-8">
-                                        
-                                        
-
-                                    </div>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
-                    
-                    <Pagination :pagination="ceddato8"></Pagination>
-                </div>
-            </div>
+        <div class="container py-6 max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">
+            <Input
+                type="text"
+                class="form-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                v-model="search"
+                placeholder="Buscar Cédula"
+            />
         </div>
+
+        <Tabla-Dato-8 :ceddato8="ceddato8"></Tabla-Dato-8>
+
     </app-layout>
 </template>
 
@@ -102,12 +23,14 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
+import TablaDato8 from "@/Components/TablaDato8.vue";
 
 export default {
     components: {
         AppLayout,
         Input,
         Pagination,
+        TablaDato8,
     },
 
     data() {
@@ -136,3 +59,4 @@ export default {
     },
 };
 </script>
+

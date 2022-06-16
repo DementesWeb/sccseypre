@@ -1,5 +1,5 @@
 <template>
-    <app-layout title="Dato 7">
+    <app-layout title="Dato 9">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Dato 9
@@ -10,7 +10,7 @@
                 type="text"
                 class="form-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 v-model="search"
-                placeholder="Buscar Cedula"
+                placeholder="Buscar Cédula"
             />
         </div>
 
@@ -42,7 +42,7 @@ export default {
     watch: {
         search($value) {
             this.$inertia.get(
-                "/dato8",
+                "/dato9",
                 {
                     search: $value,
                 },
