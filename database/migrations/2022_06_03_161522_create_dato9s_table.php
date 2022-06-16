@@ -21,11 +21,11 @@ return new class extends Migration
             $table->string('CORREGIMIENTO')->nullable();
             $table->string('BARRIO')->nullable();
             $table->string('DIRECCION')->nullable();
-            $table->string('TELEFONO FIJO')->nullable();
+            $table->string('TELEFONO_FIJO')->nullable();
             $table->string('CELULAR')->nullable();
             $table->string('CORREO')->nullable();
             $table->string('ACTI_COMERCIAL')->nullable();
-            $table->string('TIPO DOC')->nullable();
+            $table->string('TIPO_DOC')->nullable();
             $table->string('CEDULA')->nullable();
             $table->string('SECTOR')->nullable();
             $table->string('CALLE')->nullable();

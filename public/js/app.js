@@ -23969,6 +23969,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout.vue */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Jetstream_Input_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Jetstream/Input.vue */ "./resources/js/Jetstream/Input.vue");
 /* harmony import */ var _Components_Pagination_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Pagination.vue */ "./resources/js/Components/Pagination.vue");
+/* harmony import */ var _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/TablaDato9.vue */ "./resources/js/Components/TablaDato9.vue");
+
 
 
 
@@ -23976,7 +23978,8 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     AppLayout: _Layouts_AppLayout_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     Input: _Jetstream_Input_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    Pagination: _Components_Pagination_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+    Pagination: _Components_Pagination_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+    TablaDato9: _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
   data: function data() {
     return {
@@ -30015,10 +30018,10 @@ var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, " SECTOR "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   scope: "col",
   "class": "py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
-}, " NRO_CASA "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
+}, " CALLE "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   scope: "col",
   "class": "py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
-}, " CEDULA "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
+}, " NRO_CASA "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   scope: "col",
   "class": "py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
 }, " CONDOMINIO "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
@@ -30064,7 +30067,7 @@ var _hoisted_15 = {
   "class": "py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
 };
 var _hoisted_16 = {
-  "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+  "class": "py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
 };
 var _hoisted_17 = {
   "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -30073,10 +30076,10 @@ var _hoisted_18 = {
   "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
 };
 var _hoisted_19 = {
-  "class": "py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
+  "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
 };
 var _hoisted_20 = {
-  "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+  "class": "py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
 };
 var _hoisted_21 = {
   "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -30085,10 +30088,10 @@ var _hoisted_22 = {
   "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
 };
 var _hoisted_23 = {
-  "class": "py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
+  "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
 };
 var _hoisted_24 = {
-  "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+  "class": "py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
 };
 var _hoisted_25 = {
   "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -30097,10 +30100,10 @@ var _hoisted_26 = {
   "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
 };
 var _hoisted_27 = {
-  "class": "py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
+  "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
 };
 var _hoisted_28 = {
-  "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+  "class": "py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
 };
 var _hoisted_29 = {
   "class": "py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -30120,7 +30123,7 @@ var _hoisted_33 = {
 
 var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
   "class": "py-4 px-6 text-sm font-medium text-right whitespace-nowrap"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <Link :href=\"route('customers.edit', items.id)\">\r\n                                                <i class=\"fa fa-angle-right\"></i>\r\n                                            </Link> ")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <Link :href=\"route('customers.edit', items.id)\">\n                                                <i class=\"fa fa-angle-right\"></i>\n                                            </Link> ")], -1
 /* HOISTED */
 );
 
@@ -30354,33 +30357,33 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": "hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-900"
     }, [_hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.NOMBRE), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.DISTRITO), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.PROVINCIA), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CORREGIMIENTO), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.DISTRITO), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.BARRIO), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CORREGIMIENTO), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.DIRECCION), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.BARRIO), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.TELEFONO_FIJO), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.DIRECCION), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CELULAR), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.TELEFONO_FIJO), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CORREO), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CELULAR), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.ACTI_COMERCIAL), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CORREO), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.TIPO_DOC), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.ACTI_COMERCIAL), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CEDULA), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.TIPO_DOC), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.SECTOR), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CEDULA), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CALLE), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.SECTOR), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.NRO_CASA), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CALLE), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.TIPO_DOC), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.NRO_CASA), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CONDOMINIO), 1
     /* TEXT */
@@ -38702,220 +38705,12 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 var _hoisted_2 = {
-  "class": "container py-12"
-};
-var _hoisted_3 = {
-  "class": "max-w-7xl mx-auto sm:px-6 lg:px-8"
-};
-var _hoisted_4 = {
-  "class": "m-2 bg-gray-200 sm:rounded-lg shadow-md"
-};
-var _hoisted_5 = {
-  "class": "bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
-};
-var _hoisted_6 = {
-  "class": "rounded-sm w-3/4 grid grid-cols-12 bg-white shadow p-3 gap-2 items-center hover:shadow-lg transition delay-150 duration-300 ease-in-out hover:scale-105 transform",
-  href: "#"
-};
-
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-span-12 md:col-span-1"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  "class": "h-8 w-8",
-  fill: "none",
-  viewBox: "0 0 24 24",
-  stroke: "#2563eb"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round",
-  "stroke-width": "2",
-  d: "M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
-})])], -1
-/* HOISTED */
-);
-
-var _hoisted_8 = {
-  "class": "col-span-11 xl:-ml-5"
-};
-var _hoisted_9 = {
-  "class": "text-blue-600 font-bold"
-};
-var _hoisted_10 = {
-  "class": "flex flex-row md:col-start-2 col-span-11 xl:-ml-5 gap-2"
-};
-var _hoisted_11 = {
-  "class": "items-center m-8"
-};
-var _hoisted_12 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Provincia: ");
-
-var _hoisted_14 = {
-  "class": "font-bold"
-};
-var _hoisted_15 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Distrito: ");
-
-var _hoisted_17 = {
-  "class": "font-bold"
-};
-var _hoisted_18 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Corregimiento: ");
-
-var _hoisted_20 = {
-  "class": "font-bold"
-};
-var _hoisted_21 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Barrio: ");
-
-var _hoisted_23 = {
-  "class": "font-bold"
-};
-var _hoisted_24 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Dirección: ");
-
-var _hoisted_26 = {
-  "class": "font-bold"
-};
-var _hoisted_27 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Telefono_Fijo: ");
-
-var _hoisted_29 = {
-  "class": "font-bold"
-};
-var _hoisted_30 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Celular: ");
-
-var _hoisted_32 = {
-  "class": "font-bold"
-};
-var _hoisted_33 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Correo: ");
-
-var _hoisted_35 = {
-  "class": "font-bold"
-};
-var _hoisted_36 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Acti Comercial: ");
-
-var _hoisted_38 = {
-  "class": "font-bold"
-};
-var _hoisted_39 = {
-  "class": "items-center m-8"
-};
-var _hoisted_40 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_41 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Tipo Documento: ");
-
-var _hoisted_42 = {
-  "class": "font-bold"
-};
-var _hoisted_43 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_44 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Cedula: ");
-
-var _hoisted_45 = {
-  "class": "font-bold"
-};
-var _hoisted_46 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_47 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Sector: ");
-
-var _hoisted_48 = {
-  "class": "font-bold"
-};
-var _hoisted_49 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_50 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Calle: ");
-
-var _hoisted_51 = {
-  "class": "font-bold"
-};
-var _hoisted_52 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Nro Casa: ");
-
-var _hoisted_54 = {
-  "class": "font-bold"
-};
-var _hoisted_55 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_56 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Condominio: ");
-
-var _hoisted_57 = {
-  "class": "font-bold"
-};
-var _hoisted_58 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_59 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Edificio: ");
-
-var _hoisted_60 = {
-  "class": "font-bold"
-};
-var _hoisted_61 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_62 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Piso: ");
-
-var _hoisted_63 = {
-  "class": "font-bold"
-};
-var _hoisted_64 = {
-  "class": "text-md text-gray-800 font-light"
-};
-
-var _hoisted_65 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Apartamento: ");
-
-var _hoisted_66 = {
-  "class": "font-bold"
+  "class": "container py-6 max-w-7xl mx-auto my-4 px-4 sm:px-6 lg:px-8"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Input = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Input");
 
-  var _component_Pagination = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Pagination");
+  var _component_Tabla_Dato_9 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-9");
 
   var _component_app_layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("app-layout");
 
@@ -38926,7 +38721,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [_hoisted_1];
     }),
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Input, {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Input, {
         type: "text",
         "class": "form-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
         modelValue: $data.search,
@@ -38936,57 +38731,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         placeholder: "Buscar Cedula"
       }, null, 8
       /* PROPS */
-      , ["modelValue"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" component "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.ceddato9.data, function (items) {
-        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-          key: items.id
-        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Card 1 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Icon "), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Title "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, " Nombre: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.NOMBRE), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Description "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Parte Izquierda "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.PROVINCIA), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_15, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.DISTRITO), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CORREGIMIENTO), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_21, [_hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.BARRIO), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.DIRECCION), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.TELEFONO_FIJO), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_30, [_hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CELULAR), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_33, [_hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CORREO), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_36, [_hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_38, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.ACTI_COMERCIAL), 1
-        /* TEXT */
-        )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Parte derecha "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_40, [_hoisted_41, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_42, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.TIPO_DOC), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_43, [_hoisted_44, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_45, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CEDULA), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_46, [_hoisted_47, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_48, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.SECTOR), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_49, [_hoisted_50, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_51, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CALLE), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_52, [_hoisted_53, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_54, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.NRO_CASA), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_55, [_hoisted_56, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_57, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.CONDOMINIO), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_58, [_hoisted_59, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_60, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.EDIFICIO), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_61, [_hoisted_62, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_63, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.PISO), 1
-        /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_64, [_hoisted_65, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_66, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(items.APTO), 1
-        /* TEXT */
-        )])])])])], 64
-        /* STABLE_FRAGMENT */
-        );
-      }), 128
-      /* KEYED_FRAGMENT */
-      ))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Pagination, {
-        pagination: $props.ceddato9
+      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_9, {
+        ceddato9: $props.ceddato9
       }, null, 8
       /* PROPS */
-      , ["pagination"])])])])];
+      , ["ceddato9"])];
     }),
     _: 1
     /* STABLE */
