@@ -15,23 +15,20 @@
         </div>
 
         <!-- Telefonos -->
-        <!-- <Tabla-Telefono :cedtelefono="cedtelefono"></Tabla-Telefono> -->
+        <Tabla-Telefono :cedtelefono="cedtelefono"></Tabla-Telefono>
         <!-- Fin Telefono -->
 
         <!-- Dato 1 -->
-        <!-- <Tabla-Dato-1 :ceddato1="ceddato1"></Tabla-Dato-1> -->
+        <Tabla-Dato-1 :ceddato1="ceddato1"></Tabla-Dato-1>
         <!-- Fin Dato 1 -->
 
         <!-- Dato 2 -->
-        <!-- <Tabla-Dato-2 :ceddato2="ceddato2"></Tabla-Dato-2> -->
+        <Tabla-Dato-2 :ceddato2="ceddato2"></Tabla-Dato-2>
         <!-- FIN DATO 2 -->
 
         <!-- DATO 3 -->
-        <!-- <Tabla-Dato-3 :ceddato3="ceddato3"></Tabla-Dato-3> -->
+        <Tabla-Dato-3 :ceddato3="ceddato3"></Tabla-Dato-3>
         <!-- FIN DATO 3 -->
-        
-        <!-- CUSTOMER -->
-        <Tabla-Customer :customer="customer"></Tabla-Customer>
 
         <!-- DATO 4 -->
         <Tabla-Dato-4 :ceddato4="ceddato4"></Tabla-Dato-4>
@@ -57,6 +54,8 @@
         <Tabla-Dato-9 :ceddato9="ceddato9"></Tabla-Dato-9>
         <!--FIN DATO 9 -->
 
+        <!-- CUSTOMER -->
+        <Tabla-Customer :customer="customer"></Tabla-Customer>
 
     </app-layout>
 </template>

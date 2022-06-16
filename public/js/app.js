@@ -32304,7 +32304,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_application_logo, {
     "class": "block h-12 w-auto"
   })]), _hoisted_2, _hoisted_3]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
-    href: _ctx.route('customers.index'),
+    href: _ctx.route('BuscarCedula'),
     "class": "text-sm text-gray-700 underline"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -32327,7 +32327,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }, 8
   /* PROPS */
-  , ["href"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"p-6 border-t border-gray-200\">\r\n                <div class=\"flex items-center\">\r\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" class=\"w-8 h-8 text-gray-400\"><path d=\"M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\"></path></svg>\r\n                    <div class=\"ml-4 text-lg text-gray-600 leading-7 font-semibold\">Agregar Excel</div>\r\n                </div>\r\n\r\n                <div class=\"ml-12\">\r\n                    <div class=\"mt-2 text-sm text-gray-500\">\r\n                        Subir base de datos en formato Excel.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"p-6 border-t border-gray-200 md:border-l\">\r\n                <div class=\"flex items-center\">\r\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" class=\"w-8 h-8 text-gray-400\"><path d=\"M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z\"></path></svg>\r\n                    <div class=\"ml-4 text-lg text-gray-600 leading-7 font-semibold\">Informes</div>\r\n                </div>\r\n\r\n                <div class=\"ml-12\">\r\n                    <div class=\"mt-2 text-sm text-gray-500\">\r\n                        Vista de Informes de Asesores.\r\n                    </div>\r\n                </div>\r\n            </div> ")])]);
+  , ["href"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"p-6 border-t border-gray-200\">\n                <div class=\"flex items-center\">\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" class=\"w-8 h-8 text-gray-400\"><path d=\"M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\"></path></svg>\n                    <div class=\"ml-4 text-lg text-gray-600 leading-7 font-semibold\">Agregar Excel</div>\n                </div>\n\n                <div class=\"ml-12\">\n                    <div class=\"mt-2 text-sm text-gray-500\">\n                        Subir base de datos en formato Excel.\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"p-6 border-t border-gray-200 md:border-l\">\n                <div class=\"flex items-center\">\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" class=\"w-8 h-8 text-gray-400\"><path d=\"M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z\"></path></svg>\n                    <div class=\"ml-4 text-lg text-gray-600 leading-7 font-semibold\">Informes</div>\n                </div>\n\n                <div class=\"ml-12\">\n                    <div class=\"mt-2 text-sm text-gray-500\">\n                        Vista de Informes de Asesores.\n                    </div>\n                </div>\n            </div> ")])]);
 }
 
 /***/ }),
@@ -34573,7 +34573,13 @@ var _hoisted_2 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Input = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Input");
 
-  var _component_Tabla_Customer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Customer");
+  var _component_Tabla_Telefono = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Telefono");
+
+  var _component_Tabla_Dato_1 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-1");
+
+  var _component_Tabla_Dato_2 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-2");
+
+  var _component_Tabla_Dato_3 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-3");
 
   var _component_Tabla_Dato_4 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-4");
 
@@ -34586,6 +34592,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Tabla_Dato_8 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-8");
 
   var _component_Tabla_Dato_9 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-9");
+
+  var _component_Tabla_Customer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Customer");
 
   var _component_app_layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("app-layout");
 
@@ -34606,11 +34614,23 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         placeholder: "Buscar Cedula"
       }, null, 8
       /* PROPS */
-      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Customer, {
-        customer: $props.customer
+      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Telefono, {
+        cedtelefono: $props.cedtelefono
       }, null, 8
       /* PROPS */
-      , ["customer"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_4, {
+      , ["cedtelefono"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_1, {
+        ceddato1: $props.ceddato1
+      }, null, 8
+      /* PROPS */
+      , ["ceddato1"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_2, {
+        ceddato2: $props.ceddato2
+      }, null, 8
+      /* PROPS */
+      , ["ceddato2"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_3, {
+        ceddato3: $props.ceddato3
+      }, null, 8
+      /* PROPS */
+      , ["ceddato3"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_4, {
         ceddato4: $props.ceddato4
       }, null, 8
       /* PROPS */
@@ -34634,7 +34654,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         ceddato9: $props.ceddato9
       }, null, 8
       /* PROPS */
-      , ["ceddato9"])];
+      , ["ceddato9"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Customer, {
+        customer: $props.customer
+      }, null, 8
+      /* PROPS */
+      , ["customer"])];
     }),
     _: 1
     /* STABLE */
