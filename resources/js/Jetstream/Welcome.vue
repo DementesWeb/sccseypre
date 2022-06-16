@@ -23,7 +23,7 @@
 
                 <div class="ml-12">
                     <div class="mt-2 text-sm text-gray-500">
-                        <Link :href="route('customers.index')" class="text-sm text-gray-700 underline">
+                        <Link :href="route('BuscarCedula')" class="text-sm text-gray-700 underline">
                             Ir A Buscador >
                         </Link>
                     </div>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l">
-                <div class="flex items-center">                    
+                <div class="flex items-center">
                     <i class="fa fa-solid fa-users text-3xl text-blue-800"></i>
                     <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Cliente</div>
                 </div>
