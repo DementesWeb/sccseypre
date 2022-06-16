@@ -84,6 +84,12 @@
                                             </span>
                                         </p>
                                         <p class="text-md text-gray-800 font-light">
+                                            Dirección:
+                                            <span class="font-bold">
+                                                {{ items.DIRECCION }}
+                                            </span>
+                                        </p>
+                                        <p class="text-md text-gray-800 font-light">
                                             Telefono_Fijo:
                                             <span class="font-bold">
                                                 {{ items.TELEFONO_FIJO }}
