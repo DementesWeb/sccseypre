@@ -64,10 +64,10 @@
                                             SECTOR
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            NRO_CASA
+                                            CALLE
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            CEDULA
+                                            NRO_CASA
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                                             CONDOMINIO
@@ -98,6 +98,7 @@
                                             </div>
                                         </td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{items.NOMBRE}}</td>
+                                        <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{items.PROVINCIA}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.DISTRITO}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.CORREGIMIENTO}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.BARRIO}}</td>
@@ -111,7 +112,6 @@
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.SECTOR}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{items.CALLE}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.NRO_CASA}}</td>
-                                        <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.TIPO_DOC}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.CONDOMINIO}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{items.EDIFICIO}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.PISO}}</td>
