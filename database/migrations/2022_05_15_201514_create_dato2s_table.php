@@ -30,7 +30,7 @@ return new class extends Migration
             $table->string('email_cable')->nullable();
             $table->string('direccion_postal_cable')->nullable();
             $table->string('fax_cable')->nullable();
-            $table->string('direccion_fisica')->nullable();
+            $table->string('direccion_fisica',255)->nullable();
             $table->string('direccion_correspondencia')->nullable();
             $table->string('telefono_contacto')->nullable();
             $table->timestamps();
