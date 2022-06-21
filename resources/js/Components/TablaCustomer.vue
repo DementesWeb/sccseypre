@@ -1,29 +1,23 @@
 <template>
   <div class="flex justify-center">
         <div class="form-check form-switch">
-            <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista:  </label>
+            <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista: <strong>Clientes</strong> </label>
             <button class="ui btn-blue toggle" :class="{active:isActive}" @click="isActive = !isActive" >{{isActive ? 'Tarjeta' : 'Tabla'}}</button>
         </div>
     </div>
     <div v-if="isActive">
         <!-- Vista Tabla -->
-        <div  class="max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8"> 
+        <div  class="max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">
             <div class="max-w-1xl mx-auto">
-    
+
             <div class="flex flex-col">
                 <div class="overflow-x-auto shadow-md sm:rounded-lg">
                     <div class="inline-block min-w-full align-middle">
                         <div class="overflow-hidden ">
-                               
+
                             <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
                                 <thead class="bg-gray-100 dark:bg-gray-700">
                                     <tr>
-                                        <th scope="col" class="p-4">
-                                            <div class="flex items-center">
-                                                <input id="checkbox-all" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="checkbox-all" class="sr-only">checkbox</label>
-                                            </div>
-                                        </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                                             Cédula
                                             </th>
@@ -159,23 +153,17 @@
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                                             Fecha 12
                                         </th>
-                                        
-                                        
+
+
                                         <th scope="col" class="p-4">
                                             <span class="sr-only">
-                                                <i class="fa fa-circle-chevron-right"></i>    
+                                                <i class="fa fa-circle-chevron-right"></i>
                                             </span>
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
                                     <tr v-for="items in customer.data" :key="items.id" class="hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-900">
-                                        <td class="p-4 w-4">
-                                            <div class="flex items-center">
-                                                <input id="checkbox-table-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="checkbox-table-1" class="sr-only">checkbox</label>
-                                            </div>
-                                        </td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{items.cedula}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{items.nombre_y_apellido}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.cargo}}</td>
@@ -222,7 +210,7 @@
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.COD_12}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.DES_12}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.FEC_12}}</td>
-                                        <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">                                        
+                                        <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
                                             <!-- <Link :href="route('customers.edit', items.id)">
                                                 <i class="fa fa-angle-right"></i>
                                             </Link> -->
@@ -231,7 +219,7 @@
                                 </tbody>
                             </table>
                             <Pagination :pagination="customer"></Pagination>
-    
+
                         </div>
                     </div>
                 </div>
@@ -275,14 +263,14 @@
                                         />
                                     </svg>
                                 </div>
-    
+
                                 <!-- Title -->
                                 <div class="col-span-11 xl:-ml-5">
                                     <p class="text-blue-600 font-bold">
                                         Cedula: {{ items.cedula }}
                                     </p>
                                 </div>
-    
+
                                 <!-- Description -->
                                 <div
                                     class="flex flex-row md:col-start-2 col-span-11 xl:-ml-5 gap-2"
@@ -295,7 +283,7 @@
                                                 {{ items.nombre_y_apellido }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                     <!-- Parte derecha -->
                                     <div class="items-center m-8">
@@ -305,7 +293,7 @@
                                                 {{ items.cargo }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
 
@@ -317,8 +305,8 @@
                                                 {{ items.sueldo }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Sobre Sueldo:
@@ -326,8 +314,8 @@
                                                 {{ items.sobresueldo }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Sueldo Neto:
@@ -335,7 +323,7 @@
                                                 {{ items.sueldo_neto }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
@@ -346,8 +334,8 @@
                                                 {{ items.v35_porciento }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             25%:
@@ -355,8 +343,8 @@
                                                 {{ items.v25_porciento }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             20%:
@@ -364,13 +352,13 @@
                                                 {{ items.v20_porciento }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <!-- Deuda Activa 1-->
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 1</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -379,8 +367,8 @@
                                                 {{ items.COD_1 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -388,8 +376,8 @@
                                                 {{ items.DES_1 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -397,13 +385,13 @@
                                                 {{ items.FEC_1 }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <!--Fin Deuda Activa 1-->
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 2</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -412,8 +400,8 @@
                                                 {{ items.COD_2 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -421,8 +409,8 @@
                                                 {{ items.DES_2 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -430,11 +418,11 @@
                                                 {{ items.FEC_2 }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div><div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 3</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -443,8 +431,8 @@
                                                 {{ items.COD_3 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -452,8 +440,8 @@
                                                 {{ items.DES_3 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -466,7 +454,7 @@
                                 <!-- Deuda Activa 1-->
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 4</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -475,8 +463,8 @@
                                                 {{ items.COD_4 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -484,8 +472,8 @@
                                                 {{ items.DES_4 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -493,13 +481,13 @@
                                                 {{ items.FEC_4 }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <!--Fin Deuda Activa 1-->
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 5</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -508,8 +496,8 @@
                                                 {{ items.COD_5 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -517,8 +505,8 @@
                                                 {{ items.DES_5 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -526,11 +514,11 @@
                                                 {{ items.FEC_5 }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div><div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 6</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -539,8 +527,8 @@
                                                 {{ items.COD_6 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -548,8 +536,8 @@
                                                 {{ items.DES_6 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -562,7 +550,7 @@
                                 <!-- Deuda Activa 1-->
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 7</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -571,8 +559,8 @@
                                                 {{ items.COD_7 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -580,8 +568,8 @@
                                                 {{ items.DES_7 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -589,13 +577,13 @@
                                                 {{ items.FEC_7 }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <!--Fin Deuda Activa 1-->
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 8</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -604,8 +592,8 @@
                                                 {{ items.COD_8 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -613,8 +601,8 @@
                                                 {{ items.DES_8 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -622,11 +610,11 @@
                                                 {{ items.FEC_8 }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div><div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 9</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -635,8 +623,8 @@
                                                 {{ items.COD_9 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -644,8 +632,8 @@
                                                 {{ items.DES_9 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -658,7 +646,7 @@
                                 <!-- Deuda Activa 1-->
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 10</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -667,8 +655,8 @@
                                                 {{ items.COD_10 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -676,8 +664,8 @@
                                                 {{ items.DES_10 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -685,13 +673,13 @@
                                                 {{ items.FEC_10 }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <!--Fin Deuda Activa 1-->
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 11</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
@@ -700,8 +688,8 @@
                                                 {{ items.COD_11 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -709,8 +697,8 @@
                                                 {{ items.DES_11 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
@@ -718,11 +706,11 @@
                                                 {{ items.FEC_11 }}
                                             </span>
                                         </p>
-                                        
+
                                     </div>
                                 </div><div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <h4 class="py-2"> Deuda Activa 12</h4>
-                                </div>                            
+                                </div>
                                 <div class="flex flex-row md:col-start-3 col-span-11 xl:-ml-5 gap-1">
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light mb-8">
@@ -731,8 +719,8 @@
                                                 {{ items.COD_12 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center  mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Letra - Pago:
@@ -740,8 +728,8 @@
                                                 {{ items.DES_12 }}
                                             </span>
                                         </p>
-                                        
-                                    </div>                                    
+
+                                    </div>
                                     <div class="items-center mx-3">
                                         <p class="text-md text-gray-800 font-light">
                                             Fecha:
