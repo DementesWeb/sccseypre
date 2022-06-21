@@ -17,7 +17,7 @@ class Dato5Controller extends Controller
         $filters = $request->all('search');
         $ceddato5 = Dato5::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-            $query->where('CEDULA', 'like', '%' . $search . '%');
+            $query->where('CEDULA',$search);
         })->paginate(6);
         return Inertia::render('Dato5/Dato5', ['ceddato5'=>$ceddato5, 'filters'=>$filters]);
     }

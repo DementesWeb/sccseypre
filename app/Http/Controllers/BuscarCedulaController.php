@@ -27,47 +27,47 @@ class BuscarCedulaController extends Controller
         $filters = $request->all('search');
         $ceddato1 = Dato1::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('CEDULA', 'like', '%' . $search . '%');
+                $query->where('CEDULA',$search);
             })->paginate(6);
         $ceddato2 = Dato2::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('cedula', 'like', '%' . $search . '%');
+                $query->where('cedula',$search);
             })->paginate(6);
         $ceddato3 = Dato3::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('CEDULA', 'like', '%' . $search . '%');
+                $query->where('CEDULA',$search);
             })->paginate(6);
         $ceddato4 = Dato4::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('CEDULA', 'like', '%' . $search . '%');
+                $query->where('CEDULA',$search);
             })->paginate(6);
         $ceddato5 = Dato5::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('CEDULA', 'like', '%' . $search . '%');
+                $query->where('CEDULA',$search);
             })->paginate(6);
         $cedtelefono = Telefono::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('CED', 'like', '%' . $search . '%');
+                $query->where('CED',$search);
             })->paginate(6);
         $customer = Customer::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('cedula', 'like', '%' . $search . '%');
+                $query->where('cedula',$search);
             })->paginate(6);
             $ceddato6 = Dato6::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('CEDULA', 'like', '%' . $search . '%');
+                $query->where('CEDULA',$search);
             })->paginate(6);
         $ceddato7 = Dato7::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('cedula', 'like', '%' . $search . '%');
+                $query->where('cedula',$search);
             })->paginate(6);
         $ceddato8 = Dato8::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('CEDULA', 'like', '%' . $search . '%');
+                $query->where('CEDULA',$search);
             })->paginate(6);
         $ceddato9 = Dato9::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-                $query->where('CEDULA', 'like', '%' . $search . '%');
+                $query->where('CEDULA',$search);
             })->paginate(6);
 
         return Inertia::render('BuscarCedula/BuscarCedula', ['ceddato1'=>$ceddato1,

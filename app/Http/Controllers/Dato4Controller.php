@@ -17,7 +17,7 @@ class Dato4Controller extends Controller
         $filters = $request->all('search');
         $ceddato4 = Dato4::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-            $query->where('CEDULA', 'like', '%' . $search . '%');
+            $query->where('CEDULA',$search);
         })->paginate(6);
         return Inertia::render('Dato4/Dato4', ['ceddato4'=>$ceddato4, 'filters'=>$filters]);
     }

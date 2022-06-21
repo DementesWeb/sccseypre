@@ -23,14 +23,14 @@ return new class extends Migration
             $table->string('fax')->nullable();
             $table->string('email')->nullable();
             $table->string('direccion_postal')->nullable();
-            $table->string('direccion')->nullable();
+            $table->longText('direccion')->nullable();
             $table->string('telefono_residencia_cable')->nullable();
             $table->string('telefono_oficina_cable')->nullable();
             $table->string('telefono_celular_cable')->nullable();
             $table->string('email_cable')->nullable();
             $table->string('direccion_postal_cable')->nullable();
             $table->string('fax_cable')->nullable();
-            $table->string('direccion_fisica',255)->nullable();
+            $table->string('direccion_fisica')->nullable();
             $table->string('direccion_correspondencia')->nullable();
             $table->string('telefono_contacto')->nullable();
             $table->timestamps();

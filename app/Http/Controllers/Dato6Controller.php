@@ -18,7 +18,7 @@ class Dato6Controller extends Controller
         $filters = $request->all('search');
         $ceddato6 = Dato6::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-            $query->where('CEDULA', 'like', '%' . $search . '%');
+            $query->where('CEDULA',$search);
         })->paginate(6);
         return Inertia::render('Dato6/Dato6', ['ceddato6'=>$ceddato6, 'filters'=>$filters]);
     }
