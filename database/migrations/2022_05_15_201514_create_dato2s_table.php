@@ -31,7 +31,7 @@ return new class extends Migration
             $table->string('direccion_postal_cable')->nullable();
             $table->string('fax_cable')->nullable();
             $table->longText('direccion_fisica')->nullable();
-            $table->string('direccion_correspondencia')->nullable();
+            $table->longText('direccion_correspondencia')->nullable();
             $table->string('telefono_contacto')->nullable();
             $table->timestamps();
         });
