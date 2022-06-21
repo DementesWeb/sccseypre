@@ -17,7 +17,8 @@ class Dato9Controller extends Controller
         $filters = $request->all('search');
         $ceddato9 = Dato9::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-            $query->where('cedula', 'like', '%' . $search . '%');
+            /* $query->where('cedula', 'like', '%' . $search . '%'); */
+            $query->where('cedula', $search);
         })->paginate(6);
         return Inertia::render('Dato9/Dato9', ['ceddato9'=>$ceddato9, 'filters'=>$filters]);
     }

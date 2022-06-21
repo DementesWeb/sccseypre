@@ -17,7 +17,7 @@ class TelefonoController extends Controller
         $filters = $request->all('search');
         $cedtelefono = Telefono::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-            $query->where('CED', 'like', '%' . $search . '%');
+            $query->where('CED',$search);
         })->paginate(6);
         return Inertia::render('Telefono/Telefono', ['cedtelefono'=>$cedtelefono, 'filters'=>$filters]);
     }

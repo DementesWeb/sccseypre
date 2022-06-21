@@ -17,7 +17,7 @@ class Dato3Controller extends Controller
         $filters = $request->all('search');
         $ceddato3 = Dato3::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-            $query->where('CEDULA', 'like', '%' . $search . '%');
+            $query->where('CEDULA',$search);
         })->paginate(6);
         return Inertia::render('Dato3/Dato3', ['ceddato3'=>$ceddato3, 'filters'=>$filters]);
     }
