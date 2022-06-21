@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         /* ROLE ADMINISTRADOR */
         $user = new User;
         $user->name = 'Admin';
-        $user->email = 'admin@email.com';
+        $user->email = 'admin@seypre.com';
         $user->password = bcrypt('Panama.2022');
         $user->current_team_id = 1;
         $user->save();

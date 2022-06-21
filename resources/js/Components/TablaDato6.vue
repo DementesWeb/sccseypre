@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center">
         <div class="form-check form-switch">
-            <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista:  </label>
+            <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista: <strong>Datos 6</strong> </label>
             <button class="ui btn-blue toggle" :class="{active:isActive}" @click="isActive = !isActive" >{{isActive ? 'Tarjeta' : 'Tabla'}}</button>
         </div>
     </div>
@@ -14,7 +14,6 @@
                 <div class="overflow-x-auto shadow-md sm:rounded-lg">
                     <div class="inline-block min-w-full align-middle">
                         <div class="overflow-hidden ">
-
                             <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
                                 <thead class="bg-gray-100 dark:bg-gray-700">
                                     <tr>
@@ -52,12 +51,6 @@
                                 </thead>
                                 <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
                                     <tr v-for="items in ceddato6.data" :key="items.id" class="hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <td class="p-4 w-4">
-                                            <div class="flex items-center">
-                                                <input id="checkbox-table-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="checkbox-table-1" class="sr-only">checkbox</label>
-                                            </div>
-                                        </td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{items.CEDULA}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.NOMBRE}}</td>
                                         <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{items.BARRIADA}}</td>
