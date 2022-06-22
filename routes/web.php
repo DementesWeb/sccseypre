@@ -52,11 +52,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/register', function () {
     $role = Auth::user()->current_team_id;
-    if ($role==1) {
-        return Inertia::render('Auth/Register');
-    }else{
-        return Inertia::render('Dashboard');
-    }
+    return Inertia::render('Auth/Register');
 })->name('register');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/consulta', function () {
