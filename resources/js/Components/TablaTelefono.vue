@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center">
         <div class="form-check form-switch">
-            <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista: <strong>Telefonos</strong> </label>
+            <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista: <strong>Teléfonos</strong> </label>
             <button class="ui btn-blue toggle" :class="{active:isActive}" @click="isActive = !isActive" >{{isActive ? 'Tarjeta' : 'Tabla'}}</button>
         </div>
     </div>
@@ -37,49 +37,49 @@
                                             Apellido Casada
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 1
+                                            Teléfono 1
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 2
+                                            Teléfono 2
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 3
+                                            Teléfono 3
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 4
+                                            Teléfono 4
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 5
+                                            Teléfono 5
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 6
+                                            Teléfono 6
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 7
+                                            Teléfono 7
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 8
+                                            Teléfono 8
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 9
+                                            Teléfono 9
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 10
+                                            Teléfono 10
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 11
+                                            Teléfono 11
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 12
+                                            Teléfono 12
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 13
+                                            Teléfono 13
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 14
+                                            Teléfono 14
                                         </th>
                                         <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Telefono 15
+                                            Teléfono 15
                                         </th>
 
                                         <th scope="col" class="p-4">
@@ -223,7 +223,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 1:
+                                            Teléfono 1:
                                             <span class="font-bold">
                                                 {{ items.TEL1 }}
                                             </span>
@@ -231,7 +231,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 2:
+                                            Teléfono 2:
                                             <span class="font-bold">
                                                 {{ items.TEL2 }}
                                             </span>
@@ -239,7 +239,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 3:
+                                            Teléfono 3:
                                             <span class="font-bold">
                                                 {{ items.TEL3 }}
                                             </span>
@@ -255,7 +255,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 5:
+                                            Teléfono 5:
                                             <span class="font-bold">
                                                 {{ items.TEL5 }}
                                             </span>
@@ -266,7 +266,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 6:
+                                            Teléfono 6:
                                             <span class="font-bold">
                                                 {{ items.TEL6 }}
                                             </span>
@@ -274,7 +274,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 7:
+                                            Teléfono 7:
                                             <span class="font-bold">
                                                 {{ items.TEL7 }}
                                             </span>
@@ -282,7 +282,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 8:
+                                            Teléfono 8:
                                             <span class="font-bold">
                                                 {{ items.TEL8 }}
                                             </span>
@@ -290,7 +290,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 9:
+                                            Teléfono 9:
                                             <span class="font-bold">
                                                 {{ items.TEL9 }}
                                             </span>
@@ -298,7 +298,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 10:
+                                            Teléfono 10:
                                             <span class="font-bold">
                                                 {{ items.TEL10 }}
                                             </span>
@@ -306,7 +306,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 11:
+                                            Teléfono 11:
                                             <span class="font-bold">
                                                 {{ items.TEL11 }}
                                             </span>
@@ -314,7 +314,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 12:
+                                            Teléfono 12:
                                             <span class="font-bold">
                                                 {{ items.TEL12 }}
                                             </span>
@@ -322,7 +322,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 13:
+                                            Teléfono 13:
                                             <span class="font-bold">
                                                 {{ items.TEL13 }}
                                             </span>
@@ -330,7 +330,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 14:
+                                            Teléfono 14:
                                             <span class="font-bold">
                                                 {{ items.TEL14 }}
                                             </span>
@@ -338,7 +338,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono 15:
+                                            Teléfono 15:
                                             <span class="font-bold">
                                                 {{ items.TEL15 }}
                                             </span>

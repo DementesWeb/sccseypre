@@ -185,7 +185,7 @@
                                         <p
                                             class="text-md text-gray-800 font-light"
                                         >
-                                            Telefono:
+                                            Teléfono:
                                             <span class="font-bold">
                                                 {{ items.TEELFONO }}
                                             </span>

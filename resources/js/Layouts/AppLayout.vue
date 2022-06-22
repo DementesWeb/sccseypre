@@ -28,7 +28,7 @@
                                 </jet-nav-link>
 
                                 <jet-nav-link :href="route('BuscarCedula')" :active="route().current('BuscarCedula')">
-                                    Buscar Cedula
+                                    Buscar Cédula
                                 </jet-nav-link>
 
                                 <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -101,7 +101,7 @@
                         <div class="hidden sm:flex sm:items-center sm:ml-6">
                             <div class="ml-3 relative">
                                 <!-- Teams Dropdown  Datos-->
-                                
+
                                 <!-- Teams Dropdown Teams -->
                                 <jet-dropdown align="right" width="60" v-if="$page.props.jetstream.hasTeamFeatures">
                                     <template #trigger v-if="$page.props.user.current_team_id == 1">
