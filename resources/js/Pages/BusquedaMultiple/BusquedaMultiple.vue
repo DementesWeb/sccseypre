@@ -62,21 +62,6 @@ export default {
         };
     },
 
-    /* methods: {
-        buscar($value) {
-
-            this.$inertia.get(
-                "/BusquedaMultiple",
-                {
-                    search: $value.split(" "),
-                },
-                {
-                    preserveState: true,
-                }
-            );
-        },
-    }, */
-
     watch: {
         search($value) {
 

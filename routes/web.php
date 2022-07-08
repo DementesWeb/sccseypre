@@ -17,6 +17,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\TelefonoController;
 use App\Http\Controllers\BuscarCedulaController;
 use App\Http\Controllers\BusquedaMultipleController;
+use App\Http\Controllers\SecurityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,14 @@ Route::get('/', function () {
     ]);
 });
 
+/* Route::get('security', [SecurityController::class, 'index'])->name('security.index'); */
+Route::get('security/users', [SecurityController::class, 'index'])->name('security.users');
+Route::get('security/create', [SecurityController::class, 'create'])->name('security.create');
+Route::get('security/{user}/edit', [SecurityController::class, 'edit'])->name('security.edit');
+Route::post('security', [SecurityController::class, 'store'])->name('security.store');
+Route::put('security/{user}', [SecurityController::class, 'update'])->name('security.update');
+Route::delete('security/{customer}', [SecurityController::class, 'destroy'])->name('security.destroy');
+
 Route::get('customers', [CustomerController::class, 'index'])->name('customers.index');
 Route::get('customers/create', [CustomerController::class, 'create'])->name('customers.create');
 Route::get('customers/{customer}/edit', [CustomerController::class, 'edit'])->name('customers.edit');
@@ -51,10 +60,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/register', function () {
+/* Route::middleware(['auth:sanctum', 'verified'])->get('/register', function () {
     $role = Auth::user()->current_team_id;
     return Inertia::render('Auth/Register');
-})->name('register');
+})->name('register'); */
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/consulta', function () {
     return Inertia::render('Consulta');
