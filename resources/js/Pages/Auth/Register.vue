@@ -45,11 +45,11 @@
                 <Link :href="route('dashboard')" class="underline text-sm text-gray-600 hover:text-gray-900">
                     ir a Dashboard
                 </Link>
-                <div v-if="$page.props.user.current_team_id == 1">
-                    <jet-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                        Registro
-                    </jet-button>
-                </div>
+                <jet-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                    Registro
+                </jet-button>
+                <!-- <div v-if="$page.props.user.current_team_id == 1">
+                </div> -->
             </div>
         </form>
     </jet-authentication-card>
