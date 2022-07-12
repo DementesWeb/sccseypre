@@ -1,6 +1,6 @@
 <template>
     
-    <app-layout title="Configuración Usuarios">
+    <AppLayout title="Configuración Usuarios">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Dashboard - Usuarios
@@ -69,7 +69,7 @@
             </div>
         </div><!-- fin -->
         </div>
-    </app-layout>
+    </AppLayout>
 </template>
 
 <script>
@@ -80,10 +80,8 @@
     import { Head, Link } from '@inertiajs/inertia-vue3';
 
 
-    export default defineComponent({
-  created () {
-  },
-        components: {
+    export default{
+        components:{
             Input,
             Link,
             Pagination,
@@ -105,5 +103,5 @@
                 )
             }
         },
-    });
+    };
 </script>
