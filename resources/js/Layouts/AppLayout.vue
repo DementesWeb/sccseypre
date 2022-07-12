@@ -127,7 +127,7 @@
                                                 <div class="block px-4 py-2 text-xs text-gray-400">
                                                     Dashboard
                                                 </div>
-                                                <jet-dropdown-link :href="route('security.users')">
+                                                <jet-dropdown-link :href="route('security.index')">
                                                     Usuarios
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('security.create')">

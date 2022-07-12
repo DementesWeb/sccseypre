@@ -21,12 +21,12 @@ class SecurityController extends Controller
     {
         $filters = $request->all('search');
 
-        $user = User::latest()
+        $usuario = User::latest()
             ->paginate();
         $team = Team::latest()
             ->paginate();
 
-        return Inertia::render('Security/Users',['user'=> $user, 'team' => $team]);
+        return Inertia::render('Security/Index',['usuario'=> $usuario, 'filters' => $filters]);
     }
 
     public function create(Request $request){
@@ -43,7 +43,7 @@ class SecurityController extends Controller
             'current_team_id'=> 'nullable',
         ]);
 
-        $user = User::create([
+        $usuario = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
@@ -51,16 +51,16 @@ class SecurityController extends Controller
         ]);
 
 
-        return Inertia::render('Security/Edit',compact('user'));
+        return Inertia::render('Security/Edit',compact('usuario'));
     }
 
 
 
-    public function edit(User $user){
-        return Inertia::render('Security/Edit',compact('user'));
+    public function edit(User $usuario){
+        return Inertia::render('Security/Edit',compact('usuario'));
     }
 
-    public function update(Request $request, User $user){
+    public function update(Request $request, User $usuario){
         $data = $request->validate([
             'name' => 'required',
             'email' => 'required',
@@ -68,14 +68,20 @@ class SecurityController extends Controller
             'current_team_id'=> 'nullable',
         ]);
 
-        $user->update([
+        $usuario->update([
             'name' => $data['name'],
             'email' => $data['email'],
             /* 'password' => Hash::make($data['password']), */
             'current_team_id' => $data['current_team_id'],
         ]);
 
-        return Inertia::render('Security/Edit',compact('user'));
-        
+        //return Inertia::render('Security/Edit',compact('usuario'));
+        return redirect()->route('security.index');
+    }
+
+    public function destroy(User $usuario)
+    {
+        $usuario->delete();
+        return redirect()->route('security.index');
     }
 }
