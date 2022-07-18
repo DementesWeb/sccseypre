@@ -35,6 +35,10 @@
                                     Búsqueda Múltiple
                                 </jet-nav-link>
 
+                                <jet-nav-link :href="route('busquedacampos')" :active="route().current('busquedacampos')">
+                                    Búsqueda Campos
+                                </jet-nav-link>
+
                                 <div class="hidden sm:flex sm:items-center sm:ml-6">
                                     <jet-dropdown align="right" width="60" v-if="$page.props.user.current_team_id == 1">
                                     <template #trigger >
