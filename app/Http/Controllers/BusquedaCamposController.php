@@ -12,7 +12,7 @@ use App\Models\Dato6;
 use App\Models\Dato7;
 use App\Models\Dato8;
 use App\Models\Dato9;
-use App\Models\Customer;
+use App\Models\customer;
 use App\Models\Telefono;
 use Illuminate\Http\Request;
 
