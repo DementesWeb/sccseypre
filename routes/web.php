@@ -16,6 +16,7 @@ use App\Http\Controllers\Dato9Controller;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\TelefonoController;
 use App\Http\Controllers\BuscarCedulaController;
+use App\Http\Controllers\BusquedaCamposController;
 use App\Http\Controllers\BusquedaMultipleController;
 use App\Http\Controllers\SecurityController;
 
@@ -64,6 +65,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     $role = Auth::user()->current_team_id;
     return Inertia::render('Auth/Register');
 })->name('register'); */
+
+Route::get('/busquedacampos',[BusquedaCamposController::class,'Index'])->name('busquedacampos');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/consulta', function () {
     return Inertia::render('Consulta');
