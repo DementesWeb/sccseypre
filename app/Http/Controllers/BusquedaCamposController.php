@@ -78,7 +78,7 @@ class BusquedaCamposController extends Controller
                     ->orWhere('TEL14','LIKE',"%".$search."%")
                     ->orWhere('TEL15','LIKE',"%".$search."%");
                 })->paginate(50);
-            $customer = Customer::latest()
+            $customer = customer::latest()
                 ->when($filters['search'] ?? null, function($query, $search){
                     $query->where('CEDULA','LIKE',"%".$search."%");
                 })->paginate(50);
