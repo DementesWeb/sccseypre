@@ -20,6 +20,9 @@ class Dato6Controller extends Controller
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('CEDULA',$search);
         })->paginate(6);
+
+        $ceddato6 = cache('cachedb',$ceddato6,now()->addMinutes(5));
+
         return Inertia::render('Dato6/Dato6', ['ceddato6'=>$ceddato6, 'filters'=>$filters]);
     }
 }

@@ -20,6 +20,9 @@ class Dato9Controller extends Controller
             /* $query->where('cedula', 'like', '%' . $search . '%'); */
             $query->where('cedula', $search);
         })->paginate(6);
+
+        $ceddato9 = cache('cachedb',$ceddato9,now()->addMinutes(5));
+
         return Inertia::render('Dato9/Dato9', ['ceddato9'=>$ceddato9, 'filters'=>$filters]);
     }
 }

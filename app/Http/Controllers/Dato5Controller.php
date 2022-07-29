@@ -19,6 +19,9 @@ class Dato5Controller extends Controller
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('CEDULA',$search);
         })->paginate(6);
+
+        $ceddato5 = cache('cachedb',$ceddato5,now()->addMinutes(5));
+
         return Inertia::render('Dato5/Dato5', ['ceddato5'=>$ceddato5, 'filters'=>$filters]);
     }
 }
