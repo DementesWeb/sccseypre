@@ -25,7 +25,7 @@ class SecurityController extends Controller
             ->paginate();
         $team = Team::latest()
             ->paginate();
-
+        $usuario = cache('cachedb',$usuario,now()->addMinutes(5));
         return Inertia::render('Security/Index',['usuario'=> $usuario, 'filters' => $filters]);
     }
 

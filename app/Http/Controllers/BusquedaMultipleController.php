@@ -3,16 +3,10 @@
 namespace App\Http\Controllers;
 
 use Inertia\Inertia;
-use App\Models\Dato1;
-use App\Models\Dato2;
+
 use App\Models\Dato3;
 use App\Models\Dato4;
 use App\Models\Dato5;
-use App\Models\Dato6;
-use App\Models\Dato7;
-use App\Models\Dato8;
-use App\Models\Dato9;
-use App\Models\customer;
 use App\Models\Telefono;
 use Illuminate\Http\Request;
 
@@ -42,7 +36,12 @@ class BusquedaMultipleController extends Controller
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->whereIn('CED',$search);
             })->paginate(5000);
-       
+
+        $ceddato3 = cache('cached3',$ceddato3,now()->addMinutes(5));
+        $ceddato4 = cache('cached4',$ceddato4,now()->addMinutes(5));
+        $ceddato5 = cache('cached5',$ceddato5,now()->addMinutes(5));
+        $cedtelefono = cache('cachetelefono',$cedtelefono,now()->addMinutes(5));
+        
 
         return Inertia::render('BusquedaMultiple/BusquedaMultiple', ['ceddato3'=>$ceddato3,
                                                                     'ceddato4'=>$ceddato4,

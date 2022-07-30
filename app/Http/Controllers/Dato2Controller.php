@@ -19,6 +19,9 @@ class Dato2Controller extends Controller
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('cedula',$search);
         })->paginate(6);
+
+        $ceddato2 = cache('cachedb',$ceddato2,now()->addMinutes(5));
+
         return Inertia::render('Dato2/Dato2', ['ceddato2'=>$ceddato2, 'filters'=>$filters]);
     }
 }
