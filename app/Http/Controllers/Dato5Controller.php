@@ -20,7 +20,7 @@ class Dato5Controller extends Controller
             $query->where('CEDULA',$search);
         })->paginate(6);
 
-        $ceddato5 = cache('cachedb',$ceddato5,now()->addMinutes(5));
+        $ceddato5 = cache('cachedb',$ceddato5,now()->addWeek());
 
         return Inertia::render('Dato5/Dato5', ['ceddato5'=>$ceddato5, 'filters'=>$filters]);
     }

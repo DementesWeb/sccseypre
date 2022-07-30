@@ -36,13 +36,12 @@ class BusquedaMultipleController extends Controller
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->whereIn('CED',$search);
             })->paginate(5000);
-
-        $ceddato3 = cache('cached3',$ceddato3,now()->addMinutes(5));
-        $ceddato4 = cache('cached4',$ceddato4,now()->addMinutes(5));
-        $ceddato5 = cache('cached5',$ceddato5,now()->addMinutes(5));
-        $cedtelefono = cache('cachetelefono',$cedtelefono,now()->addMinutes(5));
         
-
+        $ceddato3 = cache('cached3',$ceddato3,now()->addWeek());
+        $ceddato4 = cache('cached4',$ceddato4,now()->addWeek());
+        $ceddato5 = cache('cached5',$ceddato5,now()->addWeek());
+        $cedtelefono = cache('cachetelefono',$cedtelefono,now()->addWeek());
+        
         return Inertia::render('BusquedaMultiple/BusquedaMultiple', ['ceddato3'=>$ceddato3,
                                                                     'ceddato4'=>$ceddato4,
                                                                     'ceddato5'=>$ceddato5,

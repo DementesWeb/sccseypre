@@ -472,5 +472,44 @@ class DatabaseSeeder extends Seeder
         $teamAsesor->user_id = 2;
         $teamAsesor->personal_team = 1;
         $teamAsesor->save();
+
+        $userAsesor = new User;
+        $userAsesor->name = 'Yessenia Martinez';
+        $userAsesor->email = 'yessenia@seypre.com';
+        $userAsesor->password = bcrypt('Asesor.2022');
+        $userAsesor->current_team_id = 2;
+        $userAsesor->save();
+
+        $teamAsesor = new Team;
+        $teamAsesor->name = 'Asesor';
+        $teamAsesor->user_id = 2;
+        $teamAsesor->personal_team = 1;
+        $teamAsesor->save();
+
+        $userAsesor = new User;
+        $userAsesor->name = 'Nubia Romero';
+        $userAsesor->email = 'Nubia@seypre.com';
+        $userAsesor->password = bcrypt('Asesor.2022');
+        $userAsesor->current_team_id = 2;
+        $userAsesor->save();
+
+        $teamAsesor = new Team;
+        $teamAsesor->name = 'Asesor';
+        $teamAsesor->user_id = 2;
+        $teamAsesor->personal_team = 1;
+        $teamAsesor->save();
+
+        $userAsesor = new User;
+        $userAsesor->name = 'Damaris Diaz';
+        $userAsesor->email = 'Damarins@seypre.com';
+        $userAsesor->password = bcrypt('Asesor.2022');
+        $userAsesor->current_team_id = 2;
+        $userAsesor->save();
+
+        $teamAsesor = new Team;
+        $teamAsesor->name = 'Asesor';
+        $teamAsesor->user_id = 2;
+        $teamAsesor->personal_team = 1;
+        $teamAsesor->save();
     }
 }

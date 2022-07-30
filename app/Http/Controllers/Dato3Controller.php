@@ -20,7 +20,7 @@ class Dato3Controller extends Controller
             $query->where('CEDULA',$search);
         })->paginate(6);
 
-        $ceddato3 = cache('cachedb',$ceddato3,now()->addMinutes(5));
+        $ceddato3 = cache('cachedb',$ceddato3,now()->addWeek());
         
         return Inertia::render('Dato3/Dato3', ['ceddato3'=>$ceddato3, 'filters'=>$filters]);
     }

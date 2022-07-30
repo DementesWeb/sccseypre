@@ -31,7 +31,7 @@ class CustomerController extends Controller
             ->filter($filters)
             ->paginate();
 
-
+        $customer = cache('cachedb',$customer,now()->addWeek());
         return Inertia::render('Customers/Index',compact('customer','filters'));
     }
 
@@ -106,7 +106,6 @@ class CustomerController extends Controller
         $customer = Customer::create($data);
     
         //return redirect()->route('customres.edit', $customer);
-        $customer = cache('cachedb',$customer,now()->addMinutes(5));
 
         return Inertia::render('Customers/Edit',compact('customer'));
         
