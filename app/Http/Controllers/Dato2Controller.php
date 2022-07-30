@@ -20,7 +20,7 @@ class Dato2Controller extends Controller
             $query->where('cedula',$search);
         })->paginate(6);
 
-        $ceddato2 = cache('cachedb',$ceddato2,now()->addMinutes(5));
+        $ceddato2 = cache('cachedb',$ceddato2,now()->addWeek());
 
         return Inertia::render('Dato2/Dato2', ['ceddato2'=>$ceddato2, 'filters'=>$filters]);
     }

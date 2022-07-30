@@ -118,17 +118,17 @@ class BusquedaCamposController extends Controller
                 ->orWhere('CORREGIMIENTO','LIKE',"%".$search."%");
             })->paginate(50);
 
-        $ceddato1 = cache('cached1',$ceddato1,now()->addMinutes(5));
-        $ceddato2 = cache('cached2',$ceddato2,now()->addMinutes(5));
-        $ceddato3 = cache('cached3',$ceddato3,now()->addMinutes(5));
-        $ceddato4 = cache('cached4',$ceddato4,now()->addMinutes(5));
-        $ceddato5 = cache('cached5',$ceddato5,now()->addMinutes(5));
-        $ceddato6 = cache('cached6',$ceddato6,now()->addMinutes(5));
-        $ceddato7 = cache('cached7',$ceddato7,now()->addMinutes(5));
-        $ceddato8 = cache('cached8',$ceddato8,now()->addMinutes(5));
-        $ceddato9 = cache('cached9',$ceddato9,now()->addMinutes(5));
-        $cedtelefono = cache('cachetelefono',$cedtelefono,now()->addMinutes(5));
-        $customer = cache('cachecustomer',$customer,now()->addMinutes(5));
+        $ceddato1 = cache('cached1',$ceddato1,now()->addWeek());
+        $ceddato2 = cache('cached2',$ceddato2,now()->addWeek());
+        $ceddato3 = cache('cached3',$ceddato3,now()->addWeek());
+        $ceddato4 = cache('cached4',$ceddato4,now()->addWeek());
+        $ceddato5 = cache('cached5',$ceddato5,now()->addWeek());
+        $ceddato6 = cache('cached6',$ceddato6,now()->addWeek());
+        $ceddato7 = cache('cached7',$ceddato7,now()->addWeek());
+        $ceddato8 = cache('cached8',$ceddato8,now()->addWeek());
+        $ceddato9 = cache('cached9',$ceddato9,now()->addWeek());
+        $cedtelefono = cache('cachetelefono',$cedtelefono,now()->addWeek());
+        $customer = cache('cachecustomer',$customer,now()->addWeek());
 
         return Inertia::render('BusquedaCampos/BusquedaCampos', ['ceddato1'=>$ceddato1,
                                                                     'ceddato2'=>$ceddato2,

@@ -20,7 +20,7 @@ class TelefonoController extends Controller
             $query->where('CED',$search);
         })->paginate(6);
         
-        $cedtelefono = cache('cachedb',$cedtelefono,now()->addMinutes(5));
+        $cedtelefono = cache('cachedb',$cedtelefono,now()->addWeek());
 
         return Inertia::render('Telefono/Telefono', ['cedtelefono'=>$cedtelefono, 'filters'=>$filters]);
     }
