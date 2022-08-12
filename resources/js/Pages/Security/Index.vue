@@ -18,7 +18,7 @@
                             <div class="py-4 px-1 flex items-center">
                                 <Input v-model="search" type="text" class="flex-1" placeholder="Digitar Cédula Ej:'1-234-567'"/>
                                 <Link :href="route('security.create')" class="flex-shrink-0 ml-4 btn btn-blue">Nuevo</Link>
-                            </div>  
+                            </div> 
                         <table class="min-w-full divide-y divide-gray-200 table-fixed justify-center dark:divide-gray-700">
                             <thead class="bg-gray-100 dark:bg-gray-700">
                                 <tr>
@@ -92,16 +92,21 @@
         },
         data() {
             return {
-                search: this.filters.search,
+                search: "",
             }
         },
         watch: {
-            search($value) {
-                this.$inertia.get('/securiy',
-                {search : $value},
-                {preserveState: true}
-                )
-            }
+        search($value) {
+            this.$inertia.get(
+                "/security",
+                {
+                    search: $value,
+                },
+                {
+                    preserveState: true,
+                }
+            );
         },
+    },
     }
 </script>

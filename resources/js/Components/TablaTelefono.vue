@@ -5,7 +5,7 @@
                 <label
                     class="form-check-label inline-block mx-4 text-gray-800"
                     for="flexSwitchCheckChecked"
-                    >Cambiar Tipo de Vista: <strong>Teléfonos</strong>
+                    >Cambiar Tipo de Vista: <strong>Teléfonos 1</strong>
                 </label>
                 <button
                     class="ui btn-blue toggle"

@@ -10,12 +10,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') .'?version='. Str::random() }}">
+        <link rel="stylesheet" href="{{ mix('css/app.css')}}">
         <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
 
         <!-- Scripts -->
         @routes
-        <script src="{{ mix('js/app.js') .'?version='. Str::random() }}" defer></script>
+        <script src="{{ mix('js/app.js')}}" defer></script>
     </head>
     <body class="font-sans antialiased">
         @inertia
