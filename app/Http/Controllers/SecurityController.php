@@ -22,9 +22,12 @@ class SecurityController extends Controller
         $filters = $request->all('search');
 
         $usuario = User::latest()
-            ->paginate();
-        $team = Team::latest()
-            ->paginate();
+            ->when($filters['search'] ?? null, function($query, $search){
+            $query->where('name','LIKE',"%".$search."%")
+                ->orWhere('email','LIKE',"%".$search."%");
+            })->paginate();
+        /* $team = Team::latest()
+            ->paginate(); */
         $usuario = cache('cachedb',$usuario,now()->addWeek());
         return Inertia::render('Security/Index',['usuario'=> $usuario, 'filters' => $filters]);
     }

@@ -26,6 +26,14 @@
         <Tabla-Dato-2 :ceddato2="ceddato2"></Tabla-Dato-2>
         <!-- FIN DATO 2 -->
 
+        <!-- DATO 6 -->
+        <Tabla-Dato-6 :ceddato6="ceddato6"></Tabla-Dato-6>
+        <!--FIN DATO 6 -->
+
+        <!--DATO 9 -->
+        <Tabla-Dato-9 :ceddato9="ceddato9"></Tabla-Dato-9>
+        <!--FIN DATO 9 -->
+
         <!-- DATO 3 -->
         <Tabla-Dato-3 :ceddato3="ceddato3"></Tabla-Dato-3>
         <!-- FIN DATO 3 -->
@@ -38,10 +46,6 @@
         <Tabla-Dato-5 :ceddato5="ceddato5"></Tabla-Dato-5>
         <!--FIN DATO 5 -->
 
-        <!-- DATO 6 -->
-        <Tabla-Dato-6 :ceddato6="ceddato6"></Tabla-Dato-6>
-        <!--FIN DATO 6 -->
-
         <!--DATO 7 -->
         <Tabla-Dato-7 :ceddato7="ceddato7"></Tabla-Dato-7>
         <!--FIN DATO 7 -->
@@ -49,10 +53,6 @@
         <!--DATO 8 -->
         <Tabla-Dato-8 :ceddato8="ceddato8"></Tabla-Dato-8>
         <!--FIN DATO 8 -->
-
-        <!--DATO 9 -->
-        <Tabla-Dato-9 :ceddato9="ceddato9"></Tabla-Dato-9>
-        <!--FIN DATO 9 -->
 
         <!-- CUSTOMER -->
         <Tabla-Customer :customer="customer"></Tabla-Customer>

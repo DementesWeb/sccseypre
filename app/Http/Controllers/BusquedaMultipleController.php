@@ -23,19 +23,19 @@ class BusquedaMultipleController extends Controller
         $ceddato3 = Dato3::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->whereIn('CEDULA',$search);
-            })->paginate(5000);
+            })->paginate(500);
         $ceddato4 = Dato4::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->whereIn('CEDULA',$search);
-            })->paginate(5000);
+            })->paginate(500);
         $ceddato5 = Dato5::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->whereIn('CEDULA',$search);
-            })->paginate(5000);
+            })->paginate(500);
         $cedtelefono = Telefono::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->whereIn('CED',$search);
-            })->paginate(5000);
+            })->paginate(500);
         
         $ceddato3 = cache('cached3',$ceddato3,now()->addWeek());
         $ceddato4 = cache('cached4',$ceddato4,now()->addWeek());

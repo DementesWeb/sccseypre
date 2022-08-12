@@ -2,7 +2,7 @@
     <div v-if="ceddato6.total>=1">
         <div class="flex justify-center">
             <div class="form-check form-switch">
-                <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista: <strong>Datos 6</strong> </label>
+                <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista: <strong>Teléfono 4</strong> </label>
                 <button class="ui btn-blue toggle" :class="{active:isActive}" @click="isActive = !isActive" >{{isActive ? 'Tarjeta' : 'Tabla'}}</button>
             </div>
         </div>
