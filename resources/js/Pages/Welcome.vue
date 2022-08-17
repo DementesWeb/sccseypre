@@ -1,5 +1,5 @@
 <template>
-    <Head title="Welcome" />
+    <Head title="Bienbenidos" />
 
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
         <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -21,12 +21,12 @@
 
                     <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                         <div class="flex items-center">
-                            <div class="ml-4 text-lg leading-7 font-semibold text-gray-100 dark:text-white"> Powered by SCCSEYPRE</div>
+                            <div class="ml-4 text-lg leading-7 font-semibold text-gray-100 dark:text-white"> Sistema de Consultas de Cédulas</div>
                         </div>
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                <img src="https://seypre.com/wp-content/uploads/2020/07/logo_seypre_white_final.png" alt="SEYPRE">
+                                <svg style="fill:rgba(255,255,255,1); stroke: #1e3a8a; stroke-width:2; fill-rule:evenodd;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 208C416 253.9 401.1 296.3 375.1 330.7L502.6 457.4C515.1 469.9 515.1 490.1 502.6 502.6C490.1 515.1 469.9 515.1 457.4 502.6L330.7 375.1C296.3 401.1 253.9 416 208 416C93.12 416 0 322.9 0 208C0 93.12 93.12 0 208 0C322.9 0 416 93.12 416 208zM240.1 119C231.6 109.7 216.4 109.7 207 119C197.7 128.4 197.7 143.6 207 152.1L238.1 184H120C106.7 184 96 194.7 96 208C96 221.3 106.7 232 120 232H238.1L207 263C197.7 272.4 197.7 287.6 207 296.1C216.4 306.3 231.6 306.3 240.1 296.1L312.1 224.1C322.3 215.6 322.3 200.4 312.1 191L240.1 119z"/></svg>
                             </div>
                         </div>
                     </div>

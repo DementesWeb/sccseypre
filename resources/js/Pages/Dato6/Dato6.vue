@@ -16,6 +16,17 @@
 
         <Tabla-Dato-6 :ceddato6="ceddato6"></Tabla-Dato-6>
 
+        <div 
+        v-if="ceddato6.total === 0"
+        >
+            <div class="flex justify-center">
+
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                    La Cédula: "{{search}}" no se encontro en la base de datos.
+                </h2>
+            </div>
+        </div>
+
     </app-layout>
 </template>
 

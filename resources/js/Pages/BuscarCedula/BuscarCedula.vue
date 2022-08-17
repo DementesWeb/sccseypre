@@ -57,6 +57,29 @@
         <!-- CUSTOMER -->
         <Tabla-Customer :customer="customer"></Tabla-Customer>
 
+        <div 
+        v-if="ceddato1.total === 0 &&
+            ceddato2.total === 0 &&
+            ceddato3.total === 0 &&
+            ceddato4.total === 0 &&
+            ceddato5.total === 0 &&
+            ceddato6.total === 0 &&
+            ceddato7.total === 0 &&
+            ceddato8.total === 0 && 
+            ceddato9.total === 0 && 
+            cedtelefono.total === 0 && 
+            customer.total === 0"
+        >
+            <div class="flex justify-center">
+
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        
+                     Cédula: " {{search}} " sin registro en la Base de Datos
+                </h2>
+            </div>
+        </div>
+        
+
     </app-layout>
 </template>
 
