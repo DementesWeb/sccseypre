@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Telefonos 4">
+    <app-layout title="Naturgy">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Teléfonos 4
+                Naturgy
             </h2>
         </template>
         <div class="container py-6 max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">

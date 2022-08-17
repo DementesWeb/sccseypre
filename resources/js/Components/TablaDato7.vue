@@ -153,7 +153,7 @@
             >
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
-                        <h2 class="py-4 px-12 font-bold text-xl">Dato 7</h2>
+                        <h2 class="py-4 px-12 font-bold text-xl">Enero 2022</h2>
                         <!-- component -->
                         <div
                             class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"

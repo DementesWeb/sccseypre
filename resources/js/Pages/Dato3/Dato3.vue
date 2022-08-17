@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Fecha de Nacimiento 1">
+    <app-layout title="Padron 1">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Fecha de Nacimiento 1
+                Padron 1
             </h2>
         </template>
         <div class="container py-6 max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">
