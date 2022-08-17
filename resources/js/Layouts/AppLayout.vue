@@ -63,35 +63,35 @@
 
                                                 <!-- Datos Settings -->
                                                 <jet-dropdown-link :href="route('Telefono')" :active="route().current('Telefono')">
-                                                    TELÉFONO
+                                                    Tel Final
                                                 </jet-dropdown-link>
 
                                                 <jet-dropdown-link :href="route('Dato1')" :active="route().current('Dato1')">
-                                                    DATOS 1
+                                                    Tigo 2021
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato2')" :active="route().current('Dato2')">
-                                                    DATOS 2
+                                                    Cable Onda 2020
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato3')" :active="route().current('Dato3')">
-                                                    DATOS 3
+                                                    Padron 1
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato4')" :active="route().current('Dato4')">
-                                                    DATOS 4
+                                                    Padron 2
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato5')" :active="route().current('Dato5')">
-                                                    DATOS 5
+                                                    Datos Enero 2022
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato6')" :active="route().current('Dato6')">
-                                                    DATOS 6
+                                                    Naturgy
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato7')" :active="route().current('Dato7')">
-                                                    DATOS 7
+                                                    Enero 2022
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato8')" :active="route().current('Dato8')">
-                                                    DATOS 8
+                                                    Mayo 2022
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato9')" :active="route().current('Dato9')">
-                                                    DATOS 9
+                                                    IDAAN
                                                 </jet-dropdown-link>
 
                                                 <div class="border-t border-gray-100"></div>
@@ -137,9 +137,6 @@
                                                 <jet-dropdown-link :href="route('security.create')">
                                                     Crear Usuarios
                                                 </jet-dropdown-link>
-                                                <div class="block px-4 py-2 text-xs text-gray-400">
-                                                    Administrar equipo
-                                                </div>
                                             </template>
                                         </div>
                                     </template>
