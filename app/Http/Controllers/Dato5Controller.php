@@ -18,7 +18,7 @@ class Dato5Controller extends Controller
         $ceddato5 = Dato5::latest()
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('CEDULA',$search);
-        })->paginate(6);
+        })->paginate(50);
 
         $ceddato5 = cache('cachedb',$ceddato5,now()->addWeek());
 

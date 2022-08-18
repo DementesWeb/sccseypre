@@ -18,7 +18,7 @@ class Dato2Controller extends Controller
         $ceddato2 = Dato2::latest()
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('cedula',$search);
-        })->paginate(6);
+        })->paginate(50);
 
         $ceddato2 = cache('cachedb',$ceddato2,now()->addWeek());
 

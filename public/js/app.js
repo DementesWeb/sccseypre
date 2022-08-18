@@ -28360,7 +28360,7 @@ var _hoisted_3 = {
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "form-check-label inline-block mx-4 text-gray-800",
   "for": "flexSwitchCheckChecked"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Cambiar Tipo de Vista: "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Datos Enero 2022")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Cambiar Tipo de Vista: "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Datos Junio 2022")], -1
 /* HOISTED */
 );
 
@@ -28625,7 +28625,7 @@ var _hoisted_52 = {
 
 var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "py-4 px-12 font-bold text-xl"
-}, "Datos Enero 2022", -1
+}, "Datos Junio 2022", -1
 /* HOISTED */
 );
 
@@ -32478,7 +32478,7 @@ var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNo
 
 var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Padron 2 ");
 
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Datos Enero 2022 ");
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Datos Junio 2022 ");
 
 var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Naturgy ");
 
@@ -34567,19 +34567,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Tabla_Dato_2 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-2");
 
-  var _component_Tabla_Dato_6 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-6");
-
-  var _component_Tabla_Dato_9 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-9");
-
   var _component_Tabla_Dato_3 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-3");
 
   var _component_Tabla_Dato_4 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-4");
 
   var _component_Tabla_Dato_5 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-5");
 
+  var _component_Tabla_Dato_6 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-6");
+
   var _component_Tabla_Dato_7 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-7");
 
   var _component_Tabla_Dato_8 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-8");
+
+  var _component_Tabla_Dato_9 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-9");
 
   var _component_Tabla_Customer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Customer");
 
@@ -34614,15 +34614,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         ceddato2: $props.ceddato2
       }, null, 8
       /* PROPS */
-      , ["ceddato2"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_6, {
-        ceddato6: $props.ceddato6
-      }, null, 8
-      /* PROPS */
-      , ["ceddato6"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_9, {
-        ceddato9: $props.ceddato9
-      }, null, 8
-      /* PROPS */
-      , ["ceddato9"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_3, {
+      , ["ceddato2"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_3, {
         ceddato3: $props.ceddato3
       }, null, 8
       /* PROPS */
@@ -34634,7 +34626,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         ceddato5: $props.ceddato5
       }, null, 8
       /* PROPS */
-      , ["ceddato5"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_7, {
+      , ["ceddato5"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_6, {
+        ceddato6: $props.ceddato6
+      }, null, 8
+      /* PROPS */
+      , ["ceddato6"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_7, {
         ceddato7: $props.ceddato7
       }, null, 8
       /* PROPS */
@@ -34642,11 +34638,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         ceddato8: $props.ceddato8
       }, null, 8
       /* PROPS */
-      , ["ceddato8"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Customer, {
+      , ["ceddato8"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_9, {
+        ceddato9: $props.ceddato9
+      }, null, 8
+      /* PROPS */
+      , ["ceddato9"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Customer, {
         customer: $props.customer
       }, null, 8
       /* PROPS */
-      , ["customer"]), $props.ceddato1.total === 0 && $props.ceddato2.total === 0 && $props.ceddato3.total === 0 && $props.ceddato4.total === 0 && $props.ceddato5.total === 0 && $props.ceddato6.total === 0 && $props.ceddato7.total === 0 && $props.ceddato8.total === 0 && $props.ceddato9.total === 0 && $props.cedtelefono.total === 0 && $props.customer.total === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_5, " Cédula: \" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.search) + " \" sin registro en la Base de Datos ", 1
+      , ["customer"]), $props.ceddato1.total === 0 && $props.ceddato2.total === 0 && $props.ceddato3.total === 0 && $props.ceddato4.total === 0 && $props.ceddato5.total === 0 && $props.ceddato6.total === 0 && $props.ceddato7.total === 0 && $props.ceddato8.total === 0 && $props.ceddato9.total === 0 && $props.cedtelefono.total === 0 && $props.customer.total === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_5, " Cédula: \" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.search) + " \" sin registro en la Base de Datos. ", 1
       /* TEXT */
       )])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -37260,7 +37260,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "font-semibold text-xl text-gray-800 leading-tight"
-}, " Datos Enero 2022 ", -1
+}, " Datos Junio 2022 ", -1
 /* HOISTED */
 );
 
@@ -37284,7 +37284,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_app_layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("app-layout");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_app_layout, {
-    title: "Datos Enero 2022"
+    title: "Datos Junio 2022"
   }, {
     header: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_1];

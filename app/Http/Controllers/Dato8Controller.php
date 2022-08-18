@@ -23,7 +23,7 @@ class Dato8Controller extends Controller
         $ceddato8 = Dato8::latest()
                     ->when($filters['search'] ?? null, function($query, $search){
                     $query->where('CEDULA',$search);
-                    })->paginate(10);
+                    })->paginate(50);
         
         $ceddato8 = cache('cachedb',$ceddato8,now()->addWeek());
         

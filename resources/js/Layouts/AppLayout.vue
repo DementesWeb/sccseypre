@@ -79,7 +79,7 @@
                                                     Padron 2
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato5')" :active="route().current('Dato5')">
-                                                    Datos Enero 2022
+                                                    Datos Junio 2022
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato6')" :active="route().current('Dato6')">
                                                     Naturgy
