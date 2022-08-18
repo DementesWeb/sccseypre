@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Padron 1">
+    <app-layout title="Tribunales 1">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Padron 1
+                Tribunales 1
             </h2>
         </template>
         <div class="container py-6 max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">

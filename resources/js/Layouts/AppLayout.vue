@@ -73,10 +73,10 @@
                                                     Cable Onda 2020
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato3')" :active="route().current('Dato3')">
-                                                    Padron 1
+                                                    Tribunales 1
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato4')" :active="route().current('Dato4')">
-                                                    Padron 2
+                                                    Tribunales 2
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato5')" :active="route().current('Dato5')">
                                                     Datos Junio 2022
