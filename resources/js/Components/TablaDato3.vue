@@ -2,7 +2,7 @@
     <div v-if="ceddato3.total>=1">
         <div class="flex justify-center">
             <div class="form-check form-switch">
-                <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista: <strong>Padron 1</strong> </label>
+                <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista: <strong>Tribunales 1</strong> </label>
                 <button class="ui btn-blue toggle" :class="{active:isActive}" @click="isActive = !isActive" >{{isActive ? 'Tarjeta' : 'Tabla'}}</button>
             </div>
         </div>
@@ -91,7 +91,7 @@
             <div class="container py-6 max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
-                        <h2 class="py-4 px-12 font-bold text-xl">Padron 1</h2>
+                        <h2 class="py-4 px-12 font-bold text-xl">Tribunales 1</h2>
                         <!-- component -->
                         <div
                             class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
