@@ -28,47 +28,47 @@ class BuscarCedulaController extends Controller
         $ceddato1 = Dato1::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CEDULA',$search);
-            })->paginate(6);
+            })->paginate(10);
         $ceddato2 = Dato2::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('cedula',$search);
-            })->paginate(6);
+            })->paginate(10);
         $ceddato3 = Dato3::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CEDULA',$search);
-            })->paginate(6);
+            })->paginate(10);
         $ceddato4 = Dato4::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CEDULA',$search);
-            })->paginate(6);
+            })->paginate(10);
         $ceddato5 = Dato5::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CEDULA',$search);
-            })->paginate(6);
+            })->paginate(10);
         $cedtelefono = Telefono::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CED',$search);
-            })->paginate(6);
+            })->paginate(10);
         $customer = Customer::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('cedula',$search);
-            })->paginate(6);
+            })->paginate(10);
             $ceddato6 = Dato6::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CEDULA',$search);
-            })->paginate(6);
+            })->paginate(10);
         $ceddato7 = Dato7::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('cedula',$search);
-            })->paginate(6);
+            })->paginate(10);
         $ceddato8 = Dato8::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CEDULA',$search);
-            })->paginate(6);
+            })->paginate(10);
         $ceddato9 = Dato9::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CEDULA',$search);
-            })->paginate(6);
+            })->paginate(10);
 
         $ceddato1 = cache('cached1',$ceddato1,now()->addWeek());
         $ceddato2 = cache('cached2',$ceddato2,now()->addWeek());

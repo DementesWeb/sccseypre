@@ -18,7 +18,7 @@ class Dato3Controller extends Controller
         $ceddato3 = Dato3::latest()
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('CEDULA',$search);
-        })->paginate(6);
+        })->paginate(50);
 
         $ceddato3 = cache('cachedb',$ceddato3,now()->addWeek());
         

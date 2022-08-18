@@ -18,7 +18,7 @@ class Dato7Controller extends Controller
         $ceddato7 = Dato7::latest()
                     ->when($filters['search'] ?? null, function($query, $search){
                     $query->where('cedula',$search);
-                    })->paginate(6);
+                    })->paginate(50);
         $ceddato7 = cache('cachedb',$ceddato7,now()->addWeek());
         return Inertia::render('Dato7/Dato7', ['ceddato7'=>$ceddato7, 'filters'=>$filters]);
     }

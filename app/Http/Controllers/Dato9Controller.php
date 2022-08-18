@@ -19,7 +19,7 @@ class Dato9Controller extends Controller
             ->when($filters['search'] ?? null, function($query, $search){
             /* $query->where('cedula', 'like', '%' . $search . '%'); */
             $query->where('cedula', $search);
-        })->paginate(6);
+        })->paginate(50);
 
         $ceddato9 = cache('cachedb',$ceddato9,now()->addWeek());
 

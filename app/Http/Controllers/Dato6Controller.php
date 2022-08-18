@@ -19,7 +19,7 @@ class Dato6Controller extends Controller
         $ceddato6 = Dato6::latest()
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('CEDULA',$search);
-        })->paginate(6);
+        })->paginate(50);
 
         $ceddato6 = cache('cachedb',$ceddato6,now()->addWeek());
 

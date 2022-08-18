@@ -18,7 +18,7 @@ class TelefonoController extends Controller
         $cedtelefono = Telefono::latest()
             ->when($filters['search'] ?? null, function($query, $search){
             $query->where('CED',$search);
-        })->paginate(6);
+        })->paginate(50);
         
         $cedtelefono = cache('cachedb',$cedtelefono,now()->addWeek());
 

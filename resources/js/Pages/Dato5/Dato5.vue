@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Datos Enero 2022">
+    <app-layout title="Datos Junio 2022">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Datos Enero 2022
+                Datos Junio 2022
             </h2>
         </template>
         <div class="container py-6 max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">
