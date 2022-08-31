@@ -93,6 +93,9 @@
                                                 <jet-dropdown-link :href="route('Dato9')" :active="route().current('Dato9')">
                                                     IDAAN
                                                 </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato10')" :active="route().current('Dato10')">
+                                                    Planilla IDAAN 2021
+                                                </jet-dropdown-link>
 
                                                 <div class="border-t border-gray-100"></div>
 
