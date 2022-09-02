@@ -96,6 +96,9 @@
                                                 <jet-dropdown-link :href="route('Dato10')" :active="route().current('Dato10')">
                                                     Planilla IDAAN 2021
                                                 </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato11')" :active="route().current('Dato11')">
+                                                    Planilla de Personal FIJO 2020
+                                                </jet-dropdown-link>
 
                                                 <div class="border-t border-gray-100"></div>
 
