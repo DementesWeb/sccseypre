@@ -92,12 +92,9 @@ Route::get('/dato9', [Dato9Controller::class,'Index'])->name('Dato9');
 Route::get('/dato10', [Dato10Controller::class,'Index'])->name('Dato10');
 Route::get('/dato11', [Dato11Controller::class,'Index'])->name('Dato11');
 Route::get('/dato12', [Dato12Controller::class,'Index'])->name('Dato12');
-<<<<<<< HEAD
 Route::get('/dato13', [Dato13Controller::class,'Index'])->name('Dato13');
 Route::get('/dato14', [Dato14Controller::class,'Index'])->name('Dato14');
-=======
 Route::get('/dato15', [Dato15Controller::class,'Index'])->name('Dato15');
->>>>>>> 4e19a2110c2168e772d168c4a1f9b9551a488f75
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 Route::get('/BusquedaMultiple', [BusquedaMultipleController::class,'Index'])->name('BusquedaMultiple'); 
 
