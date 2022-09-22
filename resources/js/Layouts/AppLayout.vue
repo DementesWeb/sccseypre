@@ -101,8 +101,12 @@
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato13')" :active="route().current('Dato13')">
                                                     Banco Hipotecario Planilla
+                                                </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato12')" :active="route().current('Dato12')">
                                                     Planilla Diciembre 2020 IDAAN
+                                                </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato15')" :active="route().current('Dato15')">
+                                                    ADM DIC 2020
                                                 </jet-dropdown-link>
 
                                                 <div class="border-t border-gray-100"></div>
