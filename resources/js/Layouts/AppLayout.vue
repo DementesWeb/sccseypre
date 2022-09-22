@@ -99,6 +99,9 @@
                                                 <jet-dropdown-link :href="route('Dato11')" :active="route().current('Dato11')">
                                                     Planilla de Personal FIJO 2020
                                                 </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato13')" :active="route().current('Dato13')">
+                                                    Banco Hipotecario Planilla
+                                                </jet-dropdown-link>
 
                                                 <div class="border-t border-gray-100"></div>
 
