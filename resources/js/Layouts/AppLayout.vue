@@ -99,6 +99,8 @@
                                                 <jet-dropdown-link :href="route('Dato11')" :active="route().current('Dato11')">
                                                     Planilla de Personal FIJO 2020
                                                 </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato13')" :active="route().current('Dato13')">
+                                                    Banco Hipotecario Planilla
                                                 <jet-dropdown-link :href="route('Dato12')" :active="route().current('Dato12')">
                                                     Planilla Diciembre 2020 IDAAN
                                                 </jet-dropdown-link>
