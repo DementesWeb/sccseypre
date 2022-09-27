@@ -120,6 +120,9 @@
                                                 <jet-dropdown-link :href="route('Dato20')" :active="route().current('Dato20')">
                                                     Universidad Panama 2
                                                 </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato22')" :active="route().current('Dato22')">
+                                                    Planilla SENNIAF 2021
+                                                </jet-dropdown-link>
 
                                                 <div class="border-t border-gray-100"></div>
 
