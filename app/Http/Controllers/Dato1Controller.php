@@ -22,6 +22,6 @@ class Dato1Controller extends Controller
 
         $ceddato1 = cache('cachedb',$ceddato1,now()->addWeek());
 
-        return Inertia::render('Dato1/Dato1', ['ceddato1'=>$ceddato1, 'filters'=>$filters]);
+        return Inertia::render('Datos/Dato1', ['ceddato1'=>$ceddato1, 'filters'=>$filters]);
     }
 }

@@ -20,6 +20,6 @@ class Dato7Controller extends Controller
                     $query->where('cedula',$search);
                     })->paginate(50);
         $ceddato7 = cache('cachedb',$ceddato7,now()->addWeek());
-        return Inertia::render('Dato7/Dato7', ['ceddato7'=>$ceddato7, 'filters'=>$filters]);
+        return Inertia::render('Datos/Dato7', ['ceddato7'=>$ceddato7, 'filters'=>$filters]);
     }
 }

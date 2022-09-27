@@ -27,6 +27,6 @@ class Dato8Controller extends Controller
         
         $ceddato8 = cache('cachedb',$ceddato8,now()->addWeek());
         
-        return Inertia::render('Dato8/Dato8', ['ceddato8'=>$ceddato8, 'filters'=>$filters]);
+        return Inertia::render('Datos/Dato8', ['ceddato8'=>$ceddato8, 'filters'=>$filters]);
     }
 }

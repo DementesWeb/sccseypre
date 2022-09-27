@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="ASEP Planilla Enero 2020">
+    <app-layout title="Universidad Panama 2">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                ASEP Planilla Enero 2020
+                Universidad Panama 2
             </h2>
         </template>
         <div class="container py-6 max-w-7xl mx-auto my-4 px-4 sm:px-6 lg:px-8">
@@ -14,9 +14,9 @@
             />
         </div>
   
-        <Tabla-Dato-18  :dato18="dato18"></Tabla-Dato-18>
+        <Tabla-Dato-20 :dato20="dato20"></Tabla-Dato-20>
   
-        <div v-if="dato18.total === 0">
+        <div v-if="dato20.total === 0">
             <div class="flex justify-center">
                 <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                     La Búsqueda: "{{ search }}" no se encontro en la base de
@@ -25,10 +25,6 @@
             </div>
         </div>
   
-        <!-- <pre>{{ dato18 }}</pre> -->
-  
-        
-  
     </app-layout>
   </template>
   
@@ -36,14 +32,16 @@
   import AppLayout from "@/Layouts/AppLayout.vue";
   import Input from "@/Jetstream/Input.vue";
   import Pagination from "@/Components/Pagination.vue";
-  import TablaDato18 from "@/Components/TablaDato18.vue";
+  import TablaDato20 from "@/Components/TablaDato20.vue";
   
   export default {
+  methods: {
+  },
     components: {
         AppLayout,
         Input,
         Pagination,
-        TablaDato18,
+        TablaDato20,
     },
   
     data() {
@@ -55,7 +53,7 @@
     watch: {
         search($value) {
             this.$inertia.get(
-                "/dato18",
+                "/dato20",
                 {
                     search: $value,
                 },
@@ -67,7 +65,7 @@
     },
   
     props: {
-        dato18: Object,
+        dato20: Object,
         filters: Object,
     },
   };

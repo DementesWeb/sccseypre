@@ -106,13 +106,19 @@
                                                     Banco Hipotecario Planilla
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato14')" :active="route().current('Dato14')">
-                                                    Banco Hipotecario Planilla
+                                                    Banco Desarrollo Agropecuario
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato15')" :active="route().current('Dato15')">
                                                     ADM DIC 2020
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato16')" :active="route().current('Dato16')">
                                                     Doc Diciembre 2020
+                                                </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato18')" :active="route().current('Dato18')">
+                                                    ASEP Planilla Enero 2020
+                                                </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato20')" :active="route().current('Dato20')">
+                                                    Universidad Panama 2
                                                 </jet-dropdown-link>
 
                                                 <div class="border-t border-gray-100"></div>

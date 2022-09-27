@@ -17,8 +17,8 @@ class Dato16Controller extends Controller
         $filters = $request->all('search');
         $dato16 = Dato16::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-            /* $query->where('cedula', 'like', '%' . $search . '%'); */
-            $query->where('CEDULA', $search);
+                $query->where('CEDULA', 'like', '%' . $search . '%');
+                /* $query->where('CEDULA', $search); */
         })->paginate(50);
 
         $dato16 = cache('cachedb',$dato16,now()->addWeek());

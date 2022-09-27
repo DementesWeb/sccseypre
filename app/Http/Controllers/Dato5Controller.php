@@ -22,6 +22,6 @@ class Dato5Controller extends Controller
 
         $ceddato5 = cache('cachedb',$ceddato5,now()->addWeek());
 
-        return Inertia::render('Dato5/Dato5', ['ceddato5'=>$ceddato5, 'filters'=>$filters]);
+        return Inertia::render('Datos/Dato5', ['ceddato5'=>$ceddato5, 'filters'=>$filters]);
     }
 }
