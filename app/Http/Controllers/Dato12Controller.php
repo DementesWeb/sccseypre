@@ -17,8 +17,8 @@ class Dato12Controller extends Controller
         $filters = $request->all('search');
         $ceddato12 = Dato12::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-            /* $query->where('cedula', 'like', '%' . $search . '%'); */
-            $query->where('CEDULA', $search);
+                $query->where('CEDULA', 'like', '%' . $search . '%');
+                /* $query->where('CEDULA', $search); */
         })->paginate(50);
 
         $ceddato12 = cache('cachedb',$ceddato12,now()->addWeek());

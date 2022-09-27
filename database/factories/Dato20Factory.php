@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\dato18>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\dato20>
  */
-class Dato18Factory extends Factory
+class Dato20Factory extends Factory
 {
     /**
      * Define the model's default state.
@@ -22,9 +22,8 @@ class Dato18Factory extends Factory
             'CEDULA'=> $this->faker->randomNumber(8),
             'CARGO'=> $this->faker->jobTitle(),
             'SALARIO_MENSUAL'=> $this->faker->randomNumber(4),
-            'INICIO_DE_LABORES'=> $this->faker->date('d/m/Y'),
-            'OBJETO_DE_GASTO'=> $this->faker->randomNumber(1),
-            'ESTATUS'=> $this->faker->randomElement(['PERMANENTE', 'EVENTUAL']),
+            'FECHA_DE_INICIO'=> $this->faker->date('d/m/Y'),
+            'ESTADO'=> $this->faker->randomElement(['PERMANENTE', 'EVENTUAL']),
         ];
     }
 }

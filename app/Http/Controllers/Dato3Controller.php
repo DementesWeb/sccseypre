@@ -22,6 +22,6 @@ class Dato3Controller extends Controller
 
         $ceddato3 = cache('cachedb',$ceddato3,now()->addWeek());
         
-        return Inertia::render('Dato3/Dato3', ['ceddato3'=>$ceddato3, 'filters'=>$filters]);
+        return Inertia::render('Datos/Dato3', ['ceddato3'=>$ceddato3, 'filters'=>$filters]);
     }
 }
