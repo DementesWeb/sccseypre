@@ -270,7 +270,7 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Salario Total:
+                                                Estatus:
                                                 <span class="font-bold">
                                                     {{ items.ESTATUS }}
                                                 </span>
