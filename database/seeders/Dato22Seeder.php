@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\dato20;
+use App\Models\dato22;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class Dato20Seeder extends Seeder
+class Dato22Seeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class Dato20Seeder extends Seeder
      */
     public function run()
     {
-        dato20::factory(50)->create();
+        dato22::factory(50)->create();
     }
 }
