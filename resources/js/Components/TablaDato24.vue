@@ -1,11 +1,11 @@
 <template>
-    <div v-if="dato18.total >= 1">
+    <div v-if="dato24.total >= 1">
         <div class="flex justify-center">
             <div class="form-check form-switch">
                 <label
                     class="form-check-label inline-block mx-4 text-gray-800"
                     for="flexSwitchCheckChecked"
-                    >Cambiar Tipo de Vista: <strong>ASEP Planilla Enero 2020</strong>
+                    >Cambiar Tipo de Vista: <strong>ANATI Planilla Final</strong>
                 </label>
                 <button
                     class="ui btn-blue toggle"
@@ -94,7 +94,7 @@
                                             class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700"
                                         >
                                             <tr
-                                                v-for="items in dato18.data"
+                                                v-for="items in dato24.data"
                                                 :key="items.id"
                                                 class="hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-900"
                                             >
@@ -121,7 +121,7 @@
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.SALARIO_MENSUAL }}
+                                                    {{ items.SALARIO }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -146,7 +146,7 @@
                                         </tbody>
                                     </table>
                                     <Pagination
-                                        :pagination="dato18"
+                                        :pagination="dato24"
                                     ></Pagination>
                                 </div>
                             </div>
@@ -163,13 +163,13 @@
             >
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
-                        <h2 class="py-4 px-12 font-bold text-xl">ASEP Planilla Enero 2020</h2>
+                        <h2 class="py-4 px-12 font-bold text-xl">ANATI Planilla Final</h2>
                         <!-- component -->
                         <div
                             class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
                         >
                             <template
-                                v-for="items in dato18.data"
+                                v-for="items in dato24.data"
                                 :key="items.id"
                             >
                                 <!-- Card 1 -->
@@ -248,7 +248,7 @@
                                             >
                                                 Salario Mensual:
                                                 <span class="font-bold">
-                                                    {{ items.SALARIO_MENSUAL }}
+                                                    {{ items.SALARIO }}
                                                 </span>
                                             </p>
                                             <p
@@ -281,7 +281,7 @@
                                 </div>
                             </template>
                         </div>
-                        <Pagination :pagination="dato18"></Pagination>
+                        <Pagination :pagination="dato24"></Pagination>
                     </div>
                 </div>
             </div>
@@ -296,7 +296,7 @@
         Pagination,
     },
     props: {
-        dato18: Object,
+        dato24: Object,
         filters: Object,
     },
     data() {
