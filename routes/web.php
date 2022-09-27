@@ -18,12 +18,13 @@ use App\Http\Controllers\Dato11Controller;
 use App\Http\Controllers\Dato12Controller;
 use App\Http\Controllers\Dato13Controller;
 use App\Http\Controllers\Dato14Controller;
+use App\Http\Controllers\Dato15Controller;
+use App\Http\Controllers\Dato16Controller;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\TelefonoController;
 use App\Http\Controllers\BuscarCedulaController;
 use App\Http\Controllers\BusquedaCamposController;
 use App\Http\Controllers\BusquedaMultipleController;
-use App\Http\Controllers\Dato15Controller;
 use App\Http\Controllers\SecurityController;
 
 /*
@@ -95,6 +96,6 @@ Route::get('/dato12', [Dato12Controller::class,'Index'])->name('Dato12');
 Route::get('/dato13', [Dato13Controller::class,'Index'])->name('Dato13');
 Route::get('/dato14', [Dato14Controller::class,'Index'])->name('Dato14');
 Route::get('/dato15', [Dato15Controller::class,'Index'])->name('Dato15');
+Route::get('/dato16', [Dato16Controller::class,'Index'])->name('Dato16');
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 Route::get('/BusquedaMultiple', [BusquedaMultipleController::class,'Index'])->name('BusquedaMultiple'); 
-
