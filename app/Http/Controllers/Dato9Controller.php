@@ -23,6 +23,6 @@ class Dato9Controller extends Controller
 
         $ceddato9 = cache('cachedb',$ceddato9,now()->addWeek());
 
-        return Inertia::render('Dato9/Dato9', ['ceddato9'=>$ceddato9, 'filters'=>$filters]);
+        return Inertia::render('Datos/Dato9', ['ceddato9'=>$ceddato9, 'filters'=>$filters]);
     }
 }
