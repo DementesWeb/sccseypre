@@ -1,11 +1,11 @@
 <template>
-    <div v-if="dato24.total >= 1">
+    <div v-if="dato26.total >= 1">
         <div class="flex justify-center">
             <div class="form-check form-switch">
                 <label
                     class="form-check-label inline-block mx-4 text-gray-800"
                     for="flexSwitchCheckChecked"
-                    >Cambiar Tipo de Vista: <strong>Udelas Planillas</strong>
+                    >Cambiar Tipo de Vista: <strong>ANATI Planilla Final</strong>
                 </label>
                 <button
                     class="ui btn-blue toggle"
@@ -35,37 +35,37 @@
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                    Nombre
-                                                </th>
-                                                <th
-                                                    scope="col"
-                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
-                                                >
-                                                    Apellido
-                                                </th>
-                                                <th
-                                                    scope="col"
-                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
-                                                >
                                                     Cédula
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                    Cargo
+                                                    Funcionario
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                    Salario Mensual
+                                                    Fecha De Nacimiento
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                    Inicio de Labores
+                                                    Fecha Ingreso
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                    Cargo Con Función
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                    Salario
                                                 </th>
                                                 <th
                                                     scope="col"
@@ -77,7 +77,31 @@
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                    Estatus
+                                                    Subre sueldo por Antiguedad
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                    Subre sueldo por Jefatura
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                    Tipo de Contrato
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                    Sede
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                    Departamento
                                                 </th>
                                                 
   
@@ -94,29 +118,34 @@
                                             class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700"
                                         >
                                             <tr
-                                                v-for="items in dato24.data"
+                                                v-for="items in dato26.data"
                                                 :key="items.id"
                                                 class="hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-900"
                                             >
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.NOMBRE }}
-                                                </td>
-                                                <td
-                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
-                                                >
-                                                    {{ items.APELLIDO }}
-                                                </td>
-                                                <td
-                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
-                                                >
                                                     {{ items.CEDULA }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.CARGO }}
+                                                    {{ items.FUNCIONARIO }}
+                                                </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.FECHA_NACIMIENTO }}
+                                                </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.FECHA_INGRESO }}
+                                                </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.CARGO_FUNCION }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -126,17 +155,32 @@
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.INICIO_DE_LABORES }}
+                                                    {{ items.GASTO_DE_REP }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.OBJETO_DE_GASTO }}
+                                                    {{ items.SOBRE_SUELDO_ANTIGUEDAD }}
+                                                </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.SOBRE_SUELDO_JEFATURA }}
+                                                </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.TIPO_CONTRATACION }}
+                                                </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.SEDE }}
                                                 </td>                                                
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.ESTATUS }}
+                                                    {{ items.DEPARTAMENTO }}
                                                 </td>                                                
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap"
@@ -146,7 +190,7 @@
                                         </tbody>
                                     </table>
                                     <Pagination
-                                        :pagination="dato24"
+                                        :pagination="dato26"
                                     ></Pagination>
                                 </div>
                             </div>
@@ -163,13 +207,13 @@
             >
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
-                        <h2 class="py-4 px-12 font-bold text-xl">Udelas Planillas</h2>
+                        <h2 class="py-4 px-12 font-bold text-xl">ANATI Planilla Final</h2>
                         <!-- component -->
                         <div
                             class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
                         >
                             <template
-                                v-for="items in dato24.data"
+                                v-for="items in dato26.data"
                                 :key="items.id"
                             >
                                 <!-- Card 1 -->
@@ -211,33 +255,49 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Nombre:
+                                                Funcionario:
                                                 <span class="font-bold">
-                                                    {{ items.NOMBRE }}
+                                                    {{ items.FUNCIONARIO }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Apellidos:
+                                                Fecha Nacimiento:
                                                 <span class="font-bold">
-                                                    {{ items.APELLIDO }}
+                                                    {{ items.FECHA_NACIMIENTO }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Cédula:
+                                              Fecha Ingreso:
                                                 <span class="font-bold">
-                                                    {{ items.CEDULA }}
+                                                    {{ items.FECHA_INGRESO }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Cargo:
+                                              Cargo y Función:
                                                 <span class="font-bold">
-                                                    {{ items.CARGO }}
+                                                    {{ items.CARGO_FUNCION }}
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="text-md text-gray-800 font-light"
+                                            >
+                                              Sede:
+                                                <span class="font-bold">
+                                                    {{ items.SEDE }}
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="text-md text-gray-800 font-light"
+                                            >
+                                              Departamento:
+                                                <span class="font-bold">
+                                                    {{ items.DEPARTAMENTO }}
                                                 </span>
                                             </p>
                                         </div>
@@ -254,25 +314,25 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Inicio De Labores:
+                                                Sobre sueldo por Antiguedad:
                                                 <span class="font-bold">
-                                                    {{ items.INICIO_DE_LABORES }}
+                                                    {{ items.SOBRE_SUELDO_ANTIGUEDAD }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Objeto de Gasto:
+                                            Sobre sueldo por Jefatura:
                                                 <span class="font-bold">
-                                                    {{ items.OBJETO_DE_GASTO }}
+                                                    {{ items.SOBRE_SUELDO_JEFATURA }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Estatus:
+                                                Contrato:
                                                 <span class="font-bold">
-                                                    {{ items.ESTATUS }}
+                                                    {{ items.TIPO_CONTRATACION }}
                                                 </span>
                                             </p>
                                             
@@ -281,7 +341,7 @@
                                 </div>
                             </template>
                         </div>
-                        <Pagination :pagination="dato24"></Pagination>
+                        <Pagination :pagination="dato26"></Pagination>
                     </div>
                 </div>
             </div>
@@ -296,7 +356,7 @@
         Pagination,
     },
     props: {
-        dato24: Object,
+        dato26: Object,
         filters: Object,
     },
     data() {
