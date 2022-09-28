@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="ANATI Planilla Final">
+    <app-layout title="Udelas Planillas">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                ANATI Planilla Final
+                Udelas Planillas
             </h2>
         </template>
         <div class="container py-6 max-w-7xl mx-auto my-4 px-4 sm:px-6 lg:px-8">
@@ -14,9 +14,9 @@
             />
         </div>
   
-        <Tabla-Dato-24  :dato24="dato24"></Tabla-Dato-24>
+        <Tabla-Dato-26  :dato26="dato26"></Tabla-Dato-26>
   
-        <div v-if="dato24.total === 0">
+        <div v-if="dato26.total === 0">
             <div class="flex justify-center">
                 <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                     La Búsqueda: "{{ search }}" no se encontro en la base de
@@ -32,14 +32,14 @@
   import AppLayout from "@/Layouts/AppLayout.vue";
   import Input from "@/Jetstream/Input.vue";
   import Pagination from "@/Components/Pagination.vue";
-  import TablaDato24 from "@/Components/TablaDato24.vue";
+  import TablaDato26 from "@/Components/TablaDato26.vue";
   
   export default {
     components: {
         AppLayout,
         Input,
         Pagination,
-        TablaDato24,
+        TablaDato26,
     },
   
     data() {
@@ -51,7 +51,7 @@
     watch: {
         search($value) {
             this.$inertia.get(
-                "/dato24",
+                "/dato26",
                 {
                     search: $value,
                 },
@@ -63,7 +63,7 @@
     },
   
     props: {
-        dato24: Object,
+        dato26: Object,
         filters: Object,
     },
   };
