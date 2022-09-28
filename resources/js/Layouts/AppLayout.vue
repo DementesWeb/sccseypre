@@ -114,8 +114,14 @@
                                                 <jet-dropdown-link :href="route('Dato16')" :active="route().current('Dato16')">
                                                     Doc Diciembre 2020
                                                 </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato17')" :active="route().current('Dato17')">
+                                                    Defensoria Canal de Panama
+                                                </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato18')" :active="route().current('Dato18')">
                                                     ASEP Planilla Enero 2020
+                                                </jet-dropdown-link>
+                                                <jet-dropdown-link :href="route('Dato19')" :active="route().current('Dato19')">
+                                                    Envios WhatsOn por Segmentos
                                                 </jet-dropdown-link>
                                                 <jet-dropdown-link :href="route('Dato20')" :active="route().current('Dato20')">
                                                     Universidad Panama 2
