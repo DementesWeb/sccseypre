@@ -42,6 +42,12 @@
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
+                                                    SEXO
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
                                                     APELLIDO PATERNO
                                                 </th>
                                                 <th
@@ -49,6 +55,12 @@
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
                                                     APELLIDO MATERNO
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                    APELLIDO DE CASADA
                                                 </th>
                                                 <th
                                                     scope="col"
@@ -124,6 +136,13 @@
                                                     }}
                                                 </td>
                                                 <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{
+                                                        items.SEXO
+                                                    }}
+                                                </td>
+                                                <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
                                                     {{ items.APELLIDO_PATERNO }}
@@ -132,6 +151,11 @@
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
                                                     {{ items.APELLIDO_MATERNO }}
+                                                </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.APELLIDO_DE_CASADA }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -157,7 +181,7 @@
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
                                                     {{
-                                                        items.GASTO_DE_REPRESENTACIÓN
+                                                        items.GASTO_DE_REPRESENTACION
                                                     }}
                                                 </td>
                                                 <td
@@ -256,6 +280,14 @@
                                             >
                                             Apellido Paterno:
                                                 <span class="font-bold">
+                                                    {{ items.SEXO }}
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="text-md text-gray-800 font-light"
+                                            >
+                                            Apellido Paterno:
+                                                <span class="font-bold">
                                                     {{ items.APELLIDO_PATERNO }}
                                                 </span>
                                             </p>
@@ -265,6 +297,14 @@
                                                 Apellido Materno:
                                                 <span class="font-bold">
                                                     {{ items.APELLIDO_MATERNO }}
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="text-md text-gray-800 font-light"
+                                            >
+                                                Apellido Materno:
+                                                <span class="font-bold">
+                                                    {{ items.APELLIDO_DE_CASADA }}
                                                 </span>
                                             </p>
                                             <p
@@ -308,7 +348,7 @@
                                               Gasto de Representación:
                                               <span class="font-bold">
                                                   {{
-                                                      items.GASTO_DE_REPRESENTACIÓN
+                                                      items.GASTO_DE_REPRESENTACION
                                                   }}
                                               </span>
                                           </p>

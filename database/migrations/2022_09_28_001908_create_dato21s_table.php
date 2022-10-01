@@ -16,13 +16,15 @@ return new class extends Migration
         Schema::create('dato21s', function (Blueprint $table) {
             $table->id();
             $table->string('CONDICION_DEL_NOMBRAMIENTO')->nullable();
+            $table->string('SEXO')->nullable();
             $table->string('APELLIDO_PATERNO')->nullable();
             $table->string('APELLIDO_MATERNO')->nullable();
+            $table->string('APELLIDO_DE_CASADA')->nullable();
             $table->string('PRIMER_NOMBRE')->nullable();
             $table->string('SEGUNDO_NOMBRE')->nullable();
             $table->string('CEDULA')->nullable();
             $table->string('CARGO_REAL')->nullable();
-            $table->string('GASTO_DE_REPRESENTACIÓN')->nullable();
+            $table->string('GASTO_DE_REPRESENTACION')->nullable();
             $table->string('SALARIO_SEGUN_PLANILLA')->nullable();
             $table->string('AREA')->nullable();
             $table->string('FECHA_DE_INICIO')->nullable();

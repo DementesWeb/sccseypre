@@ -1291,10 +1291,6 @@ select {
      -moz-appearance: none;
           appearance: none;
 }
-.columns-3 {
-  -moz-columns: 3;
-       columns: 3;
-}
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
