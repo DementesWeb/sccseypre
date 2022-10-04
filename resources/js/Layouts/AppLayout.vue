@@ -352,6 +352,16 @@
                                                     >
                                                         Planilla SENNIAF 2021
                                                     </jet-dropdown-link>
+                                                    <jet-dropdown-link
+                                                        :href="route('Dato23')"
+                                                        :active="
+                                                            route().current(
+                                                                'Dato23'
+                                                            )
+                                                        "
+                                                    >
+                                                        Instituto Nacional de Cultura Planilla
+                                                    </jet-dropdown-link>
                                                     <div
                                                         class="border-t border-gray-100"
                                                     ></div>
