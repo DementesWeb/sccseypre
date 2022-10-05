@@ -34,6 +34,7 @@ use App\Http\Controllers\BusquedaMultipleController;
 use App\Http\Controllers\Dato19Controller;
 use App\Http\Controllers\Dato21Controller;
 use App\Http\Controllers\Dato23Controller;
+use App\Http\Controllers\Dato25Controller;
 use App\Http\Controllers\SecurityController;
 
 /*
@@ -114,6 +115,7 @@ Route::get('/dato21', [Dato21Controller::class,'Index'])->name('Dato21');
 Route::get('/dato22', [Dato22Controller::class,'Index'])->name('Dato22');
 Route::get('/dato23', [Dato23Controller::class,'Index'])->name('Dato23');
 Route::get('/dato24', [Dato24Controller::class,'Index'])->name('Dato24');
+Route::get('/dato25', [Dato25Controller::class,'Index'])->name('Dato25');
 Route::get('/dato26', [Dato26Controller::class,'Index'])->name('Dato26');
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 Route::get('/BusquedaMultiple', [BusquedaMultipleController::class,'Index'])->name('BusquedaMultiple'); 

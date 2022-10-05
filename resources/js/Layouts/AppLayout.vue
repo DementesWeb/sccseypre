@@ -343,10 +343,10 @@
                                                         INADEH Planilla
                                                     </jet-dropdown-link>
                                                     <jet-dropdown-link
-                                                        :href="route('Dato21')"
+                                                        :href="route('Dato22')"
                                                         :active="
                                                             route().current(
-                                                                'Dato21'
+                                                                'Dato22'
                                                             )
                                                         "
                                                     >
@@ -361,6 +361,16 @@
                                                         "
                                                     >
                                                         Instituto Nacional de Cultura Planilla
+                                                    </jet-dropdown-link>
+                                                    <jet-dropdown-link
+                                                        :href="route('Dato25')"
+                                                        :active="
+                                                            route().current(
+                                                                'Dato25'
+                                                            )
+                                                        "
+                                                    >
+                                                        Planilla
                                                     </jet-dropdown-link>
                                                     <div
                                                         class="border-t border-gray-100"
