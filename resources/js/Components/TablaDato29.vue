@@ -1,11 +1,11 @@
 <template>
-    <div v-if="dato27.total >= 1">
+    <div v-if="dato29.total >= 1">
         <div class="flex justify-center">
             <div class="form-check form-switch">
                 <label
                     class="form-check-label inline-block mx-4 text-gray-800"
                     for="flexSwitchCheckChecked"
-                    >Cambiar Tipo de Vista: <strong>Planilla Enero 2021</strong>
+                    >Cambiar Tipo de Vista: <strong>Transparencia Salario Enero 2021</strong>
                 </label>
                 <button
                     class="ui btn-blue toggle"
@@ -47,31 +47,43 @@
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Número de Cédula
+                                                Cédula
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Cargo según Estructura
+                                                Cargo
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Salario Mensual
+                                                Unidad
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Inicio de Labores
+                                                Salario
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Objeto de Gasto
+                                                Antiguedad
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                Objeto Gasto
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                Fecha Ingreso
                                                 </th>
                                                 <th
                                                     scope="col"
@@ -79,9 +91,12 @@
                                                 >
                                                 Estatus
                                                 </th>
-                                                
-                                                
-  
+                                                <th
+                                                    scope="col"
+                                                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                                                >
+                                                Total
+                                                </th>
                                                 <th scope="col" class="p-4">
                                                     <span class="sr-only">
                                                         <i
@@ -95,7 +110,7 @@
                                             class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700"
                                         >
                                             <tr
-                                                v-for="items in dato27.data"
+                                                v-for="items in dato29.data"
                                                 :key="items.id"
                                                 class="hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-900"
                                             >
@@ -112,39 +127,54 @@
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.NUMERO_DE_CEDULA }}
+                                                    {{ items.CEDULA }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.CARGO_SEGUN_ESTRUCTURA }}
+                                                    {{ items.CARGO }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.SALARIO_MENSUAL }}
+                                                    {{ items.UNIDAD }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.INICIO_DE_LABORES }}
+                                                    {{ items.SALARIO }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.OBJETO_DE_GASTO }}
+                                                    {{ items.ANTIGUEDAD }}
+                                                </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.OBJETOGASTO }}
+                                                </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.FECHAINGRESO }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
                                                     {{ items.ESTATUS }}
                                                 </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
+                                                >
+                                                    {{ items.TOTAL }}
+                                                </td>
                                                 
                                             </tr>
                                         </tbody>
                                     </table>
                                     <Pagination
-                                        :pagination="dato27"
+                                        :pagination="dato29"
                                     ></Pagination>
                                 </div>
                             </div>
@@ -161,13 +191,13 @@
             >
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
-                        <h2 class="py-4 px-12 font-bold text-xl">Planilla Enero 2021</h2>
+                        <h2 class="py-4 px-12 font-bold text-xl">Transparencia Salario Enero 2021</h2>
                         <!-- component -->
                         <div
                             class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
                         >
                             <template
-                                v-for="items in dato27.data"
+                                v-for="items in dato29.data"
                                 :key="items.id"
                             >
                                 <!-- Card 1 -->
@@ -196,7 +226,7 @@
                                     <!-- Title -->
                                     <div class="col-span-11 xl:-ml-5">
                                         <p class="text-blue-600 font-bold">
-                                            Número de Cédula: {{ items.NUMERO_DE_CEDULA }}
+                                            Cédula: {{ items.CEDULA }}
                                         </p>
                                     </div>
   
@@ -225,17 +255,25 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Cargo según Estructura:
+                                              Cargo:
                                                 <span class="font-bold">
-                                                    {{ items.CARGO_SEGUN_ESTRUCTURA }}
+                                                    {{ items.CARGO }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Salario Mensual:
+                                            Unidad:
                                                 <span class="font-bold">
-                                                    {{ items.SALARIO_MENSUAL }}
+                                                    {{ items.UNIDAD }}
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="text-md text-gray-800 font-light"
+                                            >
+                                            Salario:
+                                                <span class="font-bold">
+                                                    {{ items.SALARIO }}
                                                 </span>
                                             </p>
                                         </div>
@@ -244,17 +282,33 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Inicio de Labores:
+                                            Antiguedad:
                                                 <span class="font-bold">
-                                                    {{ items.INICIO_DE_LABORES }}
+                                                    {{ items.ANTIGUEDAD }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Objeto de Gasto:
+                                            Objeto Gasto:
                                                 <span class="font-bold">
-                                                    {{ items.OBJETO_DE_GASTO }}
+                                                    {{ items.OBJETOGASTO }}
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="text-md text-gray-800 font-light"
+                                            >
+                                            Fecha Ingreso:
+                                                <span class="font-bold">
+                                                    {{ items.FECHAINGRESO }}
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="text-md text-gray-800 font-light"
+                                            >
+                                            Total:
+                                                <span class="font-bold">
+                                                    {{ items.ESTATUS }}
                                                 </span>
                                             </p>
                                             <p
@@ -262,7 +316,7 @@
                                             >
                                                 Estatus:
                                                 <span class="font-bold">
-                                                    {{ items.ESTATUS }}
+                                                    {{ items.TOTAL }}
                                                 </span>
                                             </p>
                                         </div>
@@ -270,7 +324,7 @@
                                 </div>
                             </template>
                         </div>
-                        <Pagination :pagination="dato27"></Pagination>
+                        <Pagination :pagination="dato29"></Pagination>
                     </div>
                 </div>
             </div>
@@ -285,7 +339,7 @@
         Pagination,
     },
     props: {
-        dato27: Object,
+        dato29: Object,
         filters: Object,
     },
     data() {
