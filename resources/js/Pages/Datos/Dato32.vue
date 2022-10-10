@@ -1,8 +1,8 @@
 <template>
-    <app-layout title="Personal de la CSS-asignado al ION Sep 2020">
+    <app-layout title="Planilla Alfabtica Septiembre 2020">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Personal de la CSS-asignado al ION Sep 2020
+                Planilla Alfabtica Septiembre 2020
             </h2>
         </template>
         <div class="container py-6 max-w-7xl mx-auto my-4 px-4 sm:px-6 lg:px-8">
@@ -14,9 +14,9 @@
             />
         </div>
   
-        <Tabla-Dato-30 :dato30="dato30"></Tabla-Dato-30>
+        <Tabla-Dato-32 :dato32="dato32"></Tabla-Dato-32>
   
-        <div v-if="dato30.total === 0">
+        <div v-if="dato32.total === 0">
             <div class="flex justify-center">
                 <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                     La Búsqueda: "{{ search }}" no se encontro en la base de
@@ -32,14 +32,14 @@
   import AppLayout from "@/Layouts/AppLayout.vue";
   import Input from "@/Jetstream/Input.vue";
   import Pagination from "@/Components/Pagination.vue";
-  import TablaDato30 from "@/Components/TablaDato30.vue";
+  import TablaDato32 from "@/Components/TablaDato32.vue";
   
   export default {
     components: {
         AppLayout,
         Input,
         Pagination,
-        TablaDato30,
+        TablaDato32,
     },
   
     data() {
@@ -51,7 +51,7 @@
     watch: {
         search($value) {
             this.$inertia.get(
-                "/dato30",
+                "/dato32",
                 {
                     search: $value,
                 },
@@ -63,7 +63,7 @@
     },
   
     props: {
-        dato30: Object,
+        dato32: Object,
         filters: Object,
     },
   };
