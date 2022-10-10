@@ -392,6 +392,16 @@
                                                     >
                                                     Transparencia Salario Enero 2021
                                                     </jet-dropdown-link>
+                                                    <jet-dropdown-link
+                                                        :href="route('Dato31')"
+                                                        :active="
+                                                            route().current(
+                                                                'Dato31'
+                                                            )
+                                                        "
+                                                    >
+                                                    UDELAS
+                                                    </jet-dropdown-link>
                                                     <div
                                                         class="border-t border-gray-100"
                                                     ></div>

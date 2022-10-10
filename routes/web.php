@@ -38,6 +38,7 @@ use App\Http\Controllers\Dato23Controller;
 use App\Http\Controllers\Dato25Controller;
 use App\Http\Controllers\Dato27Controller;
 use App\Http\Controllers\Dato29Controller;
+use App\Http\Controllers\Dato31Controller;
 use App\Http\Controllers\SecurityController;
 
 /*
@@ -123,5 +124,6 @@ Route::get('/dato26', [Dato26Controller::class,'Index'])->name('Dato26');
 Route::get('/dato27', [Dato27Controller::class,'Index'])->name('Dato27');
 Route::get('/dato29', [Dato29Controller::class,'Index'])->name('Dato29');
 Route::get('/dato28', [Dato28Controller::class,'Index'])->name('Dato28');
+Route::get('/dato31', [Dato31Controller::class,'Index'])->name('Dato31');
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 Route::get('/BusquedaMultiple', [BusquedaMultipleController::class,'Index'])->name('BusquedaMultiple'); 
