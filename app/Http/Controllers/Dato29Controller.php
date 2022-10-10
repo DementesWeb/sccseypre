@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Dato27;
+use App\Models\Dato29;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class Dato27Controller extends Controller
+class Dato29Controller extends Controller
 {
     public function __construct(){
         $this->middleware('auth');
@@ -15,14 +15,14 @@ class Dato27Controller extends Controller
     public function Index(Request $request)
     {
         $filters = $request->all('search');
-        $dato27 = Dato27::latest()
+        $dato29 = Dato29::latest()
             ->when($filters['search'] ?? null, function($query, $search){
-            $query->where('NUMERO_DE_CEDULA', 'like', '%' . $search . '%');
+            $query->where('CEDULA', 'like', '%' . $search . '%');
             /* $query->where('CEDULA', $search); */
         })->paginate(50);
 
-        $dato27 = cache('cachedb',$dato27,now()->addWeek());
+        $dato29 = cache('cachedb',$dato29,now()->addWeek());
         
-        return Inertia::render('Datos/Dato27', ['dato27'=>$dato27, 'filters'=>$filters]);
+        return Inertia::render('Datos/Dato29', ['dato29'=>$dato29, 'filters'=>$filters]);
     }
 }

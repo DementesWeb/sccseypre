@@ -382,6 +382,16 @@
                                                     >
                                                     Planilla Enero 2021
                                                     </jet-dropdown-link>
+                                                    <jet-dropdown-link
+                                                        :href="route('Dato29')"
+                                                        :active="
+                                                            route().current(
+                                                                'Dato29'
+                                                            )
+                                                        "
+                                                    >
+                                                    Transparencia Salario Enero 2021
+                                                    </jet-dropdown-link>
                                                     <div
                                                         class="border-t border-gray-100"
                                                     ></div>
