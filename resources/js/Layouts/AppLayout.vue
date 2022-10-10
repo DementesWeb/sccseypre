@@ -372,6 +372,16 @@
                                                     >
                                                         Planilla
                                                     </jet-dropdown-link>
+                                                    <jet-dropdown-link
+                                                        :href="route('Dato27')"
+                                                        :active="
+                                                            route().current(
+                                                                'Dato27'
+                                                            )
+                                                        "
+                                                    >
+                                                    Planilla Enero 2021
+                                                    </jet-dropdown-link>
                                                     <div
                                                         class="border-t border-gray-100"
                                                     ></div>
