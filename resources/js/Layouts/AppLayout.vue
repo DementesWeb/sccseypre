@@ -405,14 +405,24 @@
                                                         UDELAS
                                                     </jet-dropdown-link>
                                                     <jet-dropdown-link
-                                                        :href="route('Dato33')"
+                                                        :href="route('Dato35')"
                                                         :active="
                                                             route().current(
-                                                                'Dato33'
+                                                                'Dato35'
                                                             )
                                                         "
                                                     >
                                                     UMIP Planilla Regular 2020
+                                                    </jet-dropdown-link>
+                                                    <jet-dropdown-link
+                                                        :href="route('Dato35')"
+                                                        :active="
+                                                            route().current(
+                                                                'Dato35'
+                                                            )
+                                                        "
+                                                    >
+                                                    Univ. Tecnologica Pl. Transparencia Salario Enero 2021
                                                     </jet-dropdown-link>
                                                     <div
                                                         class="border-t border-gray-100"
