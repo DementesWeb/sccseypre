@@ -169,6 +169,10 @@
                                                 >
                                                     {{ items.TOTAL }}
                                                 </td>
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap"
+                                                >
+                                                </td>
                                                 
                                             </tr>
                                         </tbody>

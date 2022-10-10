@@ -16,7 +16,7 @@
                 </button>
             </div>
         </div>
-  
+
         <div v-if="isActive">
             <div class="max-w-7xl mx-auto my-4 px-4 sm:px-6 lg:px-8">
                 <div class="max-w-1xl mx-auto">
@@ -35,53 +35,51 @@
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Nombre
+                                                    Nombre
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Apellido
+                                                    Apellido
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Número de Cédula
+                                                    Número de Cédula
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Cargo según Estructura
+                                                    Cargo según Estructura
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Salario Mensual
+                                                    Salario Mensual
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Inicio de Labores
+                                                    Inicio de Labores
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Objeto de Gasto
+                                                    Objeto de Gasto
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
                                                 >
-                                                Estatus
+                                                    Estatus
                                                 </th>
-                                                
-                                                
-  
+
                                                 <th scope="col" class="p-4">
                                                     <span class="sr-only">
                                                         <i
@@ -117,7 +115,9 @@
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.CARGO_SEGUN_ESTRUCTURA }}
+                                                    {{
+                                                        items.CARGO_SEGUN_ESTRUCTURA
+                                                    }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -127,7 +127,9 @@
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.INICIO_DE_LABORES }}
+                                                    {{
+                                                        items.INICIO_DE_LABORES
+                                                    }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -139,7 +141,10 @@
                                                 >
                                                     {{ items.ESTATUS }}
                                                 </td>
-                                                
+                                                <td
+                                                    class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap"
+                                                >
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -154,14 +159,16 @@
                 </div>
             </div>
         </div>
-  
+
         <div v-else>
             <div
                 class="container max-w-7xl mx-auto my-4 px-4 sm:px-6 lg:px-8 py-6"
             >
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
-                        <h2 class="py-4 px-12 font-bold text-xl">Planilla Enero 2021</h2>
+                        <h2 class="py-4 px-12 font-bold text-xl">
+                            Planilla Enero 2021
+                        </h2>
                         <!-- component -->
                         <div
                             class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
@@ -192,14 +199,15 @@
                                             />
                                         </svg>
                                     </div>
-  
+
                                     <!-- Title -->
                                     <div class="col-span-11 xl:-ml-5">
                                         <p class="text-blue-600 font-bold">
-                                            Número de Cédula: {{ items.NUMERO_DE_CEDULA }}
+                                            Número de Cédula:
+                                            {{ items.NUMERO_DE_CEDULA }}
                                         </p>
                                     </div>
-  
+
                                     <!-- Description -->
                                     <div
                                         class="flex flex-row md:col-start-2 col-span-11 xl:-ml-5 gap-2"
@@ -225,15 +233,17 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Cargo según Estructura:
+                                                Cargo según Estructura:
                                                 <span class="font-bold">
-                                                    {{ items.CARGO_SEGUN_ESTRUCTURA }}
+                                                    {{
+                                                        items.CARGO_SEGUN_ESTRUCTURA
+                                                    }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Salario Mensual:
+                                                Salario Mensual:
                                                 <span class="font-bold">
                                                     {{ items.SALARIO_MENSUAL }}
                                                 </span>
@@ -244,15 +254,17 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Inicio de Labores:
+                                                Inicio de Labores:
                                                 <span class="font-bold">
-                                                    {{ items.INICIO_DE_LABORES }}
+                                                    {{
+                                                        items.INICIO_DE_LABORES
+                                                    }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                              Objeto de Gasto:
+                                                Objeto de Gasto:
                                                 <span class="font-bold">
                                                     {{ items.OBJETO_DE_GASTO }}
                                                 </span>
@@ -276,11 +288,11 @@
             </div>
         </div>
     </div>
-  </template>
-  
-  <script>
-  import Pagination from "@/Components/Pagination.vue";
-  export default {
+</template>
+
+<script>
+import Pagination from "@/Components/Pagination.vue";
+export default {
     components: {
         Pagination,
     },
@@ -300,8 +312,7 @@
             this.isActive = false;
         }
     },
-  };
-  </script>
-  
-  <style></style>
-  
+};
+</script>
+
+<style></style>
