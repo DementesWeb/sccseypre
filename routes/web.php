@@ -26,6 +26,7 @@ use App\Http\Controllers\Dato20Controller;
 use App\Http\Controllers\Dato22Controller;
 use App\Http\Controllers\Dato24Controller;
 use App\Http\Controllers\Dato26Controller;
+use App\Http\Controllers\Dato28Controller;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\TelefonoController;
 use App\Http\Controllers\BuscarCedulaController;
@@ -120,6 +121,10 @@ Route::get('/dato24', [Dato24Controller::class,'Index'])->name('Dato24');
 Route::get('/dato25', [Dato25Controller::class,'Index'])->name('Dato25');
 Route::get('/dato26', [Dato26Controller::class,'Index'])->name('Dato26');
 Route::get('/dato27', [Dato27Controller::class,'Index'])->name('Dato27');
+<<<<<<< HEAD
 Route::get('/dato29', [Dato29Controller::class,'Index'])->name('Dato29');
+=======
+Route::get('/dato28', [Dato28Controller::class,'Index'])->name('Dato28');
+>>>>>>> 9800c829d90c90c3aeab2a07919c296bf9f23f42
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 Route::get('/BusquedaMultiple', [BusquedaMultipleController::class,'Index'])->name('BusquedaMultiple'); 
