@@ -86,6 +86,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/menutablas', function () {
+    return Inertia::render('MenuTablas');
+})->name('menutablas');
+
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/register', function () {
     $role = Auth::user()->current_team_id;
     return Inertia::render('Auth/Register');
@@ -135,3 +139,4 @@ Route::get('/dato32', [Dato32Controller::class,'Index'])->name('Dato32');
 Route::get('/dato35', [Dato35Controller::class,'Index'])->name('Dato35');
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 Route::get('/BusquedaMultiple', [BusquedaMultipleController::class,'Index'])->name('BusquedaMultiple'); 
+
