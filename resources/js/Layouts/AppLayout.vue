@@ -59,7 +59,7 @@
                                 >
                                     Búsqueda Campos
                                 </jet-nav-link>
-
+                                <!--Inicio de boton desplegable DATOS-->
                                 <div
                                     class="hidden sm:flex sm:items-center sm:ml-6"
                                 >
@@ -113,306 +113,16 @@
                                                         Base De Datos
                                                     </div>
                                                     <!-- Datos Settings -->
+                                                    
                                                     <jet-dropdown-link
-                                                        :href="
-                                                            route('Telefono')
-                                                        "
+                                                        :href="route('menutablas')"
                                                         :active="
                                                             route().current(
-                                                                'Telefono'
+                                                                'menutablas'
                                                             )
                                                         "
                                                     >
-                                                        Tel Final
-                                                    </jet-dropdown-link>
-
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato1')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato1'
-                                                            )
-                                                        "
-                                                    >
-                                                        Tigo 2021
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato2')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato2'
-                                                            )
-                                                        "
-                                                    >
-                                                        Cable Onda 2020
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato3')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato3'
-                                                            )
-                                                        "
-                                                    >
-                                                        Tribunales 1
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato4')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato4'
-                                                            )
-                                                        "
-                                                    >
-                                                        Tribunales 2
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato5')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato5'
-                                                            )
-                                                        "
-                                                    >
-                                                        Datos Junio 2022
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato6')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato6'
-                                                            )
-                                                        "
-                                                    >
-                                                        Naturgy
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato7')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato7'
-                                                            )
-                                                        "
-                                                    >
-                                                        Enero 2022
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato8')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato8'
-                                                            )
-                                                        "
-                                                    >
-                                                        Mayo 2022
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato9')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato9'
-                                                            )
-                                                        "
-                                                    >
-                                                        IDAAN
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato10')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato10'
-                                                            )
-                                                        "
-                                                    >
-                                                        Planilla IDAAN 2021
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato11')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato11'
-                                                            )
-                                                        "
-                                                    >
-                                                        Planilla de Personal
-                                                        FIJO 2020
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato12')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato12'
-                                                            )
-                                                        "
-                                                    >
-                                                        Planilla Diciembre 2020
-                                                        IDAAN
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato13')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato13'
-                                                            )
-                                                        "
-                                                    >
-                                                        Banco Hipotecario
-                                                        Planilla
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato14')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato14'
-                                                            )
-                                                        "
-                                                    >
-                                                        Banco Desarrollo
-                                                        Agropecuario
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato15')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato15'
-                                                            )
-                                                        "
-                                                    >
-                                                        ADM DIC 2020
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato16')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato16'
-                                                            )
-                                                        "
-                                                    >
-                                                        Doc Diciembre 2020
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato17')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato17'
-                                                            )
-                                                        "
-                                                    >
-                                                        Defensoria Canal de
-                                                        Panama
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato18')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato18'
-                                                            )
-                                                        "
-                                                    >
-                                                        ASEP Planilla Enero 2020
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato19')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato19'
-                                                            )
-                                                        "
-                                                    >
-                                                        Envios WhatsOn por
-                                                        Segmentos
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato20')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato20'
-                                                            )
-                                                        "
-                                                    >
-                                                        Universidad Panama 2
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato21')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato21'
-                                                            )
-                                                        "
-                                                    >
-                                                        INADEH Planilla
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato22')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato22'
-                                                            )
-                                                        "
-                                                    >
-                                                        Planilla SENNIAF 2021
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato23')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato23'
-                                                            )
-                                                        "
-                                                    >
-                                                        Instituto Nacional de
-                                                        Cultura Planilla
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato25')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato25'
-                                                            )
-                                                        "
-                                                    >
-                                                        Planilla
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato27')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato27'
-                                                            )
-                                                        "
-                                                    >
-                                                        Planilla Enero 2021
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato29')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato29'
-                                                            )
-                                                        "
-                                                    >
-                                                        Transparencia Salario
-                                                        Enero 2021
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato31')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato31'
-                                                            )
-                                                        "
-                                                    >
-                                                        UDELAS
-                                                    </jet-dropdown-link>
-                                                    <jet-dropdown-link
-                                                        :href="route('Dato33')"
-                                                        :active="
-                                                            route().current(
-                                                                'Dato33'
-                                                            )
-                                                        "
-                                                    >
-                                                    UMIP Planilla Regular 2020
+                                                        Menú Tablas
                                                     </jet-dropdown-link>
                                                     <div
                                                         class="border-t border-gray-100"
@@ -422,6 +132,7 @@
                                         </template>
                                     </jet-dropdown>
                                 </div>
+                                <!--Fin de boton desplegable DATOS-->
                             </div>
                         </div>
 

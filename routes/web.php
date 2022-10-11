@@ -44,6 +44,7 @@ use App\Http\Controllers\TelefonoController;
 use App\Http\Controllers\BuscarCedulaController;
 use App\Http\Controllers\BusquedaCamposController;
 use App\Http\Controllers\BusquedaMultipleController;
+use App\Http\Controllers\Dato35Controller;
 use App\Http\Controllers\SecurityController;
 
 /*
@@ -86,6 +87,10 @@ Route::delete('customers/{customer}', [CustomerController::class, 'destroy'])->n
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/menutablas', function () {
+    return Inertia::render('MenuTablas');
+})->name('menutablas');
 
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/register', function () {
     $role = Auth::user()->current_team_id;
@@ -135,5 +140,7 @@ Route::get('/dato32', [Dato32Controller::class,'Index'])->name('Dato32');
 Route::get('/dato33', [Dato33Controller::class,'Index'])->name('Dato33');
 Route::get('/dato34', [Dato34Controller::class,'Index'])->name('Dato34');
 Route::get('/dato36', [Dato36Controller::class,'Index'])->name('Dato36');
+Route::get('/dato35', [Dato35Controller::class,'Index'])->name('Dato35');
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 Route::get('/BusquedaMultiple', [BusquedaMultipleController::class,'Index'])->name('BusquedaMultiple'); 
+
