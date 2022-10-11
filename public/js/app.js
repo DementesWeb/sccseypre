@@ -24512,17 +24512,71 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout.vue */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Jetstream_Input_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Jetstream/Input.vue */ "./resources/js/Jetstream/Input.vue");
 /* harmony import */ var _Components_Pagination_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Pagination.vue */ "./resources/js/Components/Pagination.vue");
-/* harmony import */ var _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/TablaDato9.vue */ "./resources/js/Components/TablaDato9.vue");
-/* harmony import */ var _Components_TablaDato8_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/TablaDato8.vue */ "./resources/js/Components/TablaDato8.vue");
-/* harmony import */ var _Components_TablaDato7_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Components/TablaDato7.vue */ "./resources/js/Components/TablaDato7.vue");
-/* harmony import */ var _Components_TablaDato6_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/Components/TablaDato6.vue */ "./resources/js/Components/TablaDato6.vue");
-/* harmony import */ var _Components_TablaDato5_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/Components/TablaDato5.vue */ "./resources/js/Components/TablaDato5.vue");
-/* harmony import */ var _Components_TablaDato4_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/Components/TablaDato4.vue */ "./resources/js/Components/TablaDato4.vue");
-/* harmony import */ var _Components_TablaDato3_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/Components/TablaDato3.vue */ "./resources/js/Components/TablaDato3.vue");
-/* harmony import */ var _Components_TablaDato2_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/Components/TablaDato2.vue */ "./resources/js/Components/TablaDato2.vue");
-/* harmony import */ var _Components_TablaDato1_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/Components/TablaDato1.vue */ "./resources/js/Components/TablaDato1.vue");
-/* harmony import */ var _Components_TablaCustomer_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @/Components/TablaCustomer.vue */ "./resources/js/Components/TablaCustomer.vue");
-/* harmony import */ var _Components_TablaTelefono_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @/Components/TablaTelefono.vue */ "./resources/js/Components/TablaTelefono.vue");
+/* harmony import */ var _Components_TablaDato36_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/TablaDato36.vue */ "./resources/js/Components/TablaDato36.vue");
+/* harmony import */ var _Components_TablaDato35_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/TablaDato35.vue */ "./resources/js/Components/TablaDato35.vue");
+/* harmony import */ var _Components_TablaDato34_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Components/TablaDato34.vue */ "./resources/js/Components/TablaDato34.vue");
+/* harmony import */ var _Components_TablaDato33_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/Components/TablaDato33.vue */ "./resources/js/Components/TablaDato33.vue");
+/* harmony import */ var _Components_TablaDato32_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/Components/TablaDato32.vue */ "./resources/js/Components/TablaDato32.vue");
+/* harmony import */ var _Components_TablaDato31_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/Components/TablaDato31.vue */ "./resources/js/Components/TablaDato31.vue");
+/* harmony import */ var _Components_TablaDato30_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/Components/TablaDato30.vue */ "./resources/js/Components/TablaDato30.vue");
+/* harmony import */ var _Components_TablaDato29_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/Components/TablaDato29.vue */ "./resources/js/Components/TablaDato29.vue");
+/* harmony import */ var _Components_TablaDato28_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/Components/TablaDato28.vue */ "./resources/js/Components/TablaDato28.vue");
+/* harmony import */ var _Components_TablaDato27_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @/Components/TablaDato27.vue */ "./resources/js/Components/TablaDato27.vue");
+/* harmony import */ var _Components_TablaDato26_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @/Components/TablaDato26.vue */ "./resources/js/Components/TablaDato26.vue");
+/* harmony import */ var _Components_TablaDato25_vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @/Components/TablaDato25.vue */ "./resources/js/Components/TablaDato25.vue");
+/* harmony import */ var _Components_TablaDato24_vue__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @/Components/TablaDato24.vue */ "./resources/js/Components/TablaDato24.vue");
+/* harmony import */ var _Components_TablaDato23_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @/Components/TablaDato23.vue */ "./resources/js/Components/TablaDato23.vue");
+/* harmony import */ var _Components_TablaDato22_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @/Components/TablaDato22.vue */ "./resources/js/Components/TablaDato22.vue");
+/* harmony import */ var _Components_TablaDato21_vue__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @/Components/TablaDato21.vue */ "./resources/js/Components/TablaDato21.vue");
+/* harmony import */ var _Components_TablaDato20_vue__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @/Components/TablaDato20.vue */ "./resources/js/Components/TablaDato20.vue");
+/* harmony import */ var _Components_TablaDato19_vue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @/Components/TablaDato19.vue */ "./resources/js/Components/TablaDato19.vue");
+/* harmony import */ var _Components_TablaDato18_vue__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @/Components/TablaDato18.vue */ "./resources/js/Components/TablaDato18.vue");
+/* harmony import */ var _Components_TablaDato17_vue__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @/Components/TablaDato17.vue */ "./resources/js/Components/TablaDato17.vue");
+/* harmony import */ var _Components_TablaDato16_vue__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @/Components/TablaDato16.vue */ "./resources/js/Components/TablaDato16.vue");
+/* harmony import */ var _Components_TablaDato15_vue__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @/Components/TablaDato15.vue */ "./resources/js/Components/TablaDato15.vue");
+/* harmony import */ var _Components_TablaDato14_vue__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @/Components/TablaDato14.vue */ "./resources/js/Components/TablaDato14.vue");
+/* harmony import */ var _Components_TablaDato13_vue__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @/Components/TablaDato13.vue */ "./resources/js/Components/TablaDato13.vue");
+/* harmony import */ var _Components_TablaDato12_vue__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @/Components/TablaDato12.vue */ "./resources/js/Components/TablaDato12.vue");
+/* harmony import */ var _Components_TablaDato11_vue__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @/Components/TablaDato11.vue */ "./resources/js/Components/TablaDato11.vue");
+/* harmony import */ var _Components_TablaDato10_vue__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @/Components/TablaDato10.vue */ "./resources/js/Components/TablaDato10.vue");
+/* harmony import */ var _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @/Components/TablaDato9.vue */ "./resources/js/Components/TablaDato9.vue");
+/* harmony import */ var _Components_TablaDato8_vue__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @/Components/TablaDato8.vue */ "./resources/js/Components/TablaDato8.vue");
+/* harmony import */ var _Components_TablaDato7_vue__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @/Components/TablaDato7.vue */ "./resources/js/Components/TablaDato7.vue");
+/* harmony import */ var _Components_TablaDato6_vue__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @/Components/TablaDato6.vue */ "./resources/js/Components/TablaDato6.vue");
+/* harmony import */ var _Components_TablaDato5_vue__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @/Components/TablaDato5.vue */ "./resources/js/Components/TablaDato5.vue");
+/* harmony import */ var _Components_TablaDato4_vue__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! @/Components/TablaDato4.vue */ "./resources/js/Components/TablaDato4.vue");
+/* harmony import */ var _Components_TablaDato3_vue__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! @/Components/TablaDato3.vue */ "./resources/js/Components/TablaDato3.vue");
+/* harmony import */ var _Components_TablaDato2_vue__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! @/Components/TablaDato2.vue */ "./resources/js/Components/TablaDato2.vue");
+/* harmony import */ var _Components_TablaDato1_vue__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! @/Components/TablaDato1.vue */ "./resources/js/Components/TablaDato1.vue");
+/* harmony import */ var _Components_TablaCustomer_vue__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! @/Components/TablaCustomer.vue */ "./resources/js/Components/TablaCustomer.vue");
+/* harmony import */ var _Components_TablaTelefono_vue__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @/Components/TablaTelefono.vue */ "./resources/js/Components/TablaTelefono.vue");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -24542,17 +24596,44 @@ __webpack_require__.r(__webpack_exports__);
     AppLayout: _Layouts_AppLayout_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     Input: _Jetstream_Input_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     Pagination: _Components_Pagination_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    TablaTelefono: _Components_TablaTelefono_vue__WEBPACK_IMPORTED_MODULE_13__["default"],
-    TablaDato9: _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    TablaDato8: _Components_TablaDato8_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-    TablaDato7: _Components_TablaDato7_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-    TablaDato6: _Components_TablaDato6_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
-    TablaDato5: _Components_TablaDato5_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
-    TablaDato4: _Components_TablaDato4_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
-    TablaDato3: _Components_TablaDato3_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
-    TablaDato2: _Components_TablaDato2_vue__WEBPACK_IMPORTED_MODULE_10__["default"],
-    TablaDato1: _Components_TablaDato1_vue__WEBPACK_IMPORTED_MODULE_11__["default"],
-    TablaCustomer: _Components_TablaCustomer_vue__WEBPACK_IMPORTED_MODULE_12__["default"]
+    TablaTelefono: _Components_TablaTelefono_vue__WEBPACK_IMPORTED_MODULE_40__["default"],
+    TablaDato36: _Components_TablaDato36_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    TablaDato35: _Components_TablaDato35_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    TablaDato34: _Components_TablaDato34_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+    TablaDato33: _Components_TablaDato33_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
+    TablaDato32: _Components_TablaDato32_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+    TablaDato31: _Components_TablaDato31_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
+    TablaDato30: _Components_TablaDato30_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
+    TablaDato29: _Components_TablaDato29_vue__WEBPACK_IMPORTED_MODULE_10__["default"],
+    TablaDato28: _Components_TablaDato28_vue__WEBPACK_IMPORTED_MODULE_11__["default"],
+    TablaDato27: _Components_TablaDato27_vue__WEBPACK_IMPORTED_MODULE_12__["default"],
+    TablaDato26: _Components_TablaDato26_vue__WEBPACK_IMPORTED_MODULE_13__["default"],
+    TablaDato25: _Components_TablaDato25_vue__WEBPACK_IMPORTED_MODULE_14__["default"],
+    TablaDato24: _Components_TablaDato24_vue__WEBPACK_IMPORTED_MODULE_15__["default"],
+    TablaDato23: _Components_TablaDato23_vue__WEBPACK_IMPORTED_MODULE_16__["default"],
+    TablaDato22: _Components_TablaDato22_vue__WEBPACK_IMPORTED_MODULE_17__["default"],
+    TablaDato21: _Components_TablaDato21_vue__WEBPACK_IMPORTED_MODULE_18__["default"],
+    TablaDato20: _Components_TablaDato20_vue__WEBPACK_IMPORTED_MODULE_19__["default"],
+    TablaDato19: _Components_TablaDato19_vue__WEBPACK_IMPORTED_MODULE_20__["default"],
+    TablaDato18: _Components_TablaDato18_vue__WEBPACK_IMPORTED_MODULE_21__["default"],
+    TablaDato17: _Components_TablaDato17_vue__WEBPACK_IMPORTED_MODULE_22__["default"],
+    TablaDato16: _Components_TablaDato16_vue__WEBPACK_IMPORTED_MODULE_23__["default"],
+    TablaDato15: _Components_TablaDato15_vue__WEBPACK_IMPORTED_MODULE_24__["default"],
+    TablaDato14: _Components_TablaDato14_vue__WEBPACK_IMPORTED_MODULE_25__["default"],
+    TablaDato13: _Components_TablaDato13_vue__WEBPACK_IMPORTED_MODULE_26__["default"],
+    TablaDato12: _Components_TablaDato12_vue__WEBPACK_IMPORTED_MODULE_27__["default"],
+    TablaDato11: _Components_TablaDato11_vue__WEBPACK_IMPORTED_MODULE_28__["default"],
+    TablaDato10: _Components_TablaDato10_vue__WEBPACK_IMPORTED_MODULE_29__["default"],
+    TablaDato9: _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_30__["default"],
+    TablaDato8: _Components_TablaDato8_vue__WEBPACK_IMPORTED_MODULE_31__["default"],
+    TablaDato7: _Components_TablaDato7_vue__WEBPACK_IMPORTED_MODULE_32__["default"],
+    TablaDato6: _Components_TablaDato6_vue__WEBPACK_IMPORTED_MODULE_33__["default"],
+    TablaDato5: _Components_TablaDato5_vue__WEBPACK_IMPORTED_MODULE_34__["default"],
+    TablaDato4: _Components_TablaDato4_vue__WEBPACK_IMPORTED_MODULE_35__["default"],
+    TablaDato3: _Components_TablaDato3_vue__WEBPACK_IMPORTED_MODULE_36__["default"],
+    TablaDato2: _Components_TablaDato2_vue__WEBPACK_IMPORTED_MODULE_37__["default"],
+    TablaDato1: _Components_TablaDato1_vue__WEBPACK_IMPORTED_MODULE_38__["default"],
+    TablaCustomer: _Components_TablaCustomer_vue__WEBPACK_IMPORTED_MODULE_39__["default"]
   },
   data: function data() {
     return {
@@ -24579,6 +24660,33 @@ __webpack_require__.r(__webpack_exports__);
     ceddato7: Object,
     ceddato8: Object,
     ceddato9: Object,
+    ceddato10: Object,
+    dato11: Object,
+    ceddato12: Object,
+    dato13: Object,
+    dato14: Object,
+    dato15: Object,
+    dato16: Object,
+    dato17: Object,
+    dato18: Object,
+    dato19: Object,
+    dato20: Object,
+    dato21: Object,
+    dato22: Object,
+    dato23: Object,
+    dato24: Object,
+    dato25: Object,
+    dato26: Object,
+    dato27: Object,
+    dato28: Object,
+    dato29: Object,
+    dato30: Object,
+    dato31: Object,
+    dato32: Object,
+    dato33: Object,
+    dato34: Object,
+    dato35: Object,
+    dato36: Object,
     filters: Object,
     customer: Object
   }
@@ -46906,6 +47014,60 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Tabla_Dato_9 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-9");
 
+  var _component_Tabla_Dato_10 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-10");
+
+  var _component_Tabla_Dato_11 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-11");
+
+  var _component_Tabla_Dato_12 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-12");
+
+  var _component_Tabla_Dato_13 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-13");
+
+  var _component_Tabla_Dato_14 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-14");
+
+  var _component_Tabla_Dato_15 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-15");
+
+  var _component_Tabla_Dato_16 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-16");
+
+  var _component_Tabla_Dato_17 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-17");
+
+  var _component_Tabla_Dato_18 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-18");
+
+  var _component_Tabla_Dato_19 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-19");
+
+  var _component_Tabla_Dato_20 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-20");
+
+  var _component_Tabla_Dato_21 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-21");
+
+  var _component_Tabla_Dato_22 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-22");
+
+  var _component_Tabla_Dato_23 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-23");
+
+  var _component_Tabla_Dato_24 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-24");
+
+  var _component_Tabla_Dato_25 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-25");
+
+  var _component_Tabla_Dato_26 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-26");
+
+  var _component_Tabla_Dato_27 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-27");
+
+  var _component_Tabla_Dato_28 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-28");
+
+  var _component_Tabla_Dato_29 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-29");
+
+  var _component_Tabla_Dato_30 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-30");
+
+  var _component_Tabla_Dato_31 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-31");
+
+  var _component_Tabla_Dato_32 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-32");
+
+  var _component_Tabla_Dato_33 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-33");
+
+  var _component_Tabla_Dato_34 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-34");
+
+  var _component_Tabla_Dato_35 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-35");
+
+  var _component_Tabla_Dato_36 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-36");
+
   var _component_Tabla_Customer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Customer");
 
   var _component_app_layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("app-layout");
@@ -46967,11 +47129,119 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         ceddato9: $props.ceddato9
       }, null, 8
       /* PROPS */
-      , ["ceddato9"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Customer, {
+      , ["ceddato9"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_10, {
+        ceddato10: $props.ceddato10
+      }, null, 8
+      /* PROPS */
+      , ["ceddato10"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_11, {
+        dato11: $props.dato11
+      }, null, 8
+      /* PROPS */
+      , ["dato11"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_12, {
+        ceddato12: $props.ceddato12
+      }, null, 8
+      /* PROPS */
+      , ["ceddato12"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_13, {
+        dato13: $props.dato13
+      }, null, 8
+      /* PROPS */
+      , ["dato13"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_14, {
+        dato14: $props.dato14
+      }, null, 8
+      /* PROPS */
+      , ["dato14"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_15, {
+        dato15: $props.dato15
+      }, null, 8
+      /* PROPS */
+      , ["dato15"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_16, {
+        dato16: $props.dato16
+      }, null, 8
+      /* PROPS */
+      , ["dato16"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_17, {
+        dato17: $props.dato17
+      }, null, 8
+      /* PROPS */
+      , ["dato17"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_18, {
+        dato18: $props.dato18
+      }, null, 8
+      /* PROPS */
+      , ["dato18"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_19, {
+        dato19: $props.dato19
+      }, null, 8
+      /* PROPS */
+      , ["dato19"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_20, {
+        dato20: $props.dato20
+      }, null, 8
+      /* PROPS */
+      , ["dato20"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_21, {
+        dato21: $props.dato21
+      }, null, 8
+      /* PROPS */
+      , ["dato21"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_22, {
+        dato22: $props.dato22
+      }, null, 8
+      /* PROPS */
+      , ["dato22"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_23, {
+        dato23: $props.dato23
+      }, null, 8
+      /* PROPS */
+      , ["dato23"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_24, {
+        dato24: $props.dato24
+      }, null, 8
+      /* PROPS */
+      , ["dato24"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_25, {
+        dato25: $props.dato25
+      }, null, 8
+      /* PROPS */
+      , ["dato25"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_26, {
+        dato26: $props.dato26
+      }, null, 8
+      /* PROPS */
+      , ["dato26"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_27, {
+        dato27: $props.dato27
+      }, null, 8
+      /* PROPS */
+      , ["dato27"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_28, {
+        dato28: $props.dato28
+      }, null, 8
+      /* PROPS */
+      , ["dato28"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_29, {
+        dato29: $props.dato29
+      }, null, 8
+      /* PROPS */
+      , ["dato29"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_30, {
+        dato30: $props.dato30
+      }, null, 8
+      /* PROPS */
+      , ["dato30"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_31, {
+        dato31: $props.dato31
+      }, null, 8
+      /* PROPS */
+      , ["dato31"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_32, {
+        dato32: $props.dato32
+      }, null, 8
+      /* PROPS */
+      , ["dato32"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_33, {
+        dato33: $props.dato33
+      }, null, 8
+      /* PROPS */
+      , ["dato33"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_34, {
+        dato34: $props.dato34
+      }, null, 8
+      /* PROPS */
+      , ["dato34"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_35, {
+        dato35: $props.dato35
+      }, null, 8
+      /* PROPS */
+      , ["dato35"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_36, {
+        dato36: $props.dato36
+      }, null, 8
+      /* PROPS */
+      , ["dato36"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Customer, {
         customer: $props.customer
       }, null, 8
       /* PROPS */
-      , ["customer"]), $props.ceddato1.total === 0 && $props.ceddato2.total === 0 && $props.ceddato3.total === 0 && $props.ceddato4.total === 0 && $props.ceddato5.total === 0 && $props.ceddato6.total === 0 && $props.ceddato7.total === 0 && $props.ceddato8.total === 0 && $props.ceddato9.total === 0 && $props.cedtelefono.total === 0 && $props.customer.total === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_5, " La búsqueda: \"" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.search) + "\" no se encontro en ningun campo de la base de datos. ", 1
+      , ["customer"]), $props.ceddato1.total === 0 && $props.ceddato2.total === 0 && $props.ceddato3.total === 0 && $props.ceddato4.total === 0 && $props.ceddato5.total === 0 && $props.ceddato6.total === 0 && $props.ceddato7.total === 0 && $props.ceddato8.total === 0 && $props.ceddato9.total === 0 && $props.ceddato10.total === 0 && $props.dato11.total === 0 && $props.ceddato12.total === 0 && $props.dato13.total === 0 && $props.dato14.total === 0 && $props.dato15.total === 0 && $props.dato16.total === 0 && $props.dato17.total === 0 && $props.dato18.total === 0 && $props.dato19.total === 0 && $props.dato20.total === 0 && $props.dato21.total === 0 && $props.dato22.total === 0 && $props.dato23.total === 0 && $props.dato24.total === 0 && $props.dato25.total === 0 && $props.dato26.total === 0 && $props.dato27.total === 0 && $props.dato28.total === 0 && $props.dato29.total === 0 && $props.dato30.total === 0 && $props.dato31.total === 0 && $props.dato32.total === 0 && $props.dato33.total === 0 && $props.dato34.total === 0 && $props.dato35.total === 0 && $props.dato36.total === 0 && $props.cedtelefono.total === 0 && $props.customer.total === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_5, " La búsqueda: \"" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.search) + "\" no se encontro en ningun campo de la base de datos. ", 1
       /* TEXT */
       )])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),

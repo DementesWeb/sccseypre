@@ -32,7 +32,7 @@ class Dato19 extends Model
         'DES_8',
         'DES_9',
         'DES_10',
-        'DES_10',
+        'DES_11',
         'COD_1',
         'COD_2',
         'COD_3',
