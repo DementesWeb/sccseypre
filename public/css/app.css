@@ -1030,9 +1030,6 @@ select {
 .m-12 {
   margin: 3rem;
 }
-.m-3 {
-  margin: 0.75rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1052,10 +1049,6 @@ select {
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
-}
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 .my-10 {
   margin-top: 2.5rem;
@@ -1314,12 +1307,6 @@ select {
 }
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
