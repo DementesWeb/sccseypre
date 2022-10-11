@@ -280,13 +280,13 @@
                 UMIP Planilla Regular 2020
                 <!-- <i classs="fa fa-angle-right"></i> -->
             </Link>
-            <!-- <Link
+            <Link
                     :href="route('Dato34')"
                     as="button"
                     class="text-sm text-gray-700 btn btn-blue p-4"
                 >
                     Tribunales 1
-                </Link> -->
+                </Link>
             <Link
                 :href="route('Dato35')"
                 as="button"
@@ -295,14 +295,14 @@
                 Universidad Tecnologica Planilla Transparencia Salario Enero
                 2021
             </Link>
-            <!-- <Link
+            <Link
                     :href="route('Dato36')"
                     as="button"
                     class="text-sm text-gray-700 btn btn-blue p-4"
                 >
                     Tribunales 1
                     
-                </Link> -->
+                </Link>
         </div>
     </app-layout>
 </template>
