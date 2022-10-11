@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Inertia\Inertia;
-use App\Models\Dato16;
+use App\Models\dato16;
 use Illuminate\Http\Request;
 
 class Dato16Controller extends Controller
@@ -15,7 +15,7 @@ class Dato16Controller extends Controller
     public function Index(Request $request)
     {
         $filters = $request->all('search');
-        $dato16 = Dato16::latest()
+        $dato16 = dato16::latest()
             ->when($filters['search'] ?? null, function($query, $search){
                 $query->where('CEDULA', 'like', '%' . $search . '%');
                 /* $query->where('CEDULA', $search); */
