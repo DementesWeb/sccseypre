@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Inertia\Inertia;
-use App\Models\Dato10;
+use App\Models\dato10;
 use Illuminate\Http\Request;
 
 class Dato10Controller extends Controller
@@ -15,7 +15,7 @@ class Dato10Controller extends Controller
     public function Index(Request $request)
     {
         $filters = $request->all('search');
-        $ceddato10 = Dato10::latest()
+        $ceddato10 = dato10::latest()
             ->when($filters['search'] ?? null, function($query, $search){
             /* $query->where('cedula', 'like', '%' . $search . '%'); */
             $query->where('CARGO', $search);
