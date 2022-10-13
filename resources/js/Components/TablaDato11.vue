@@ -5,7 +5,7 @@
               <label
                   class="form-check-label inline-block mx-4 text-gray-800"
                   for="flexSwitchCheckChecked"
-                  >Cambiar Tipo de Vista: <strong>Planilla Empleados Enero 2021</strong>
+                  >Cambiar Tipo de Vista: <strong>Planilla de Personal FIJO DICIEMBRE 2020</strong>
               </label>
               <button
                   class="ui btn-blue toggle"
@@ -154,7 +154,7 @@
           >
               <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                   <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
-                      <h2 class="py-4 px-12 font-bold text-xl">Planilla Empleados Enero 2021</h2>
+                      <h2 class="py-4 px-12 font-bold text-xl">Planilla de Personal FIJO DICIEMBRE 2020</h2>
                       <!-- component -->
                       <div
                           class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
