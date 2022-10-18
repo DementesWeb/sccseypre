@@ -285,7 +285,7 @@
                     as="button"
                     class="text-sm text-gray-700 btn btn-blue p-4"
                 >
-                    Tribunales 1
+                Planilla Lotería
                 </Link>
             <Link
                 :href="route('Dato35')"
@@ -300,7 +300,7 @@
                     as="button"
                     class="text-sm text-gray-700 btn btn-blue p-4"
                 >
-                    Tribunales 1
+                Envios WhatsOn Segmentos
                     
                 </Link>
         </div>

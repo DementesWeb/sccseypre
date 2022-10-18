@@ -13,6 +13,7 @@ use App\Models\Dato7;
 use App\Models\Dato8;
 use App\Models\Dato9;
 use App\Models\customer;
+use App\Models\dato10;
 use App\Models\Telefono;
 use Illuminate\Http\Request;
 
@@ -118,6 +119,13 @@ class BusquedaCamposController extends Controller
                 ->orWhere('CORREGIMIENTO','LIKE',"%".$search."%");
             })->paginate(50);
 
+            $dato10 = dato10::latest()
+            ->when($filters['search'] ?? null, function($query, $search){
+                $query->where('NOMBRE','LIKE',"%".$search."%")
+                ->orWhere('APELLIDO','LIKE',"%".$search."%")
+                ->orWhere('CARGO','LIKE',"%".$search."%");
+            })->paginate(50);
+
         $ceddato1 = cache('cached1',$ceddato1,now()->addWeek());
         $ceddato2 = cache('cached2',$ceddato2,now()->addWeek());
         $ceddato3 = cache('cached3',$ceddato3,now()->addWeek());
@@ -129,6 +137,7 @@ class BusquedaCamposController extends Controller
         $ceddato9 = cache('cached9',$ceddato9,now()->addWeek());
         $cedtelefono = cache('cachetelefono',$cedtelefono,now()->addWeek());
         $customer = cache('cachecustomer',$customer,now()->addWeek());
+        $dato10 = cache('dato10',$dato10,now()->addWeek());
 
         return Inertia::render('BusquedaCampos/BusquedaCampos', ['ceddato1'=>$ceddato1,
                                                                     'ceddato2'=>$ceddato2,
@@ -139,6 +148,7 @@ class BusquedaCamposController extends Controller
                                                                     'ceddato7'=>$ceddato7,
                                                                     'ceddato8'=>$ceddato8,
                                                                     'ceddato9'=>$ceddato9,
+                                                                    'dato10'=>$dato10,
                                                                     'cedtelefono'=>$cedtelefono,
                                                                     'customer'=>$customer,
                                                                     'filters'=>$filters]);

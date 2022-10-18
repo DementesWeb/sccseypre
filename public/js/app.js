@@ -24404,17 +24404,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout.vue */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Jetstream_Input_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Jetstream/Input.vue */ "./resources/js/Jetstream/Input.vue");
 /* harmony import */ var _Components_Pagination_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Pagination.vue */ "./resources/js/Components/Pagination.vue");
-/* harmony import */ var _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/TablaDato9.vue */ "./resources/js/Components/TablaDato9.vue");
-/* harmony import */ var _Components_TablaDato8_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/TablaDato8.vue */ "./resources/js/Components/TablaDato8.vue");
-/* harmony import */ var _Components_TablaDato7_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Components/TablaDato7.vue */ "./resources/js/Components/TablaDato7.vue");
-/* harmony import */ var _Components_TablaDato6_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/Components/TablaDato6.vue */ "./resources/js/Components/TablaDato6.vue");
-/* harmony import */ var _Components_TablaDato5_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/Components/TablaDato5.vue */ "./resources/js/Components/TablaDato5.vue");
-/* harmony import */ var _Components_TablaDato4_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/Components/TablaDato4.vue */ "./resources/js/Components/TablaDato4.vue");
-/* harmony import */ var _Components_TablaDato3_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/Components/TablaDato3.vue */ "./resources/js/Components/TablaDato3.vue");
-/* harmony import */ var _Components_TablaDato2_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/Components/TablaDato2.vue */ "./resources/js/Components/TablaDato2.vue");
-/* harmony import */ var _Components_TablaDato1_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/Components/TablaDato1.vue */ "./resources/js/Components/TablaDato1.vue");
-/* harmony import */ var _Components_TablaCustomer_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @/Components/TablaCustomer.vue */ "./resources/js/Components/TablaCustomer.vue");
-/* harmony import */ var _Components_TablaTelefono_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @/Components/TablaTelefono.vue */ "./resources/js/Components/TablaTelefono.vue");
+/* harmony import */ var _Components_TablaDato10_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/TablaDato10.vue */ "./resources/js/Components/TablaDato10.vue");
+/* harmony import */ var _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/TablaDato9.vue */ "./resources/js/Components/TablaDato9.vue");
+/* harmony import */ var _Components_TablaDato8_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Components/TablaDato8.vue */ "./resources/js/Components/TablaDato8.vue");
+/* harmony import */ var _Components_TablaDato7_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/Components/TablaDato7.vue */ "./resources/js/Components/TablaDato7.vue");
+/* harmony import */ var _Components_TablaDato6_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/Components/TablaDato6.vue */ "./resources/js/Components/TablaDato6.vue");
+/* harmony import */ var _Components_TablaDato5_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/Components/TablaDato5.vue */ "./resources/js/Components/TablaDato5.vue");
+/* harmony import */ var _Components_TablaDato4_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/Components/TablaDato4.vue */ "./resources/js/Components/TablaDato4.vue");
+/* harmony import */ var _Components_TablaDato3_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/Components/TablaDato3.vue */ "./resources/js/Components/TablaDato3.vue");
+/* harmony import */ var _Components_TablaDato2_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/Components/TablaDato2.vue */ "./resources/js/Components/TablaDato2.vue");
+/* harmony import */ var _Components_TablaDato1_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @/Components/TablaDato1.vue */ "./resources/js/Components/TablaDato1.vue");
+/* harmony import */ var _Components_TablaCustomer_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @/Components/TablaCustomer.vue */ "./resources/js/Components/TablaCustomer.vue");
+/* harmony import */ var _Components_TablaTelefono_vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @/Components/TablaTelefono.vue */ "./resources/js/Components/TablaTelefono.vue");
+
 
 
 
@@ -24434,17 +24436,18 @@ __webpack_require__.r(__webpack_exports__);
     AppLayout: _Layouts_AppLayout_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     Input: _Jetstream_Input_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     Pagination: _Components_Pagination_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    TablaTelefono: _Components_TablaTelefono_vue__WEBPACK_IMPORTED_MODULE_13__["default"],
-    TablaDato9: _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    TablaDato8: _Components_TablaDato8_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-    TablaDato7: _Components_TablaDato7_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-    TablaDato6: _Components_TablaDato6_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
-    TablaDato5: _Components_TablaDato5_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
-    TablaDato4: _Components_TablaDato4_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
-    TablaDato3: _Components_TablaDato3_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
-    TablaDato2: _Components_TablaDato2_vue__WEBPACK_IMPORTED_MODULE_10__["default"],
-    TablaDato1: _Components_TablaDato1_vue__WEBPACK_IMPORTED_MODULE_11__["default"],
-    TablaCustomer: _Components_TablaCustomer_vue__WEBPACK_IMPORTED_MODULE_12__["default"]
+    TablaTelefono: _Components_TablaTelefono_vue__WEBPACK_IMPORTED_MODULE_14__["default"],
+    TablaDato10: _Components_TablaDato10_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    TablaDato9: _Components_TablaDato9_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    TablaDato8: _Components_TablaDato8_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+    TablaDato7: _Components_TablaDato7_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
+    TablaDato6: _Components_TablaDato6_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+    TablaDato5: _Components_TablaDato5_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
+    TablaDato4: _Components_TablaDato4_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
+    TablaDato3: _Components_TablaDato3_vue__WEBPACK_IMPORTED_MODULE_10__["default"],
+    TablaDato2: _Components_TablaDato2_vue__WEBPACK_IMPORTED_MODULE_11__["default"],
+    TablaDato1: _Components_TablaDato1_vue__WEBPACK_IMPORTED_MODULE_12__["default"],
+    TablaCustomer: _Components_TablaCustomer_vue__WEBPACK_IMPORTED_MODULE_13__["default"]
   },
   data: function data() {
     return {
@@ -24471,6 +24474,7 @@ __webpack_require__.r(__webpack_exports__);
     ceddato7: Object,
     ceddato8: Object,
     ceddato9: Object,
+    dato10: Object,
     filters: Object,
     customer: Object
   }
@@ -39242,7 +39246,7 @@ var _hoisted_3 = {
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "form-check-label inline-block mx-4 text-gray-800",
   "for": "flexSwitchCheckChecked"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Cambiar Tipo de Vista: "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Planilla Lotería")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Cambiar Tipo de Vista: "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Envios WhatsOn Segmentos")], -1
 /* HOISTED */
 );
 
@@ -39516,7 +39520,7 @@ var _hoisted_53 = {
 
 var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "py-4 px-12 font-bold text-xl"
-}, "Planilla Lotería", -1
+}, "Envios WhatsOn Segmentos", -1
 /* HOISTED */
 );
 
@@ -46636,6 +46640,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Tabla_Dato_9 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-9");
 
+  var _component_Tabla_Dato_10 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Dato-10");
+
   var _component_Tabla_Customer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Tabla-Customer");
 
   var _component_app_layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("app-layout");
@@ -46697,11 +46703,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         ceddato9: $props.ceddato9
       }, null, 8
       /* PROPS */
-      , ["ceddato9"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Customer, {
+      , ["ceddato9"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Dato_10, {
+        ceddato10: $props.dato10
+      }, null, 8
+      /* PROPS */
+      , ["ceddato10"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Tabla_Customer, {
         customer: $props.customer
       }, null, 8
       /* PROPS */
-      , ["customer"]), $props.ceddato1.total === 0 && $props.ceddato2.total === 0 && $props.ceddato3.total === 0 && $props.ceddato4.total === 0 && $props.ceddato5.total === 0 && $props.ceddato6.total === 0 && $props.ceddato7.total === 0 && $props.ceddato8.total === 0 && $props.ceddato9.total === 0 && $props.cedtelefono.total === 0 && $props.customer.total === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_5, " La búsqueda: \"" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.search) + "\" no se encontro en ningun campo de la base de datos. ", 1
+      , ["customer"]), $props.ceddato1.total === 0 && $props.ceddato2.total === 0 && $props.ceddato3.total === 0 && $props.ceddato4.total === 0 && $props.ceddato5.total === 0 && $props.ceddato6.total === 0 && $props.ceddato7.total === 0 && $props.ceddato8.total === 0 && $props.ceddato9.total === 0 && $props.dato10.total === 0 && $props.cedtelefono.total === 0 && $props.customer.total === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_5, " La búsqueda: \"" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.search) + "\" no se encontro en ningun campo de la base de datos. ", 1
       /* TEXT */
       )])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -51563,11 +51573,11 @@ var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNo
 
 var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" UMIP Planilla Regular 2020 ");
 
-var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Tribunales 1 ");
+var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Planilla Lotería ");
 
 var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Universidad Tecnologica Planilla Transparencia Salario Enero 2021 ");
 
-var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Tribunales 1 ");
+var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Envios WhatsOn Segmentos ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");

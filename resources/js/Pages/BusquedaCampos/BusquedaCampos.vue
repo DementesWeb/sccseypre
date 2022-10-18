@@ -53,6 +53,10 @@
         <!--DATO 9 -->
         <Tabla-Dato-9 :ceddato9="ceddato9"></Tabla-Dato-9>
         <!--FIN DATO 9 -->
+        
+        <!--DATO 10 -->
+        <Tabla-Dato-10 :ceddato10="dato10"></Tabla-Dato-10>
+        <!--FIN DATO 10 -->
 
         <!-- CUSTOMER -->
         <Tabla-Customer :customer="customer"></Tabla-Customer>
@@ -67,6 +71,7 @@
             ceddato7.total === 0 &&
             ceddato8.total === 0 && 
             ceddato9.total === 0 && 
+            dato10.total === 0 && 
             cedtelefono.total === 0 && 
             customer.total === 0"
         >
@@ -85,6 +90,7 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
+import TablaDato10 from "@/Components/TablaDato10.vue";
 import TablaDato9 from "@/Components/TablaDato9.vue";
 import TablaDato8 from "@/Components/TablaDato8.vue";
 import TablaDato7 from "@/Components/TablaDato7.vue";
@@ -104,6 +110,7 @@ export default {
         Input,
         Pagination,
         TablaTelefono,
+        TablaDato10,
         TablaDato9,
         TablaDato8,
         TablaDato7,
@@ -147,6 +154,7 @@ export default {
         ceddato7: Object,
         ceddato8: Object,
         ceddato9: Object,
+        dato10: Object,
         filters: Object,
         customer: Object,
     },
