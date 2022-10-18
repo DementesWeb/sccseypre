@@ -14,7 +14,7 @@ class dato14 extends Model
         'NOMBRE',
         'CEDULA',
         'CARGO',
-        'SALARIO',
+        'SALARIO_MENSUAL',
         'GASTO_DE_REPRESENTACIO',
         'TOTAL',
     ];

@@ -199,7 +199,7 @@
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
                         <h2 class="py-4 px-12 font-bold text-xl">
-                            Transparencia Salario Enero 2021
+                            Universidad Tecnologica Planilla Transparencia Salario Enero 2021
                         </h2>
                         <!-- component -->
                         <div

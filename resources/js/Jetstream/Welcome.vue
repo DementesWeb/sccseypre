@@ -44,24 +44,43 @@
                     </div>
                 </div>
             </div>
+            <div v-if="$page.props.user.current_team_id == 1">
+                <div class="p-6 border-t border-gray-200">
+                    <div class="flex items-center">
+                        <i class="fa fa-solid fa-user-shield text-3xl text-blue-800"></i>
+                        <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Gestión de Usuarios</div>
+                    </div>
+                    
+                    <div class="ml-12">
+                        <div class="mt-2 text-sm text-gray-500">
+                            <Link :href="route('security.index')" class="text-sm text-gray-700 underline pr-3">
+                                Ver Usuarios >
+                            </Link>
+                            <Link :href="route('security.create')" class="text-sm text-gray-700 underline">
+                                Crear Usuarios >
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="p-6 border-t border-gray-200">
+            <div v-if="$page.props.user.current_team_id == 1">
+                <div class="p-6 border-t border-gray-200">
                 <div class="flex items-center">
-                    <i class="fa fa-solid fa-user-shield text-3xl text-blue-800"></i>
-                    <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Gestión de Usuarios</div>
+                    <i class="fa fa-solid fa-server text-3xl text-blue-800"></i>
+                    <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Bases de Datos</div>
                 </div>
 
                 <div class="ml-12">
                     <div class="mt-2 text-sm text-gray-500">
-                        <Link :href="route('security.index')" class="text-sm text-gray-700 underline pr-3">
-                            Ver Usuarios >
-                        </Link>
-                        <Link :href="route('security.create')" class="text-sm text-gray-700 underline">
-                            Crear Usuarios >
+                        <Link :href="route('menutablas')" class="text-sm text-gray-700 underline pr-3">
+                            Ver Bases de Datos >
                         </Link>
                     </div>
                 </div>
+                </div>
             </div>
+            
 
 
         </div>
