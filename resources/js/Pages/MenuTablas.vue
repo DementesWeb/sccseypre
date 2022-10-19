@@ -281,12 +281,12 @@
                 <!-- <i classs="fa fa-angle-right"></i> -->
             </Link>
             <Link
-                    :href="route('Dato34')"
-                    as="button"
-                    class="text-sm text-gray-700 btn btn-blue p-4"
-                >
+                :href="route('Dato34')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
                 Planilla Lotería
-                </Link>
+            </Link>
             <Link
                 :href="route('Dato35')"
                 as="button"
@@ -296,22 +296,37 @@
                 2021
             </Link>
             <Link
-                    :href="route('Dato36')"
-                    as="button"
-                    class="text-sm text-gray-700 btn btn-blue p-4"
-                >
+                :href="route('Dato36')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
                 Envios WhatsOn Segmentos
-                    
-                </Link>
+
+            </Link>
+            <Link
+                :href="route('Dato37')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
+                Planilla ACP-FN
+
+            </Link>
+            <Link
+                :href="route('Dato38')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
+                Planilla ACP
+            </Link>
         </div>
     </app-layout>
 </template>
 
 <script>
 import AppLayout from "@/Layouts/AppLayout.vue";
-import { Link } from "@inertiajs/inertia-vue3";
+import {Link} from "@inertiajs/inertia-vue3";
 
 export default {
-    components: { AppLayout, Link },
+    components: {AppLayout, Link},
 };
 </script>
