@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Dato37Controller;
+use App\Http\Controllers\Dato38Controller;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -139,8 +141,10 @@ Route::get('/dato31', [Dato31Controller::class,'Index'])->name('Dato31');
 Route::get('/dato32', [Dato32Controller::class,'Index'])->name('Dato32');
 Route::get('/dato33', [Dato33Controller::class,'Index'])->name('Dato33');
 Route::get('/dato34', [Dato34Controller::class,'Index'])->name('Dato34');
-Route::get('/dato36', [Dato36Controller::class,'Index'])->name('Dato36');
 Route::get('/dato35', [Dato35Controller::class,'Index'])->name('Dato35');
+Route::get('/dato36', [Dato36Controller::class,'Index'])->name('Dato36');
+Route::get('/dato37', [Dato37Controller::class,'Index'])->name('Dato37');
+Route::get('/dato38', [Dato38Controller::class,'Index'])->name('Dato38');
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 Route::get('/BusquedaMultiple', [BusquedaMultipleController::class,'Index'])->name('BusquedaMultiple'); 
 
