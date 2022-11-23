@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        /* ROLE ADMINISTRADOR */
+        /* ROLE ADMINISTRADOR 
         $user = new User;
         $user->name = 'Admin';
         $user->email = 'admin@admin.com';
@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
+        */
         
         $user = new User;
         $user->name = 'Andrea Bohórquez';
