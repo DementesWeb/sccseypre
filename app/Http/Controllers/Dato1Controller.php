@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Inertia\Inertia;
 use App\Models\Dato1;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 
 class Dato1Controller extends Controller
 {

@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        /* ROLE ADMINISTRADOR 
+        //ROLE ADMINISTRADOR
         $user = new User;
         $user->name = 'Admin';
         $user->email = 'admin@admin.com';
@@ -29,21 +29,20 @@ class DatabaseSeeder extends Seeder
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
-        */
-        
+
         $user = new User;
         $user->name = 'Andrea Bohórquez';
         $user->email = 'abohorquez@admin.com';
         $user->password = bcrypt('Panama.2022');
         $user->current_team_id = 1;
         $user->save();
-        
+
         $teamAdmin = new Team;
         $teamAdmin->name = 'Admin';
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
-    
+
         $user = new User;
         $user->name = 'Andrea Guzmán';
         $user->email = 'aguzman@admin.com';
@@ -56,7 +55,7 @@ class DatabaseSeeder extends Seeder
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
-    
+
         $user = new User;
         $user->name = 'Angie Picón';
         $user->email = 'angie@admin.com';
@@ -69,7 +68,7 @@ class DatabaseSeeder extends Seeder
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
-    
+
         $user = new User;
         $user->name = 'Elizabeth López';
         $user->email = 'elopez@admin.com';
@@ -82,7 +81,7 @@ class DatabaseSeeder extends Seeder
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
-    
+
         $user = new User;
         $user->name = 'Gheraldine Taba';
         $user->email = 'gtaba@admin.com';
@@ -95,7 +94,7 @@ class DatabaseSeeder extends Seeder
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
-    
+
         $user = new User;
         $user->name = 'Jose de la Guardia';
         $user->email = 'jmg@admin.com';
@@ -108,7 +107,7 @@ class DatabaseSeeder extends Seeder
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
-    
+
         $user = new User;
         $user->name = 'Julio Tejada';
         $user->email = 'jtejada@admin.com';
@@ -121,7 +120,7 @@ class DatabaseSeeder extends Seeder
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
-    
+
         $user = new User;
         $user->name = 'Selene Cuenca';
         $user->email = 'selene@admin.com';
@@ -134,7 +133,7 @@ class DatabaseSeeder extends Seeder
         $teamAdmin->user_id = 1;
         $teamAdmin->personal_team = 1;
         $teamAdmin->save();
-    
+
         /* ROLES ASESOR */
         $userAsesor = new User;
         $userAsesor->name = 'Adriana Picón';

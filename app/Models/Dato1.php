@@ -11,20 +11,14 @@ class Dato1 extends Model
 
     protected $fillable = [
         'CEDULA',
-        'NOMBRE_CLIENTE',
+        'NOMBRE',
         'SUSCRIPTOR',
-        'BARRIO',
         'CELULAR',
         'TELEFONO',
-        'EMAIL',
-        'EMAIL_CABLE',
-        'SALDOCORRIENTE',
-        'SALDO30',
-        'SALDO60',
-        'SALDO90',
-        'SALDO90MAS',
-        'ESTADO',
-        'DEUDATOTAL',
-        'FECHA_ACTUALIZACION'
+        'BARRIO',
+        'CEDULA_SIN_FORMATO',
+        'CUENTA',
+        'CUENTA_BARRIO',
+        'NOMBRE_CUENTA'
     ];
 }

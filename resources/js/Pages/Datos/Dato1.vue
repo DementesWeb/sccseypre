@@ -2,7 +2,7 @@
     <app-layout title="Tigo 2021">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Tigo 2021
+                Tigo 2023
             </h2>
         </template>
         <div class="container py-6 max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">

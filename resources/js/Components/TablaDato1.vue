@@ -3,7 +3,7 @@
         <div class="flex justify-center">
 
             <div class="form-check form-switch">
-                <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista:  <strong>Tigo 2021</strong></label>
+                <label class="form-check-label inline-block mx-4 text-gray-800" for="flexSwitchCheckChecked">Cambiar Tipo de Vista:  <strong>Tigo 2023</strong></label>
                 <button class="ui btn-blue toggle" :class="{active:isActive}" @click="isActive = !isActive" >{{isActive ? 'Tarjeta' : 'Tabla'}}</button>
             </div>
         </div>
@@ -24,13 +24,10 @@
                                                 Cédula
                                                 </th>
                                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Nombre Cliente
+                                                Nombre
                                             </th>
                                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                                                 Suscriptor
-                                            </th>
-                                            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Barrio
                                             </th>
                                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                                                 Celular
@@ -39,37 +36,20 @@
                                                 Teléfono
                                             </th>
                                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Email
+                                                Barrio
                                             </th>
                                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Email Cable
+                                                Cédula sin formato
                                             </th>
                                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Saldo Corriente
+                                                Cuenta
                                             </th>
                                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Saldo 30
+                                                Cuenta Barrio
                                             </th>
                                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Saldo 60
+                                                Nombre Cuenta
                                             </th>
-                                            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Saldo 90
-                                            </th>
-                                            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Saldo 90 Más
-                                            </th>
-                                            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Estado
-                                            </th>
-                                            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                                Deuda Total
-                                            </th>
-                                            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Fecha Actualización
-                                            </th>
-
-
                                             <th scope="col" class="p-4">
                                                 <span class="sr-only">
                                                     <i class="fa fa-circle-chevron-right"></i>
@@ -80,28 +60,16 @@
                                     <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
                                         <tr v-for="items in ceddato1.data" :key="items.id" class="hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-900">
                                             <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{items.CEDULA}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.NOMBRE_CLIENTE}}</td>
+                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.NOMBRE}}</td>
                                             <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.SUSCRIPTOR}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.BARRIO}}</td>
                                             <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.CELULAR}}</td>
                                             <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.TELEFONO}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.EMAIL}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.EMAIL_CABLE}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.SALDOCORRIENTE}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.SALDO30}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.SALDO60}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.SALDO90}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.SALDO90MAS}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.ESTADO}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.DEUDATOTAL}}</td>
-                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.FECHA_ACTUALIZACION}}</td>
-
-
-
+                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.BARRIO}}</td>
+                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.CEDULA_SIN_FORMATO}}</td>
+                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.CUENTA}}</td>
+                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.CUENTA_BARRIO}}</td>
+                                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{items.NOMBRE_CUENTA}}</td>
                                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                                                <!-- <Link :href="route('customers.edit', items.id)">
-                                                    <i class="fa fa-angle-right"></i>
-                                                </Link> -->
                                             </td>
                                         </tr>
                                     </tbody>
@@ -120,7 +88,7 @@
             <div class="container py-4 max-w-7xl mx-auto  my-4 px-4 sm:px-6 lg:px-8">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="m-2 bg-gray-200 sm:rounded-lg shadow-md">
-                        <h2 class="py-4 px-12 font-bold text-xl">Tigo 2021</h2>
+                        <h2 class="py-4 px-12 font-bold text-xl">Tigo 2023</h2>
                         <!-- component -->
                         <div
                             class="bg-gray-200 flex w-full flex-col gap-4 mt-4 items-center justify-center"
@@ -151,11 +119,10 @@
                                             />
                                         </svg>
                                     </div>
-
                                     <!-- Title -->
                                     <div class="col-span-11 xl:-ml-5">
                                         <p class="text-blue-600 font-bold">
-                                            Cedula: {{ items.CEDULA }}
+                                            Cédula: {{ items.CEDULA }}
                                         </p>
                                     </div>
 
@@ -168,9 +135,9 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Nombre Cliente:
+                                                Nombre:
                                                 <span class="font-bold">
-                                                    {{ items.NOMBRE_CLIENTE }}
+                                                    {{ items.NOMBRE }}
                                                 </span>
                                             </p>
                                             <p
@@ -184,15 +151,7 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Barrio:
-                                                <span class="font-bold">
-                                                    {{ items.BARRIO }}
-                                                </span>
-                                            </p>
-                                            <p
-                                                class="text-md text-gray-800 font-light"
-                                            >
-                                                Célular:
+                                                Celular:
                                                 <span class="font-bold">
                                                     {{ items.CELULAR }}
                                                 </span>
@@ -200,7 +159,7 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Telefono:
+                                                Teléfono:
                                                 <span class="font-bold">
                                                     {{ items.TELEFONO }}
                                                 </span>
@@ -208,25 +167,9 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Email:
+                                                Barrio:
                                                 <span class="font-bold">
-                                                    {{ items.EMAIL }}
-                                                </span>
-                                            </p>
-                                            <p
-                                                class="text-md text-gray-800 font-light"
-                                            >
-                                                Email Cable:
-                                                <span class="font-bold">
-                                                    {{ items.EMAIL_CABLE }}
-                                                </span>
-                                            </p>
-                                            <p
-                                                class="text-md text-gray-800 font-light"
-                                            >
-                                                Saldo Corriente:
-                                                <span class="font-bold">
-                                                    {{ items.SALDOCORRIENTE }}
+                                                    {{ items.BARRIO }}
                                                 </span>
                                             </p>
                                         </div>
@@ -235,57 +178,33 @@
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Saldo 30:
+                                                Cédula sin Formato:
                                                 <span class="font-bold">
-                                                    {{ items.SALDO30 }}
+                                                    {{ items.CEDULA_SIN_FORMATO }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Saldo 60:
+                                                Cuenta:
                                                 <span class="font-bold">
-                                                    {{ items.SALDO60 }}
+                                                    {{ items.CUENTA }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Saldo 90:
+                                                Cuenta Barrio:
                                                 <span class="font-bold">
-                                                    {{ items.SALDO90 }}
+                                                    {{ items.CUENTA_BARRIO }}
                                                 </span>
                                             </p>
                                             <p
                                                 class="text-md text-gray-800 font-light"
                                             >
-                                                Saldo 90 Mas:
+                                                Nombre Cuenta:
                                                 <span class="font-bold">
-                                                    {{ items.SALDO90MAS }}
-                                                </span>
-                                            </p>
-                                            <p
-                                                class="text-md text-gray-800 font-light"
-                                            >
-                                                Estado:
-                                                <span class="font-bold">
-                                                    {{ items.ESTADO }}
-                                                </span>
-                                            </p>
-                                            <p
-                                                class="text-md text-gray-800 font-light"
-                                            >
-                                                Deuda Total:
-                                                <span class="font-bold">
-                                                    {{ items.DEUDATOTAL }}
-                                                </span>
-                                            </p>
-                                            <p
-                                                class="text-md text-gray-800 font-light"
-                                            >
-                                                Fecha Actualización:
-                                                <span class="font-bold">
-                                                    {{ items.FECHA_ACTUALIZACION }}
+                                                    {{ items.NOMBRE_CUENTA }}
                                                 </span>
                                             </p>
                                         </div>
