@@ -21,10 +21,10 @@ return new class extends Migration
             $table->string('CELULAR')->nullable();
             $table->string('TELEFONO')->nullable();
             $table->string('BARRIO')->nullable();
-            $table->double('CEDULA_SIN_FORMATO')->nullable();
-            $table->double('CUENTA')->nullable();
-            $table->integer('CUENTA_BARRIO')->nullable();
-            $table->integer('NOMBRE_CUENTA')->nullable();
+            $table->string('CEDULA_SIN_FORMATO')->nullable();
+            $table->string('CUENTA')->nullable();
+            $table->string('CUENTA_BARRIO')->nullable();
+            $table->string('NOMBRE_CUENTA')->nullable();
             $table->timestamps();
         });
     }
