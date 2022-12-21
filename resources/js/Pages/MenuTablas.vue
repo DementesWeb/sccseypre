@@ -21,7 +21,7 @@
                 as="button"
                 class="text-sm text-gray-700 btn btn-blue p-4"
             >
-                Tigo 2021
+                Tigo 2023
                 <!-- <i classs="fa fa-angle-right"></i> -->
             </Link>
             <Link

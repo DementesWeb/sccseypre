@@ -58,7 +58,7 @@ class BusquedaCamposController extends Controller
                 $query->where('CEDULA', 'LIKE', "%" . $search . "%")
                     ->orWhere('BARRIO', 'LIKE', "%" . $search . "%")
                     ->orWhere('CELULAR', 'LIKE', "%" . $search . "%")
-                    ->orWhere('EMAIL', 'LIKE', "%" . $search . "%");
+                    ->orWhere('NOMBRE_CUENTA', 'LIKE', "%" . $search . "%");
             })->paginate(50);
         $ceddato2 = Dato2::latest()
             ->when($filters['search'] ?? null, function ($query, $search) {
