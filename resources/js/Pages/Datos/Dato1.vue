@@ -1,5 +1,5 @@
 <template>
-    <app-layout title="Tigo 2021">
+    <app-layout title="Tigo 2023">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Tigo 2023
@@ -16,7 +16,7 @@
 
         <Tabla-Dato-1 :ceddato1="ceddato1"></Tabla-Dato-1>
 
-        <div 
+        <div
         v-if="ceddato1.total === 0"
         >
             <div class="flex justify-center">
