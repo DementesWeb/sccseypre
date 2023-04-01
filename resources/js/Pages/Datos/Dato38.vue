@@ -14,9 +14,9 @@
             />
         </div>
 
-        <Tabla-Dato-38 :dato38="dato38"></Tabla-Dato-38>
+        <Tabla-Dato-38 :dato39="dato39"></Tabla-Dato-38>
 
-        <div v-if="dato38.total === 0">
+        <div v-if="dato39.total === 0">
             <div class="flex justify-center">
                 <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                     La Búsqueda: "{{ search }}" no se encontro en la base de
@@ -32,14 +32,14 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
-import TablaDato38 from "@/Components/TablaDato38.vue";
+import TablaDato39 from "@/Components/TablaDato39.vue";
 
 export default {
     components: {
         AppLayout,
         Input,
         Pagination,
-        TablaDato38,
+        Tabladato39,
     },
 
     data() {
@@ -51,7 +51,7 @@ export default {
     watch: {
         search($value) {
             this.$inertia.get(
-                "/dato38",
+                "/dato39",
                 {
                     search: $value,
                 },
@@ -63,7 +63,7 @@ export default {
     },
 
     props: {
-        dato38: Object,
+        dato39: Object,
         filters: Object,
     },
 };
