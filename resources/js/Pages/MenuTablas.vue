@@ -318,6 +318,13 @@
             >
                 Planilla ACP
             </Link>
+            <Link
+                :href="route('Dato39')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
+                ENA 2023
+            </Link>
         </div>
     </app-layout>
 </template>
