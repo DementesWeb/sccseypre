@@ -162,6 +162,18 @@
         <Tabla-Dato-36 :dato36="dato36"></Tabla-Dato-36>
         <!--FIN DATO 36 -->
 
+        <!--DATO 37 -->
+        <Tabla-Dato-37 :dato37="dato37"></Tabla-Dato-37>
+        <!--FIN DATO 37 -->
+
+        <!--DATO 38 -->
+        <Tabla-Dato-38 :dato38="dato38"></Tabla-Dato-38>
+        <!--FIN DATO 38 -->
+
+        <!--DATO 39 -->
+        <Tabla-Dato-39 :dato39="dato39"></Tabla-Dato-39>
+        <!--FIN DATO 39 -->
+
         <!-- CUSTOMER -->
         <Tabla-Customer :customer="customer"></Tabla-Customer>
 
@@ -203,6 +215,9 @@
                 dato34.total === 0 &&
                 dato35.total === 0 &&
                 dato36.total === 0 &&
+                dato37.total === 0 &&
+                dato38.total === 0 &&
+                dato39.total === 0 &&
                 cedtelefono.total === 0 &&
                 customer.total === 0
             "
@@ -220,6 +235,9 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
+import TablaDato39 from "@/Components/TablaDato39.vue";
+import TablaDato38 from "@/Components/TablaDato38.vue";
+import TablaDato37 from "@/Components/TablaDato37.vue";
 import TablaDato36 from "@/Components/TablaDato36.vue";
 import TablaDato35 from "@/Components/TablaDato35.vue";
 import TablaDato34 from "@/Components/TablaDato34.vue";
@@ -265,6 +283,9 @@ export default {
         Input,
         Pagination,
         TablaTelefono,
+        TablaDato39,
+        TablaDato38,
+        TablaDato37,
         TablaDato36,
         TablaDato35,
         TablaDato34,
@@ -362,6 +383,9 @@ export default {
         dato34: Object,
         dato35: Object,
         dato36: Object,
+        dato37: Object,
+        dato38: Object,
+        dato39: Object,
         filters: Object,
         customer: Object,
     },
