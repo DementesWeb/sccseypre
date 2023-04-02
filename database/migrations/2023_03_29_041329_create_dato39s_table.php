@@ -20,9 +20,9 @@ return new class extends Migration
             $table->string('TIPODEDOCUMENTO')->nullable();
             $table->string('CEDULA')->nullable();
             $table->string('NOMBRE')->nullable();
-            $table->string('DIRECCIÓN')->nullable();
+            $table->string('DIRECCION')->nullable();
             $table->string('TAG')->nullable();
-            $table->string('MATRÍCULA')->nullable();
+            $table->string('MATRICULA')->nullable();
             $table->string('TEL1')->nullable();
             $table->string('TEL2')->nullable();
             $table->string('TEL3')->nullable();
