@@ -159,7 +159,7 @@
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.DIRECCIÓN }}
+                                                    {{ items.DIRECCION }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
@@ -169,7 +169,7 @@
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"
                                                 >
-                                                    {{ items.MATRÍCULA }}
+                                                    {{ items.MATRICULA }}
                                                 </td>
                                                 <td
                                                     class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white"

@@ -24,47 +24,46 @@
                 </h2>
             </div>
         </div>
-
     </app-layout>
 </template>
 
 <script>
-import AppLayout from "@/Layouts/AppLayout.vue";
-import Input from "@/Jetstream/Input.vue";
-import Pagination from "@/Components/Pagination.vue";
-import TablaDato39 from "@/Components/TablaDato39.vue";
+    import AppLayout from "@/Layouts/AppLayout.vue";
+    import Input from "@/Jetstream/Input.vue";
+    import Pagination from "@/Components/Pagination.vue";
+    import TablaDato39 from "@/Components/TablaDato39.vue";
 
-export default {
-    components: {
-        AppLayout,
-        Input,
-        Pagination,
-        TablaDato39,
-    },
-
-    data() {
-        return {
-            search: "",
-        };
-    },
-
-    watch: {
-        search($value) {
-            this.$inertia.get(
-                "/dato39",
-                {
-                    search: $value,
-                },
-                {
-                    preserveState: true,
-                }
-            );
+    export default {
+        components: {
+            AppLayout,
+            Input,
+            Pagination,
+            TablaDato39,
         },
-    },
 
-    props: {
-        dato39: Object,
-        filters: Object,
-    },
-};
+        data() {
+            return {
+                search: "",
+            };
+        },
+
+        watch: {
+            search($value) {
+                this.$inertia.get(
+                    "/dato39",
+                    {
+                        search: $value,
+                    },
+                    {
+                        preserveState: true,
+                    }
+                );
+            },
+        },
+
+        props: {
+            dato39: Object,
+            filters: Object,
+        },
+    };
 </script>
