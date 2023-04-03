@@ -247,7 +247,7 @@ class BuscarCedulaController extends Controller
 
         $dato38 = Dato38::latest()
             ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
+                $query->where('CARGO', $search);
             })->paginate(10);
 
         $dato39 = Dato39::latest()
