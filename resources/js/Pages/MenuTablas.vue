@@ -301,7 +301,6 @@
                 class="text-sm text-gray-700 btn btn-blue p-4"
             >
                 Envios WhatsOn Segmentos
-
             </Link>
             <Link
                 :href="route('Dato37')"
@@ -309,7 +308,6 @@
                 class="text-sm text-gray-700 btn btn-blue p-4"
             >
                 Planilla ACP-FN
-
             </Link>
             <Link
                 :href="route('Dato38')"
@@ -325,15 +323,22 @@
             >
                 ENA 2023
             </Link>
+            <Link
+                :href="route('Dato40')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
+                CW MOVI ACT 2023
+            </Link>
         </div>
     </app-layout>
 </template>
 
 <script>
 import AppLayout from "@/Layouts/AppLayout.vue";
-import {Link} from "@inertiajs/inertia-vue3";
+import { Link } from "@inertiajs/inertia-vue3";
 
 export default {
-    components: {AppLayout, Link},
+    components: { AppLayout, Link },
 };
 </script>

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Dato37Controller;
 use App\Http\Controllers\Dato38Controller;
 use App\Http\Controllers\Dato39Controller;
+use App\Http\Controllers\Dato40Controller;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -147,6 +148,6 @@ Route::get('/dato36', [Dato36Controller::class,'Index'])->name('Dato36');
 Route::get('/dato37', [Dato37Controller::class,'Index'])->name('Dato37');
 Route::get('/dato38', [Dato38Controller::class,'Index'])->name('Dato38');
 Route::get('/dato39', [Dato39Controller::class,'Index'])->name('Dato39');
+Route::get('/dato40', [Dato40Controller::class,'Index'])->name('Dato40');
 Route::get('/buscarcedula', [BuscarCedulaController::class,'Index'])->name('BuscarCedula');
 Route::get('/BusquedaMultiple', [BusquedaMultipleController::class,'Index'])->name('BusquedaMultiple');
-
