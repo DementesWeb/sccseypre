@@ -330,6 +330,13 @@
             >
                 CW MOVI ACT 2023
             </Link>
+            <Link
+                :href="route('Dato42')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
+                CW PRIME 2023
+            </Link>
         </div>
     </app-layout>
 </template>
