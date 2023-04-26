@@ -14,6 +14,8 @@ use App\Models\Dato8;
 use App\Models\Dato9;
 use App\Models\customer;
 use App\Models\dato10;
+<<<<<<< HEAD
+=======
 use App\Models\Dato11;
 use App\Models\dato12;
 use App\Models\Dato13;
@@ -40,6 +42,7 @@ use App\Models\Dato33;
 use App\Models\dato34;
 use App\Models\Dato35;
 use App\Models\dato36;
+>>>>>>> 1fe5fe28dcd006862c1ff76160ab5f4b5b656aa7
 use App\Models\Telefono;
 use Illuminate\Http\Request;
 
@@ -453,6 +456,41 @@ class BusquedaCamposController extends Controller
                     ->orWhere('MINI', 'LIKE', "%" . $search . "%");
             })->paginate(50);
 
+<<<<<<< HEAD
+            $dato10 = dato10::latest()
+            ->when($filters['search'] ?? null, function($query, $search){
+                $query->where('NOMBRE','LIKE',"%".$search."%")
+                ->orWhere('APELLIDO','LIKE',"%".$search."%")
+                ->orWhere('CARGO','LIKE',"%".$search."%");
+            })->paginate(50);
+
+        $ceddato1 = cache('cached1',$ceddato1,now()->addWeek());
+        $ceddato2 = cache('cached2',$ceddato2,now()->addWeek());
+        $ceddato3 = cache('cached3',$ceddato3,now()->addWeek());
+        $ceddato4 = cache('cached4',$ceddato4,now()->addWeek());
+        $ceddato5 = cache('cached5',$ceddato5,now()->addWeek());
+        $ceddato6 = cache('cached6',$ceddato6,now()->addWeek());
+        $ceddato7 = cache('cached7',$ceddato7,now()->addWeek());
+        $ceddato8 = cache('cached8',$ceddato8,now()->addWeek());
+        $ceddato9 = cache('cached9',$ceddato9,now()->addWeek());
+        $cedtelefono = cache('cachetelefono',$cedtelefono,now()->addWeek());
+        $customer = cache('cachecustomer',$customer,now()->addWeek());
+        $dato10 = cache('dato10',$dato10,now()->addWeek());
+
+        return Inertia::render('BusquedaCampos/BusquedaCampos', ['ceddato1'=>$ceddato1,
+                                                                    'ceddato2'=>$ceddato2,
+                                                                    'ceddato3'=>$ceddato3,
+                                                                    'ceddato4'=>$ceddato4,
+                                                                    'ceddato5'=>$ceddato5,
+                                                                    'ceddato6'=>$ceddato6,
+                                                                    'ceddato7'=>$ceddato7,
+                                                                    'ceddato8'=>$ceddato8,
+                                                                    'ceddato9'=>$ceddato9,
+                                                                    'dato10'=>$dato10,
+                                                                    'cedtelefono'=>$cedtelefono,
+                                                                    'customer'=>$customer,
+                                                                    'filters'=>$filters]);
+=======
         $ceddato1 = cache('cached1', $ceddato1, now()->addWeek());
         $ceddato2 = cache('cached2', $ceddato2, now()->addWeek());
         $ceddato3 = cache('cached3', $ceddato3, now()->addWeek());
@@ -533,5 +571,6 @@ class BusquedaCamposController extends Controller
             'customer' => $customer,
             'filters' => $filters
         ]);
+>>>>>>> 1fe5fe28dcd006862c1ff76160ab5f4b5b656aa7
     }
 }
