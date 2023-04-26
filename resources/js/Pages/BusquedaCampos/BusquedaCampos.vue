@@ -53,6 +53,10 @@
         <!--DATO 9 -->
         <Tabla-Dato-9 :ceddato9="ceddato9"></Tabla-Dato-9>
         <!--FIN DATO 9 -->
+        
+        <!--DATO 10 -->
+        <Tabla-Dato-10 :ceddato10="dato10"></Tabla-Dato-10>
+        <!--FIN DATO 10 -->
 
         <!--DATO 10 -->
         <Tabla-Dato-10 :ceddato10="ceddato10"></Tabla-Dato-10>
