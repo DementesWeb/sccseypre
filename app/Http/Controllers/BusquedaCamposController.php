@@ -40,6 +40,11 @@ use App\Models\Dato33;
 use App\Models\dato34;
 use App\Models\Dato35;
 use App\Models\dato36;
+use App\Models\Dato37;
+use App\Models\Dato38;
+use App\Models\Dato39;
+use App\Models\Dato40;
+use App\Models\Dato41;
 use App\Models\Telefono;
 use Illuminate\Http\Request;
 
@@ -453,6 +458,66 @@ class BusquedaCamposController extends Controller
                     ->orWhere('MINI', 'LIKE', "%" . $search . "%");
             })->paginate(50);
 
+        $dato37 = Dato37::latest()
+            ->when($filters['search'] ?? null, function ($query, $search) {
+                $query->where('CEDULA', 'LIKE', "%" . $search . "%")
+                    ->orWhere('PRIMER_NOMBRE', 'LIKE', "%" . $search . "%")
+                    ->orWhere('SEGUNDO_NOMBRE', 'LIKE', "%" . $search . "%")
+                    ->orWhere('APELLIDO_PATERNO', 'LIKE', "%" . $search . "%")
+                    ->orWhere('APELLIDO_MATERNO', 'LIKE', "%" . $search . "%")
+                    ->orWhere('FECHA_NACIMIENTO', 'LIKE', "%" . $search . "%")
+                    ->orWhere('SEXO', 'LIKE', "%" . $search . "%");
+            })->paginate(50);
+        $dato38 = Dato38::latest()
+            ->when($filters['search'] ?? null, function ($query, $search) {
+                $query->where('NOMBRE', 'LIKE', "%" . $search . "%")
+                    ->orWhere('CARGO', 'LIKE', "%" . $search . "%")
+                    ->orWhere('ESTATUS', 'LIKE', "%" . $search . "%")
+                    ->orWhere('SALARIO', 'LIKE', "%" . $search . "%");
+            })->paginate(50);
+        $dato39 = Dato39::latest()
+            ->when($filters['search'] ?? null, function ($query, $search) {
+                $query->where('NUMPANAPASS', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TIPODECUENTA', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TIPODEDOCUMENTO', 'LIKE', "%" . $search . "%")
+                    ->orWhere('CEDULA', 'LIKE', "%" . $search . "%")
+                    ->orWhere('NOMBRE', 'LIKE', "%" . $search . "%")
+                    ->orWhere('DIRECCION', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TAG', 'LIKE', "%" . $search . "%")
+                    ->orWhere('MATRICULA', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TEL1', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TEL2', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TEL3', 'LIKE', "%" . $search . "%")
+                    ->orWhere('EMAIL', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TIPO_RECARGA', 'LIKE', "%" . $search . "%")
+                    ->orWhere('NUM_TAGS', 'LIKE', "%" . $search . "%");
+            })->paginate(50);
+        $dato40 = Dato40::latest()
+            ->when($filters['search'] ?? null, function ($query, $search) {
+                $query->where('ID', 'LIKE', "%" . $search . "%")
+                    ->orWhere('CEDULA', 'LIKE', "%" . $search . "%")
+                    ->orWhere('NOMBRE', 'LIKE', "%" . $search . "%")
+                    ->orWhere('EMAIL', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TEL1', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TEL2', 'LIKE', "%" . $search . "%");
+            })->paginate(50);
+        $dato41 = Dato41::latest()
+            ->when($filters['search'] ?? null, function ($query, $search) {
+                $query->where('id', 'LIKE', "%" . $search . "%")
+                    ->orWhere('POS', 'LIKE', "%" . $search . "%")
+                    ->orWhere('Cedula', 'LIKE', "%" . $search . "%")
+                    ->orWhere('Nombre', 'LIKE', "%" . $search . "%")
+                    ->orWhere('Cargo', 'LIKE', "%" . $search . "%")
+                    ->orWhere('Departamento', 'LIKE', "%" . $search . "%")
+                    ->orWhere('Estado', 'LIKE', "%" . $search . "%")
+                    ->orWhere('F_Inicio', 'LIKE', "%" . $search . "%")
+                    ->orWhere('Obj_Gasto', 'LIKE', "%" . $search . "%")
+                    ->orWhere('Salario', 'LIKE', "%" . $search . "%")
+                    ->orWhere('Gastos', 'LIKE', "%" . $search . "%")
+                    ->orWhere('S_Sueldo', 'LIKE', "%" . $search . "%")
+                    ->orWhere('Total', 'LIKE', "%" . $search . "%");
+            })->paginate(50);
+
         $ceddato1 = cache('cached1', $ceddato1, now()->addWeek());
         $ceddato2 = cache('cached2', $ceddato2, now()->addWeek());
         $ceddato3 = cache('cached3', $ceddato3, now()->addWeek());
@@ -489,6 +554,11 @@ class BusquedaCamposController extends Controller
         $dato34 = cache('cached34', $dato34, now()->addWeek());
         $dato35 = cache('cached35', $dato35, now()->addWeek());
         $dato36 = cache('cached36', $dato36, now()->addWeek());
+        $dato37 = cache('cached37', $dato37, now()->addWeek());
+        $dato38 = cache('cached38', $dato38, now()->addWeek());
+        $dato39 = cache('cached39', $dato39, now()->addWeek());
+        $dato40 = cache('cached40', $dato40, now()->addWeek());
+        $dato41 = cache('cached41', $dato41, now()->addWeek());
         $cedtelefono = cache('cachetelefono', $cedtelefono, now()->addWeek());
         $customer = cache('cachecustomer', $customer, now()->addWeek());
 
@@ -529,6 +599,11 @@ class BusquedaCamposController extends Controller
             'dato34' => $dato34,
             'dato35' => $dato35,
             'dato36' => $dato36,
+            'dato37' => $dato37,
+            'dato38' => $dato38,
+            'dato39' => $dato39,
+            'dato40' => $dato40,
+            'dato41' => $dato41,
             'cedtelefono' => $cedtelefono,
             'customer' => $customer,
             'filters' => $filters

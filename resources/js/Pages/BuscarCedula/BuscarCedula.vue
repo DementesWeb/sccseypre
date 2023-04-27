@@ -166,10 +166,6 @@
         <Tabla-Dato-37 :dato37="dato37"></Tabla-Dato-37>
         <!--FIN DATO 37 -->
 
-        <!--DATO 38 -->
-        <Tabla-Dato-38 :dato38="dato38"></Tabla-Dato-38>
-        <!--FIN DATO 38 -->
-
         <!--DATO 39 -->
         <Tabla-Dato-39 :dato39="dato39"></Tabla-Dato-39>
         <!--FIN DATO 39 -->
@@ -178,13 +174,13 @@
         <Tabla-Dato-40 :dato40="dato40"></Tabla-Dato-40>
         <!--FIN DATO 40 -->
 
+        <!--DATO 41 -->
+        <Tabla-Dato-41 :dato41="dato41"></Tabla-Dato-41>
+        <!--FIN DATO 41 -->
+
         <!--DATO 42 -->
         <Tabla-Dato-42 :dato42="dato42"></Tabla-Dato-42>
         <!--FIN DATO 42 -->
-
-        <pre>
-            {{ dato42 }}
-        </pre>
 
         <!-- CUSTOMER -->
         <Tabla-Customer :customer="customer"></Tabla-Customer>
@@ -228,9 +224,9 @@
                 dato35.total === 0 &&
                 dato36.total === 0 &&
                 dato37.total === 0 &&
-                dato38.total === 0 &&
                 dato39.total === 0 &&
                 dato40.total === 0 &&
+                dato41.total === 0 &&
                 dato42.total === 0 &&
                 cedtelefono.total === 0 &&
                 customer.total === 0
@@ -250,9 +246,9 @@ import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
 import TablaDato42 from "@/Components/TablaDato42.vue";
+import TablaDato41 from "@/Components/TablaDato41.vue";
 import TablaDato40 from "@/Components/TablaDato40.vue";
 import TablaDato39 from "@/Components/TablaDato39.vue";
-import TablaDato38 from "@/Components/TablaDato38.vue";
 import TablaDato37 from "@/Components/TablaDato37.vue";
 import TablaDato36 from "@/Components/TablaDato36.vue";
 import TablaDato35 from "@/Components/TablaDato35.vue";
@@ -300,9 +296,9 @@ export default {
         Pagination,
         TablaTelefono,
         TablaDato42,
+        TablaDato41,
         TablaDato40,
         TablaDato39,
-        TablaDato38,
         TablaDato37,
         TablaDato36,
         TablaDato35,
@@ -402,10 +398,10 @@ export default {
         dato35: Object,
         dato36: Object,
         dato37: Object,
-        dato38: Object,
         dato39: Object,
         dato40: Object,
         dato42: Object,
+        dato41: Object,
         filters: Object,
         customer: Object,
     },
