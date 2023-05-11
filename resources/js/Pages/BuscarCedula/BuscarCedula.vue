@@ -182,6 +182,10 @@
         <Tabla-Dato-42 :dato42="dato42"></Tabla-Dato-42>
         <!--FIN DATO 42 -->
 
+        <!--DATO 43 -->
+        <Tabla-Dato-43 :dato43="dato43"></Tabla-Dato-43>
+        <!--FIN DATO 43 -->
+
         <!-- CUSTOMER -->
         <Tabla-Customer :customer="customer"></Tabla-Customer>
 
@@ -228,6 +232,7 @@
                 dato40.total === 0 &&
                 dato41.total === 0 &&
                 dato42.total === 0 &&
+                dato43.total === 0 &&
                 cedtelefono.total === 0 &&
                 customer.total === 0
             "
@@ -245,6 +250,7 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
+import TablaDato43 from "@/Components/TablaDato43.vue";
 import TablaDato42 from "@/Components/TablaDato42.vue";
 import TablaDato41 from "@/Components/TablaDato41.vue";
 import TablaDato40 from "@/Components/TablaDato40.vue";
@@ -295,6 +301,7 @@ export default {
         Input,
         Pagination,
         TablaTelefono,
+        TablaDato43,
         TablaDato42,
         TablaDato41,
         TablaDato40,
@@ -401,6 +408,7 @@ export default {
         dato39: Object,
         dato40: Object,
         dato42: Object,
+        dato43: Object,
         dato41: Object,
         filters: Object,
         customer: Object,

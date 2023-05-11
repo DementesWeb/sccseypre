@@ -344,6 +344,13 @@
             >
                 CW PRIME 2023
             </Link>
+            <Link
+                :href="route('Dato43')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
+                RUVM
+            </Link>
         </div>
     </app-layout>
 </template>
