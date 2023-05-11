@@ -46,6 +46,7 @@ use App\Models\Dato39;
 use App\Models\Dato40;
 use App\Models\Dato41;
 use App\Models\Dato42;
+use App\Models\Dato43;
 use App\Models\Telefono;
 use Illuminate\Http\Request;
 
@@ -273,6 +274,11 @@ class BuscarCedulaController extends Controller
                 $query->where('CEDULA', $search);
             })->paginate(10);
 
+        $dato43 = Dato43::latest()
+            ->when($filters['search'] ?? null, function ($query, $search) {
+                $query->where('CIP_PROPIETARIO', $search);
+            })->paginate(10);
+
         $cedtelefono = Telefono::latest()
             ->when($filters['search'] ?? null, function ($query, $search) {
                 $query->where('CED', $search);
@@ -326,6 +332,7 @@ class BuscarCedulaController extends Controller
         $dato40 = cache('cached40', $dato40, now()->addWeek());
         $dato41 = cache('cached41', $dato41, now()->addWeek());
         $dato42 = cache('cached42', $dato42, now()->addWeek());
+        $dato43 = cache('cached43', $dato43, now()->addWeek());
         $cedtelefono = cache('cachetelefono', $cedtelefono, now()->addWeek());
         $customer = cache('cachecustomer', $customer, now()->addWeek());
 
@@ -372,6 +379,7 @@ class BuscarCedulaController extends Controller
             'dato40' => $dato40,
             'dato41' => $dato41,
             'dato42' => $dato42,
+            'dato43' => $dato43,
             'cedtelefono' => $cedtelefono,
             'customer' => $customer,
             'filters' => $filters

@@ -67,7 +67,7 @@
                                                 >
                                                     EMAIL
                                                 </th>
-                                                
+
                                             </tr>
                                         </thead>
                                         <tbody
@@ -200,30 +200,33 @@
                                                     {{ items.CEDULA }}
                                                 </span>
                                             </p>
-                                            <p
-                                                class="text-md text-gray-800 font-light"
-                                            >
-                                            Teléfono 1:
-                                                <span class="font-bold">
-                                                    {{ items.TEL1 }}
-                                                </span>
-                                            </p>
-                                            <p
-                                                class="text-md text-gray-800 font-light"
-                                            >
-                                            Teléfono 2:
-                                                <span class="font-bold">
-                                                    {{ items.TEL2 }}
-                                                </span>
-                                            </p>
-                                            <p
-                                                class="text-md text-gray-800 font-light"
-                                            >
-                                                Email:
-                                                <span class="font-bold">
-                                                    {{ items.EMAIL }}
-                                                </span>
-                                            </p>
+                                            <!-- Parte Derecha -->
+                                            <div class="items-center m-8">
+                                                <p
+                                                    class="text-md text-gray-800 font-light"
+                                                >
+                                                Teléfono 1:
+                                                    <span class="font-bold">
+                                                        {{ items.TEL1 }}
+                                                    </span>
+                                                </p>
+                                                <p
+                                                    class="text-md text-gray-800 font-light"
+                                                >
+                                                Teléfono 2:
+                                                    <span class="font-bold">
+                                                        {{ items.TEL2 }}
+                                                    </span>
+                                                </p>
+                                                <p
+                                                    class="text-md text-gray-800 font-light"
+                                                >
+                                                    Email:
+                                                    <span class="font-bold">
+                                                        {{ items.EMAIL }}
+                                                    </span>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
