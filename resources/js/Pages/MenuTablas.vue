@@ -351,6 +351,13 @@
             >
                 RUVM
             </Link>
+            <Link
+                :href="route('Dato44')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
+                DESCUENTO
+            </Link>
         </div>
     </app-layout>
 </template>
