@@ -13,6 +13,7 @@
                 placeholder="Busca por: Provincia, Teléfono, Lugar de Trabajo, etc."
             />
         </div>
+
         <!-- Telefonos -->
         <Tabla-Telefono :cedtelefono="cedtelefono"></Tabla-Telefono>
         <!-- Fin Telefono -->
@@ -186,6 +187,10 @@
         <Tabla-Dato-43 :dato43="dato43"></Tabla-Dato-43>
         <!--FIN DATO 43 -->
 
+        <!--DATO 44 -->
+        <Tabla-Dato-44 :dato44="dato44"></Tabla-Dato-44>
+        <!--FIN DATO 44 -->
+
         <!-- CUSTOMER -->
         <Tabla-Customer :customer="customer"></Tabla-Customer>
 
@@ -233,6 +238,7 @@
                 dato40.total === 0 &&
                 dato41.total === 0 &&
                 dato43.total === 0 &&
+                dato44.total === 0 &&
                 cedtelefono.total === 0 &&
                 customer.total === 0
             "
@@ -251,6 +257,7 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import Input from "@/Jetstream/Input.vue";
 import Pagination from "@/Components/Pagination.vue";
+import TablaDato44 from "@/Components/TablaDato44.vue";
 import TablaDato43 from "@/Components/TablaDato43.vue";
 import TablaDato41 from "@/Components/TablaDato41.vue";
 import TablaDato40 from "@/Components/TablaDato40.vue";
@@ -302,6 +309,7 @@ export default {
         Input,
         Pagination,
         TablaTelefono,
+        TablaDato44,
         TablaDato43,
         TablaDato41,
         TablaDato40,
@@ -411,6 +419,7 @@ export default {
         dato40: Object,
         dato41: Object,
         dato43: Object,
+        dato44: Object,
         filters: Object,
         customer: Object,
     },
