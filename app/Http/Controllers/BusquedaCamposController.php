@@ -47,6 +47,7 @@ use App\Models\Dato40;
 use App\Models\Dato41;
 use App\Models\Dato43;
 use App\Models\Dato44;
+use App\Models\Dato45;
 use App\Models\Telefono;
 use Illuminate\Http\Request;
 
@@ -541,6 +542,19 @@ class BusquedaCamposController extends Controller
                     ->orWhere('NOMBRE_DESC', 'LIKE', "%" . $search . "%")
                     ->orWhere('ESTATUS', 'LIKE', "%" . $search . "%");
             })->paginate(50);
+        $dato45 = Dato45::latest()
+            ->when($filters['search'] ?? null, function ($query, $search) {
+                $query->where('CEDULA', 'LIKE', "%" . $search . "%")
+                    ->orWhere('SUSCRIPTOR', 'LIKE', "%" . $search . "%")
+                    ->orWhere('BARRIO', 'LIKE', "%" . $search . "%")
+                    ->orWhere('CELULAR', 'LIKE', "%" . $search . "%")
+                    ->orWhere('TELEFONO', 'LIKE', "%" . $search . "%")
+                    ->orWhere('SALDOCORRIENTE', 'LIKE', "%" . $search . "%")
+                    ->orWhere('DESCSALDOCORRIENTE', 'LIKE', "%" . $search . "%")
+                    ->orWhere('DEUDATOTAL', 'LIKE', "%" . $search . "%")
+                    ->orWhere('CUENTA_BARRIO', 'LIKE', "%" . $search . "%")
+                    ->orWhere('NOMBRE_CUENTA', 'LIKE', "%" . $search . "%");
+            })->paginate(50);
 
         $ceddato1 = cache('cached1', $ceddato1, now()->addWeek());
         $ceddato2 = cache('cached2', $ceddato2, now()->addWeek());
@@ -585,6 +599,7 @@ class BusquedaCamposController extends Controller
         $dato41 = cache('cached41', $dato41, now()->addWeek());
         $dato43 = cache('cached43', $dato43, now()->addWeek());
         $dato44 = cache('cached44', $dato44, now()->addWeek());
+        $dato45 = cache('cached45', $dato45, now()->addWeek());
         $cedtelefono = cache('cachetelefono', $cedtelefono, now()->addWeek());
         $customer = cache('cachecustomer', $customer, now()->addWeek());
 
@@ -632,6 +647,7 @@ class BusquedaCamposController extends Controller
             'dato41' => $dato41,
             'dato43' => $dato43,
             'dato44' => $dato44,
+            'dato45' => $dato45,
             'cedtelefono' => $cedtelefono,
             'customer' => $customer,
             'filters' => $filters
