@@ -358,6 +358,13 @@
             >
                 DESCUENTO
             </Link>
+            <Link
+                :href="route('Dato45')"
+                as="button"
+                class="text-sm text-gray-700 btn btn-blue p-4"
+            >
+                Cable Onda 2023
+            </Link>
         </div>
     </app-layout>
 </template>
