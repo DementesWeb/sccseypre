@@ -7,6 +7,32 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Software Requirement
+
+- Git
+- Github
+- Apache2
+- PHP 8.0
+- Composer latest version
+- Node 16.20.1
+- Mariadb
+
+## Installation Guide
+
+- Clone our repo from github
+- Copy the .env.example and change the new file words for .env
+- Run `composer install` on terminal as a command
+- Run `npm install`
+- Run `npm run dev` to compiling js/css files
+- Run `php artisan key:generate`
+- Set up a database in mariadb named sccseypre
+- Run migrations with `php artisan migrate`
+- Run command for set up user and get access to website with `php artisan db:seed --class=DatabaseSeeder`
+- Run `php artisan serve` for deploy locally the development webserver.
+- And Run `npm run watch` for watch changes in js/css files.
+
+### This All that you need to deploy locally the project sccseypre.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
