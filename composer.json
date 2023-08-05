@@ -12,7 +12,7 @@
         "laravel/jetstream": "^2.6",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
-        "predis/predis": "^2.0",
+        "predis/predis": "^2.2",
         "tightenco/ziggy": "^1.0"
     },
     "require-dev": {
