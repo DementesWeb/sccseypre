@@ -8,8 +8,7 @@
         <div
             class="grid md:grid-cols-4 lg:grid-cols-4 sm:grid-cols-1 gap-5 mx-5 my-10"
         >
-            <Link
-                :href="route('Telefono')"
+            <Link :href="route('Telefono')"
                 as="button"
                 class="text-sm text-gray-700 btn btn-blue p-4"
             >
