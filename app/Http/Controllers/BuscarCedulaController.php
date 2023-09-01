@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Inertia\Inertia;
 use App\Models\Dato1;
+use App\Models\dato10;
 use App\Models\Dato2;
 use App\Models\Dato3;
 use App\Models\Dato4;
@@ -12,45 +12,8 @@ use App\Models\Dato6;
 use App\Models\Dato7;
 use App\Models\Dato8;
 use App\Models\Dato9;
-use App\Models\customer;
-use App\Models\dato10;
-use App\Models\Dato11;
-use App\Models\dato12;
-use App\Models\Dato13;
-use App\Models\dato14;
-use App\Models\dato15;
-use App\Models\dato16;
-use App\Models\Dato17;
-use App\Models\dato18;
-use App\Models\Dato19;
-use App\Models\dato20;
-use App\Models\Dato21;
-use App\Models\dato22;
-use App\Models\Dato23;
-use App\Models\dato24;
-use App\Models\Dato25;
-use App\Models\dato26;
-use App\Models\Dato27;
-use App\Models\dato28;
-use App\Models\Dato29;
-use App\Models\dato30;
-use App\Models\Dato31;
-use App\Models\dato32;
-use App\Models\Dato33;
-use App\Models\dato34;
-use App\Models\Dato35;
-use App\Models\dato36;
-use App\Models\Dato37;
-use App\Models\Dato38;
-use App\Models\Dato39;
-use App\Models\Dato40;
-use App\Models\Dato41;
-use App\Models\Dato42;
-use App\Models\Dato43;
-use App\Models\Dato44;
-use App\Models\Dato45;
-use App\Models\Telefono;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class BuscarCedulaController extends Controller
 {
@@ -61,307 +24,585 @@ class BuscarCedulaController extends Controller
 
     public function Index(Request $request)
     {
-        //REQUEST
-        $filters = $request->all('search');
+        // Obtener los filtros de la solicitud
+        $filters = $request->input('search');
 
-        //RESPONDS
-        $ceddato1 = Dato1::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        // Página actual
+        $page = $request->query('page', 1);
 
-        $ceddato2 = Dato2::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('cedula', $search);
-            })->paginate(10);
+        // Clave de caché
+        $cacheKey = "cachingAllData-$page";
 
-        $ceddato3 = Dato3::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        // Obtener datos de la caché
+        $cachedData = cache($cacheKey);
 
-        $ceddato4 = Dato4::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        if ($cachedData && is_array($cachedData)) {
+            $cachingtelefonos = collect($cachedData);
+        } else {
+            $cachingtelefonos = collect();
+        }
 
-        $ceddato5 = Dato5::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        // Crear una función anónima para recordar en caché los datos
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato1::query();
 
-        $ceddato6 = Dato6::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CEDULA', 'like', $filters);
+            }
 
-        $ceddato7 = Dato7::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('cedula', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query(
+                    'page',
+                    1
+                )
+            );
+        });
 
-        $ceddato8 = Dato8::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        $ceddato2 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato2::query();
 
-        $ceddato9 = Dato9::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CEDULA', 'like', $filters);
+            }
 
-        $ceddato10 = dato10::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                /* $query->where('cedula', 'like', '%' . $search . '%'); */
-                $query->where('CARGO', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato11 = Dato11::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CARGO', $search);
-            })->paginate(10);
+        $ceddato3 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato3::query();
 
-        $ceddato12 = dato12::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CEDULA', 'like', $filters);
+            }
 
-        $dato13 = Dato13::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato14 = dato14::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        $ceddato4 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato4::query();
 
-        $dato15 = dato15::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CEDULA', 'like', $filters);
+            }
 
-        $dato16 = dato16::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato17 = Dato17::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CARGO', $search);
-            })->paginate(10);
+        $ceddato5 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato5::query();
 
-        $dato18 = dato18::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CEDULA', 'like', $filters);
+            }
 
-        $dato19 = Dato19::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato20 = dato20::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        $ceddato6 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato6::query();
 
-        $dato21 = Dato21::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CEDULA', 'like', $filters);
+            }
 
-        $dato22 = dato22::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato23 = Dato23::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        $ceddato7 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato7::query();
 
-        $dato24 = dato24::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('cedula', 'like', $filters);
+            }
 
-        $dato25 = Dato25::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('PUESTO', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato26 = dato26::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        $ceddato8 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato8::query();
 
-        $dato27 = Dato27::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('NUMERO_DE_CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CEDULA', 'like', $filters);
+            }
 
-        $dato28 = dato28::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato29 = Dato29::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        $ceddato9 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato9::query();
 
-        $dato30 = dato30::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('cedula', 'like', $filters);
+            }
 
-        $dato31 = Dato31::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato32 = dato32::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        $ceddato10 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = dato10::query();
 
-        $dato33 = Dato33::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('cedula', 'like', $filters);
+            }
 
-        $dato34 = dato34::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            return $query->paginate(
+                25,
+                ['*'],
+                'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato35 = Dato35::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+        /* $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato11::query();
 
-        $dato36 = dato36::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
 
-        $dato37 = Dato37::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato38 = Dato38::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CARGO', $search);
-            })->paginate(10);
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = dato12::query();
 
-        $dato39 = Dato39::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
 
-        $dato40 = Dato40::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato41 = Dato41::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('Cedula', $search);
-            })->paginate(10);
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato13::query();
 
-        $dato42 = Dato42::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CEDULA', $search);
-            })->paginate(10);
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
 
-        $dato43 = Dato43::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CIP_PROPIETARIO', $search);
-            })->paginate(10);
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $dato44 = Dato44::latest()
-        ->when($filters['search'] ?? null, function ($query, $search) {
-            $query->where('POSICION', $search);
-        })->paginate(10);
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = dato14::query();
 
-        $dato45 = Dato45::latest()
-        ->when($filters['search'] ?? null, function ($query, $search) {
-            $query->where('CEDULA', $search);
-        })->paginate(10);
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
 
-        $cedtelefono = Telefono::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('CED', $search);
-            })->paginate(10);
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
 
-        $customer = Customer::latest()
-            ->when($filters['search'] ?? null, function ($query, $search) {
-                $query->where('cedula', $search);
-            })->paginate(10);
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = dato15::query();
 
-        //CACHE
-        $ceddato1 = cache('cached1', $ceddato1, now()->addWeek());
-        $ceddato2 = cache('cached2', $ceddato2, now()->addWeek());
-        $ceddato3 = cache('cached3', $ceddato3, now()->addWeek());
-        $ceddato4 = cache('cached4', $ceddato4, now()->addWeek());
-        $ceddato5 = cache('cached5', $ceddato5, now()->addWeek());
-        $ceddato6 = cache('cached6', $ceddato6, now()->addWeek());
-        $ceddato7 = cache('cached7', $ceddato7, now()->addWeek());
-        $ceddato8 = cache('cached8', $ceddato8, now()->addWeek());
-        $ceddato9 = cache('cached9', $ceddato9, now()->addWeek());
-        $ceddato10 = cache('cached10', $ceddato10, now()->addWeek());
-        $dato11 = cache('cached11', $dato11, now()->addWeek());
-        $ceddato12 = cache('cached12', $ceddato12, now()->addWeek());
-        $dato13 = cache('cached13', $dato13, now()->addWeek());
-        $dato14 = cache('cached14', $dato14, now()->addWeek());
-        $dato15 = cache('cached15', $dato15, now()->addWeek());
-        $dato16 = cache('cached16', $dato16, now()->addWeek());
-        $dato17 = cache('cached17', $dato17, now()->addWeek());
-        $dato18 = cache('cached18', $dato18, now()->addWeek());
-        $dato19 = cache('cached19', $dato19, now()->addWeek());
-        $dato20 = cache('cached20', $dato20, now()->addWeek());
-        $dato21 = cache('cached21', $dato21, now()->addWeek());
-        $dato22 = cache('cached22', $dato22, now()->addWeek());
-        $dato23 = cache('cached23', $dato23, now()->addWeek());
-        $dato24 = cache('cached24', $dato24, now()->addWeek());
-        $dato25 = cache('cached25', $dato25, now()->addWeek());
-        $dato26 = cache('cached26', $dato26, now()->addWeek());
-        $dato27 = cache('cached27', $dato27, now()->addWeek());
-        $dato28 = cache('cached28', $dato28, now()->addWeek());
-        $dato29 = cache('cached29', $dato29, now()->addWeek());
-        $dato30 = cache('cached30', $dato30, now()->addWeek());
-        $dato31 = cache('cached31', $dato31, now()->addWeek());
-        $dato32 = cache('cached32', $dato32, now()->addWeek());
-        $dato33 = cache('cached33', $dato33, now()->addWeek());
-        $dato34 = cache('cached34', $dato34, now()->addWeek());
-        $dato35 = cache('cached35', $dato35, now()->addWeek());
-        $dato36 = cache('cached36', $dato36, now()->addWeek());
-        $dato37 = cache('cached37', $dato37, now()->addWeek());
-        $dato38 = cache('cached38', $dato38, now()->addWeek());
-        $dato39 = cache('cached39', $dato39, now()->addWeek());
-        $dato40 = cache('cached40', $dato40, now()->addWeek());
-        $dato41 = cache('cached41', $dato41, now()->addWeek());
-        $dato42 = cache('cached42', $dato42, now()->addWeek());
-        $dato43 = cache('cached43', $dato43, now()->addWeek());
-        $dato44 = cache('cached44', $dato44, now()->addWeek());
-        $dato45 = cache('cached45', $dato45, now()->addWeek());
-        $cedtelefono = cache('cachetelefono', $cedtelefono, now()->addWeek());
-        $customer = cache('cachecustomer', $customer, now()->addWeek());
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
 
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = dato16::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = dato18::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato19::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = dato20::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato21::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = dato22::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page',
+                request()->query('page', 1)
+            );
+        });
+        $ceddato1 = cache()->remember($cacheKey, now()->addWeek(), function () use ($filters) {
+            $query = Dato17::query();
+
+            if ($filters) {
+                $query->where('CED', 'like', $filters);
+            }
+
+            return $query->paginate(25, ['*'], 'page', request()->query('page', 1));
+        }); */
+
+        // Fusionar los datos de la caché con los nuevos datos
+        $cachingceddato1 = $cachingtelefonos->merge($ceddato1);
+        $cachingceddato2 = $cachingtelefonos->merge($ceddato2);
+        $cachingceddato3 = $cachingtelefonos->merge($ceddato3);
+        $cachingceddato4 = $cachingtelefonos->merge($ceddato4);
+        $cachingceddato5 = $cachingtelefonos->merge($ceddato5);
+        $cachingceddato6 = $cachingtelefonos->merge($ceddato6);
+        $cachingceddato7 = $cachingtelefonos->merge($ceddato7);
+        $cachingceddato8 = $cachingtelefonos->merge($ceddato8);
+        $cachingceddato9 = $cachingtelefonos->merge($ceddato9);
+        $cachingceddato10 = $cachingtelefonos->merge($ceddato10);
+
+        // Guardar en la caché
+        cache([$cacheKey => $cachingtelefonos], now()->addWeek());
+
+        // Renderizar la vista usando Inertia
         return Inertia::render('BuscarCedula/BuscarCedula', [
-            'ceddato1' => $ceddato1,
-            'ceddato2' => $ceddato2,
-            'ceddato3' => $ceddato3,
-            'ceddato4' => $ceddato4,
-            'ceddato5' => $ceddato5,
-            'ceddato6' => $ceddato6,
-            'ceddato7' => $ceddato7,
-            'ceddato8' => $ceddato8,
-            'ceddato9' => $ceddato9,
-            'ceddato10' => $ceddato10,
-            'dato11' => $dato11,
+            'ceddato1' => $cachingceddato1,
+            'ceddato2' => $cachingceddato2,
+            'ceddato3' => $cachingceddato3,
+            'ceddato4' => $cachingceddato4,
+            'ceddato5' => $cachingceddato5,
+            'ceddato6' => $cachingceddato6,
+            'ceddato7' => $cachingceddato7,
+            'ceddato8' => $cachingceddato8,
+            'ceddato9' => $cachingceddato9,
+            'ceddato10' => $cachingceddato10,
+            /* 'dato11' => $dato11,
             'ceddato12' => $ceddato12,
             'dato13' => $dato13,
             'dato14' => $dato14,
@@ -398,7 +639,7 @@ class BuscarCedulaController extends Controller
             'dato45' => $dato45,
             'cedtelefono' => $cedtelefono,
             'customer' => $customer,
-            'filters' => $filters
+            'filters' => $filters */
         ]);
     }
 }

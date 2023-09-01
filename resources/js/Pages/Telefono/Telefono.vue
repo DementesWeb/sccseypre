@@ -40,9 +40,7 @@ export default {
 
   data() {
     return {
-      search: "",
-      filters: {},
-      cedtelefono: {},
+      search: JSON.parse(this.filters),
     };
   },
 
@@ -63,7 +61,7 @@ export default {
 
   props: {
     cedtelefono: Object,
-    filters: Object,
+    filters: String,
   },
 };
 </script>
